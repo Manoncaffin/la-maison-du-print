@@ -6,22 +6,27 @@ options:
   changeSlug: true
   delete: false
 
-  columns:
-  - width: 1/2
+sections:
+  gallery:
+    type: fields
     fields:
-      category:
-        label: Type d'impression
-        type: tags
-        options:
-          - Sérigraphie
-          - Impression DTF
-      image:
-        label: Image
-        type: files
-        max: 1
-        min: 1
-        required: true
-      about:
-        label: Légende
-        type: textarea
-        required: true
+      gallery_items:
+        label: Galerie
+        type: structure
+        fields:
+          category:
+            label: Type d'impression
+            type: tags
+            options:
+              - Sérigraphie
+              - Impression DTF
+          image:
+            label: Image
+            type: files
+            max: 1
+            min: 1
+            required: true
+          about:
+            label: Légende
+            type: textarea
+            required: true
