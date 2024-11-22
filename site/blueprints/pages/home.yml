@@ -1,0 +1,9 @@
+title: Home
+icon: home
+
+options:
+  changeStatus: false
+  changeSlug: false
+  delete: false
+
+  

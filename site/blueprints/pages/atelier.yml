@@ -1,0 +1,36 @@
+title: Atelier
+icon: users
+
+options:
+  changeStatus: true
+  changeSlug: false
+  delete: false
+
+columns:
+  - width: 2/3
+    fields:
+      titre:
+        type: text
+      about:
+        label: À propos
+        type: textarea
+      image:
+        label: Image
+        type: files
+        max: 1
+        min: 1
+        required: true
+
+      Technique:
+        type: blocks
+        fieldsets:
+            - type: section
+              name: Section
+              preview: fields
+              fields:
+                titre:
+                  type: text
+                texte:
+                  type: textarea
+                image:
+                  type: files

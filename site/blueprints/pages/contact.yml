@@ -1,0 +1,89 @@
+title: Contact
+icon: chat
+
+columns:
+  - width: 1/2
+    sections:
+    fields:
+      pageSettings:
+          label: Infos pratiques
+          type: headline
+          required: true
+      address:
+        label: Adresse
+        type: structure
+        fields:
+          number:
+            label: Numéro
+            type: number
+            required: true
+          street:
+            label: Rue
+            type: text
+            required: true
+          zipcode:
+            label: Code postal
+            type: number
+            required: true
+          city:
+            label: Ville
+            type: text
+            required: true
+      email:
+        label: Email
+        type: email
+      tel:
+        label: Téléphone
+        type: tel
+      open:
+        label: Horaires
+        type: structure
+      buy: 
+        label: Règlement
+        type: textarea
+      send:
+        label: Envoi
+        type: textarea
+
+  - width: 1/2
+    sections:
+    fields:
+      pagePartners:
+          label: Réseaux et partenaires
+          type: headline
+          required: true
+      clients:
+        label: Clients
+        type: structure
+        fields:
+          client:
+            label: Nom du client
+            type: text
+          link:
+            label: Image
+            type: files
+            max: 1
+            min: 1
+            required: true
+      partners:
+        label: Bons plans
+        type: structure
+        fields:
+          network:
+            label: Option 
+            type: text
+          link:
+            label: Lien
+            type: url
+      networks:
+        label: Réseaux
+        type: structure
+        fields:
+          network:
+            label: Nom du réseau
+            type: text
+          link:
+            label: Lien
+            type: url
+
+
