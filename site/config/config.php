@@ -42,5 +42,16 @@ return [
         'slug' => 'panel',
         'language' => 'fr',
         'css' => 'assets/css/panel.css'
+    ],
+    'hooks' => [
+        'file.create:before' => function ($file) {
+            // Limiter les dimensions d'image, par exemple 2000x2000px
+            if ($file->type() === 'image') {
+                $dimensions = $file->dimensions();
+                if ($dimensions->width() > 2000 || $dimensions->height() > 2000) {
+                    throw new Exception('L\'image dépasse les dimensions autorisées (2000x2000px)');
+                }
+            }
+        }
     ]
 ];

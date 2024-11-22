@@ -1,0 +1,109 @@
+title: Devis
+icon: document
+
+options:
+  changeStatus: true
+  changeSlug: false
+  delete: false
+
+sections:
+  main:
+    type: fields
+    fields:
+      about:
+        label: À propos
+        type: textarea
+      image:
+        label: Image
+        type: files
+        max: 1
+        min: 1
+        required: true
+
+  formulaire:
+    type: fields
+    fields:
+      choice_model:
+        label: Choix du modèle
+        type: structure
+        fields:
+          model:
+            label: Modèle
+            type: text
+            required: true
+
+      choice_background:
+        label: Choix du fond
+        type: structure
+        fields:
+          model:
+            label: Fond
+            type: text
+            required: true
+
+      model_number:
+        label: Nombre d'article
+        type: number
+
+      color_number:
+        label: Nombre de couleur
+        type: number
+        step: 4
+
+      to_print:
+        label: Zone à imprimer
+        type: structure
+        fields:
+          model:
+            label: Zone
+            type: text
+            required: true
+
+      type_textile:
+        label: Choix du textile
+        type: structure
+        fields:
+          model:
+            label: Textile
+            type: text
+            required: true
+
+      project_description:
+        label: Description du projet
+        type: textarea
+        required: true
+
+  files_section:
+    type: fields
+    fields:
+      send_files:
+        label: Fichier à transférer
+        type: files
+        multiple: true
+        uploads:
+          template: file
+          accept:
+            - application/pdf
+            - image/jpeg
+            - image/png
+          max: 5M
+
+      client_name:
+        label: Nom du client
+        type: text
+        required: true
+
+      client_firstname:
+        label: Prénom du client
+        type: text
+        required: true
+
+      client_email:
+        label: Email du client
+        type: email
+        required: true
+
+      client_number:
+        label: Numéro du client
+        type: number
+        required: true

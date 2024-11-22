@@ -32,6 +32,22 @@ tabs:
             max: 1
             min: 1
             required: true
+          contact_home:
+              label: Email
+              type: email
+          networks:
+            label: Réseaux
+            type: structure
+            fields:
+              network:
+                label: Nom du réseau
+                type: text
+                required: true
+              link:
+                label: Lien
+                type: url
+                required: true
+
   identite:
     label: Identité visuelle
     columns:

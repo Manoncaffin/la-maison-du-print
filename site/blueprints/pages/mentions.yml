@@ -1,0 +1,18 @@
+title: Mentions légales
+icon: document
+
+columns:
+  - width: 2/3
+      fields:
+        texte:
+          type: writer
+          fieldsets:
+            - heading
+            - text
+            - list
+            - image
+            - gallery
+            - video
+            - code
+            - markdown
+

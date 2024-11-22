@@ -38,6 +38,24 @@ columns:
       open:
         label: Horaires
         type: structure
+        fields:
+          day:
+            label: Jour
+            type: select
+            options:
+              monday: Lundi
+              tuesday: Mardi
+              wednesday: Mercredi
+              thursday: Jeudi
+              friday: Vendredi
+              Saturday: Samedi
+              Sunday: Dimanche
+          time_start:
+            label: Début
+            type: time
+          time_end:
+            label: Fin
+            type: time
       buy: 
         label: Règlement
         type: textarea

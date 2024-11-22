@@ -14,8 +14,8 @@ columns:
       about:
         label: À propos
         type: textarea
-      image:
-        label: Image
+      video:
+        label: Vidéo
         type: files
         max: 1
         min: 1

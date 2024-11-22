@@ -1,0 +1,27 @@
+title: Galerie
+icon: users
+
+options:
+  changeStatus: true
+  changeSlug: true
+  delete: false
+
+  columns:
+  - width: 1/2
+    fields:
+      category:
+        label: Type d'impression
+        type: tags
+        options:
+          - Sérigraphie
+          - Impression DTF
+      image:
+        label: Image
+        type: files
+        max: 1
+        min: 1
+        required: true
+      about:
+        label: Légende
+        type: textarea
+        required: true
