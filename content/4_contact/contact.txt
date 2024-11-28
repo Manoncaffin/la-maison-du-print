@@ -1,0 +1,126 @@
+Address:
+
+- 
+  number: 123
+  street: rue de la Soie
+  zipcode: 38110
+  city: La Bâtie-Mongascon
+
+----
+
+Email: atelier@lamaisonduprint.fr
+
+----
+
+Tel: 07 68 18 48 96
+
+----
+
+Open:
+
+- 
+  day: monday
+  time_start: 09:00:00
+  time_end: 18:00:00
+- 
+  day: tuesday
+  time_start: 09:00:00
+  time_end: 18:00:00
+- 
+  day: wednesday
+  time_start: 09:00:00
+  time_end: 13:30:00
+- 
+  day: thursday
+  time_start: 09:00:00
+  time_end: 18:00:00
+- 
+  day: friday
+  time_start: 09:00:00
+  time_end: 18:00:00
+
+----
+
+Buy:
+
+Les règlements se font par virement ou par espèces lors du retrait de la commande. 
+Un acompte de 30% peut être demandé.
+
+----
+
+Send: Vos commandes peuvent être expédiées à l’adresse indiquée ou remises en mains propres à l’atelier.
+
+----
+
+Clients:
+
+- 
+  client: BIRIBI TATTOO SHOP
+  link:
+    - file://NAAjSZr4O9yg9Fn7
+- 
+  client: GRIBOUILLEURZ
+  link:
+    - file://XaIm4rXxhnVBmtDK
+- 
+  client: LA CARPE TATTOO
+  link:
+    - file://BxoLCzS8c1qusBMM
+- 
+  client: LOWCOSTERIE
+  link:
+    - file://A7AF6HjLqob0Komy
+- 
+  client: RENÉ LA MUISE
+  link:
+    - file://bJyIJr1OCxPIIcN2
+
+----
+
+Partners:
+
+- 
+  network: Une bonne quille de vin nature
+  link: https://domaine-lesgauchers.fr/
+- 
+  network: Un graphiste au top
+  link: >
+    https://www.instagram.com/lecabinet_?igsh=MW54cWoycm9pYTJpcw==
+- 
+  network: >
+    Un magicien du corps humain
+    (ostéopathe)
+  link: https://g.co/kgs/s1BSMQs
+- 
+  network: 'Des bombes de peinture sur Marseille '
+  link: https://www.instagram.com/backjumpstore/
+- 
+  network: Ou sur Lyon
+  link: http://eightyonestore.com/
+- 
+  network: De la sérigraphie mais sur papier
+  link: https://editionscomete.com/
+- 
+  network: Un super site comme celui là
+  link: >
+    https://manon-portfolio.projets.garage404.com/
+- 
+  network: Du motion design !
+  link: https://thibaultfavre.com
+- 
+  network: Un artiste peintre incroyable
+  link: >
+    https://meyso.fr/?fbclid=PAZXh0bgNhZW0CMTEAAaYTNBKIqYsD6QJx7T6jTZ0fcY-WdukxhufCICgBDHKQ5bzSIJaE2CBgs1A_aem_t1ukLxIps45pDZsPT5FVsw
+
+----
+
+Networks:
+
+- 
+  network: Instagram
+  link: >
+    https://www.instagram.com/lamaison.duprint/
+
+----
+
+Uuid: J0bkwalu6tR7NiQn

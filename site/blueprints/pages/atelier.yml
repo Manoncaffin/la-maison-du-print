@@ -9,8 +9,6 @@ options:
 columns:
   - width: 2/3
     fields:
-      titre:
-        type: text
       about:
         label: À propos
         type: textarea
@@ -20,7 +18,11 @@ columns:
         max: 1
         min: 1
         required: true
-
+        maxsize: 50M
+        template: video
+        accept:
+          - video/mp4
+          - video/mov
       Technique:
         type: blocks
         fieldsets:

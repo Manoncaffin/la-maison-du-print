@@ -22,6 +22,11 @@ return [
         'methods' => ['password', 'password-reset']
     ],
 
+    'upload' => [
+    'maxsize' => 50 * 1024 * 1024,
+    'types' => ['mp4', 'mov', 'avi']
+    ],
+
     //Image srcsets thumbs presets
     'thumbs' => [
         'srcsets' => [
@@ -53,5 +58,5 @@ return [
                 }
             }
         }
-    ]
+    ],
 ];

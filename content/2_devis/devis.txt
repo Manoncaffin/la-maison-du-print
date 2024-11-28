@@ -1,0 +1,105 @@
+About:
+
+Une demande de devis est traitée sous trois jours.
+
+Pour une demande de devis rapide, merci de remplir le formulaire suivant. Vous serez recontacté·e ultérieurement.
+
+Pour toute demande de projet urgent ou qui n’apparaîtrait pas dans le questionnaire, n’hésitez pas à me solliciter directement par mail à l’adresse : atelier@lamaisonduprint.fr ou par téléphone.
+
+----
+
+Image: - file://X919bUWGXUdJUrrv
+
+----
+
+Choice-model:
+
+- 
+  model: Classique
+
+----
+
+Choice-background:
+
+- 
+  model: A5
+
+----
+
+Model-number: 
+
+----
+
+Color-number:
+
+- 
+  model: "1"
+- 
+  model: "2"
+- 
+  model: "3"
+- 
+  model: "4"
+
+----
+
+To-print:
+
+- 
+  model: Avant
+
+----
+
+Type-textile:
+
+- 
+  model: 20gr
+
+----
+
+Project-description: 
+
+----
+
+Send-files: 
+
+----
+
+Client-name: 
+
+----
+
+Client-firstname: 
+
+----
+
+Client-email: 
+
+----
+
+Client-number: 
+
+----
+
+Uuid: LHGmRc7FfLIEHQie
+
+----
+
+Layout:
+
+- 
+  attrs: [ ]
+  columns:
+    - 
+      blocks: [ ]
+      id: 07f4fcbe-6e31-46c9-b3e8-2bee6d692445
+      width: 1/1
+  id: cee3d2be-5575-4364-a086-c320934b14f8
+- 
+  attrs: [ ]
+  columns:
+    - 
+      blocks: [ ]
+      id: a1f117bc-3a6a-47c1-8de4-90d0dbdffbb8
+      width: 1/1
+  id: b7156a3a-4136-472f-b845-4a976e10896f

@@ -23,6 +23,10 @@ sections:
   formulaire:
     type: fields
     fields:
+      headline_formulaire:
+        type: headline
+        label: Formulaire
+
       choice_model:
         label: Choix du modèle
         type: structure
@@ -47,8 +51,12 @@ sections:
 
       color_number:
         label: Nombre de couleur
-        type: number
-        step: 4
+        type: structure
+        fields:
+          model:
+            label: Nombre
+            type: text
+            required: true
 
       to_print:
         label: Zone à imprimer
@@ -71,7 +79,6 @@ sections:
       project_description:
         label: Description du projet
         type: textarea
-        required: true
 
   files_section:
     type: fields
@@ -84,26 +91,22 @@ sections:
           template: file
           accept:
             - application/pdf
-            - image/jpeg
-            - image/png
+            - application/postscript
+            - application/illustrator
           max: 5M
 
       client_name:
         label: Nom du client
         type: text
-        required: true
 
       client_firstname:
         label: Prénom du client
         type: text
-        required: true
 
       client_email:
         label: Email du client
         type: email
-        required: true
 
       client_number:
         label: Numéro du client
         type: number
-        required: true
