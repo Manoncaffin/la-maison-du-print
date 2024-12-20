@@ -157,7 +157,32 @@ a {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         grid-gap: var(--gutter-width);
+    }
+
+    .all_footer {
+        align-items: center;
+        grid-column: 1 / span 12;
+        background-color: black;
+    }
+
+    .title_footer,
+    .mentions_footer {
+        color: white;
+    }
+
+    .name_footer,
+    .mentions_footer {
         padding: 20px 40px 30px 40px;
+    }
+
+    .name_footer {
+        display: flex;
+        justify-content: start;
+    }
+
+    .mentions_footer {
+        display: flex;
+        justify-content: end;
     }
 
     /* -------------------- */
@@ -307,6 +332,23 @@ a {
     #toggle {
         display: none;
     }
+
+
+    /* ------- FOOTER ------- */
+    /* ---------------------- */
+    .container_footer {
+        align-items: center;
+    }
+
+    .name_footer,
+    .mentions_footer {
+        padding: 20px 80px 30px 80px;
+    }
+
+
+    /* ---------------------- */
+    /* ------- FOOTER ------- */
+    
 }
 
 

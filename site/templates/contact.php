@@ -100,5 +100,4 @@
 
 </main>
 
-
 <?= snippet('footer') ?>
