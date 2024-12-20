@@ -1,0 +1,39 @@
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 350PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 350px) {
+    .container_homepage {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: var(--gutter-width);
+        padding: 20px 40px 0 40px;
+    }
+
+
+    .border_homepage_horizontal {
+        border: 1px solid black;
+        grid-column: 1 / span 12;
+        padding: 0 100px 0 100px;
+        margin: 15px 0 15px 0;
+    }
+}
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1000PX --------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1000px) {
+
+    .container_homepage {
+        padding: 20px 100px 0 100px;
+    }
+
+    .border_homepage_horizontal {
+        border: 1px solid black;
+        grid-column: 1 / span 12;
+    }
+}

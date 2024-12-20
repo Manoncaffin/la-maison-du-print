@@ -59,4 +59,5 @@ return [
             }
         }
     ],
+    'home' => 'home',
 ];

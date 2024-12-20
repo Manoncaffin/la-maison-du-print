@@ -89,15 +89,19 @@ a {
         padding: 30px 40px 20px 40px;
     }
 
-    .logo_header,
-    .logo_footer {
-        font-family: "Ronfard";
+    .title_header
+    .title_footer {
+        font-size: 1.8rem;
+        font-weight: 600;
+    }
+
+    .all_logo {
+        grid-column: span 3;
     }
 
     .logo_header {
-        grid-column: span 3;
         width: 200px;
-        height: 140px;
+        height: auto;
     }
 
     .arrow_header {
@@ -158,4 +162,183 @@ a {
 
     /* -------------------- */
     /* ------ FOOTER ------ */
+}
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 768PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 768px) {
+    /* ------- HEADER ------- */
+    /* ---------------------- */
+
+    /* ------- HEADER ------- */
+    /* ---------------------- */
+
+
+    /* ------- FOOTER ------- */
+    /* ---------------------- */
+
+    /* ------- FOOTER ------- */
+    /* ---------------------- */
+
+}
+
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1000PX -------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1000px) {
+
+    /* ------- HEADER ------- */
+    /* ---------------------- */
+    .container {
+        padding: 30px 100px 0px 100px;
+    }
+
+    .logo_header {
+        width: 80px;
+        height: auto;
+    }
+
+    .all_logo {
+        grid-column: span 4;
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .container_header {
+        padding: 40px 80px 20px 80px;
+        align-items: center;
+    }
+
+    .all_menu {
+        grid-column: 6 / span 7;
+    }
+
+    .menu {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 50px; 
+    }
+    
+    .menu li {
+        list-style: none;
+        display: flex; 
+        align-items: center;
+        height: 50px; 
+        border-radius: 20px;
+        width: 100%;
+        justify-content: center;
+        margin-right: 20px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        position: relative; 
+        margin: 0;
+        padding: 0;
+    }
+    
+    .menu li a {
+        font-size: 1.3rem;
+        font-weight: 600;
+        text-align: center;
+        width: 100%; 
+        height: 100%; 
+        display: block; 
+        text-decoration: none;
+        color: black;
+        transition: color 0.3s ease, background-color 0.3s ease;
+    }
+    
+    .menu li:hover {
+        background-color: black;
+    }
+
+    .menu li:hover a {
+        color: white;
+    }
+
+    .menu a {
+        position: relative;
+    }
+
+    .menu li:last-child {
+        margin-right: 0;
+    }
+
+    .hover {
+        display: flex;
+    }
+
+    .hover_other {
+        display: flex;
+        border-radius: 50px;
+    }
+
+    .menu li a {
+        font-size: 1.3rem;
+        font-weight: 600;
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+        padding: 12px 30px;
+        border: 1px solid black;
+        border-radius: 20px;
+    }
+
+    .menu li a:hover {
+        color: white;
+        background-color: black;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    label,
+    #toggle {
+        display: none;
+    }
+}
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1200PX -------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1200px) {
+
+    /* ------- HEADER ------- */
+    /* ---------------------- */
+
+    .logo {
+        grid-column: span 3;
+    }
+
+    /* ------- HEADER ------- */
+    /* ---------------------- */
+
+}
+
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1500PX -------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1500px) {
+
+    /* ------- HEADER ------- */
+    /* ---------------------- */
 }

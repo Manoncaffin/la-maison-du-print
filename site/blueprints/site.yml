@@ -29,7 +29,7 @@ tabs:
           image:
             label: Image
             type: files
-            max: 1
+            max: 2
             min: 1
             required: true
           contact_home:
@@ -47,7 +47,6 @@ tabs:
                 label: Lien
                 type: url
                 required: true
-
   identite:
     label: Identité visuelle
     columns:
