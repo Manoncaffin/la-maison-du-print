@@ -2,9 +2,9 @@
 <?= snippet('head') ?>
 
 <main class="container_contact">
-<?php $contact = page('contact'); ?>
+    <?php $contact = page('contact'); ?>
 
-<?php
+    <?php
     // Tableau de correspondance pour les jours en français
     $daysInFrench = [
         'monday'    => 'Lundi',
@@ -15,16 +15,22 @@
         'saturday'  => 'Samedi',
         'sunday'    => 'Dimanche'
     ];
-?>
-    
+    ?>
+
+    <div class="title-page">
+        <p>CONTACT ET INFOS PRATIQUES</p>
+        <div class="border"></div>
+    </div>
+
     <div class="public">
         <p><?= $contact->about()->kti() ?></p>
     </div>
 
     <div class="address">
-        <p>La Maison du print</p>
+        <h2>La Maison du print</h2>
         <?php foreach ($contact->address()->toStructure() as $address) : ?>
-            <p id="address-<?= $address->index() ?>" data-id="address-<?= $address->index() ?>"><?= $address->number()->kti() ?> <?= $address->street()->kti() ?> <?= $address->zipcode()->kti() ?> <?= $address->city()->kti() ?></p>
+            <p id="address-<?= $address->index() ?>" data-id="address-<?= $address->index() ?>"><?= $address->number()->kti() ?> <?= $address->street()->kti() ?></p>
+            <p><?= $address->zipcode()->kti() ?> <?= $address->city()->kti() ?></p>
         <?php endforeach ?>
     </div>
 
@@ -39,9 +45,9 @@
             <h2>Horaires et jours d'ouverture</h2>
             <ul>
                 <?php foreach ($contact->open()->toStructure() as $entry): ?>
-                    <?php 
-                        // Traduction du jour en français
-                        $dayInFrench = $daysInFrench[$entry->day()->value()] ?? $entry->day()->value();
+                    <?php
+                    // Traduction du jour en français
+                    $dayInFrench = $daysInFrench[$entry->day()->value()] ?? $entry->day()->value();
                     ?>
                     <li>
                         <strong><?= $dayInFrench ?>:</strong>
@@ -69,35 +75,44 @@
     <?php endif; ?>
 
     <!-- Bons plans -->
-<?php if ($contact->partners()->isNotEmpty()): ?>
     <section class="partners">
-        <h2>Bons plans</h2>
-        <ul>
-            <?php foreach ($contact->partners()->toStructure() as $partner): ?>
-                <li>
-                    <strong><?= $partner->network()->html() ?></strong>: 
-                    <a href="<?= $partner->link()->html() ?>" target="_blank"><?= $partner->link()->html() ?></a>
-                </li>
-            <?php endforeach; ?>
+        <h1>La Maison du print partage ses bons plans !</h1>
+        <p>
+            Cliquez ici si vous cherchez
+            <span id="selected-partner">[sélectionnez une option]</span>
+        </p>
+        <ul id="partners-list" style="display: none;">
+            <?php if ($contact->partners()->isNotEmpty()): ?>
+                <?php foreach ($contact->partners()->toStructure() as $partner): ?>
+                    <li>
+                        <a href="<?= $partner->link()->html() ?>"
+                            data-partner="<?= $partner->network()->html() ?>"
+                            target="_blank">
+                            <?= $partner->network()->html() ?>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </ul>
     </section>
-<?php endif; ?>
 
-<!-- Réseaux sociaux -->
-<?php if ($contact->networks()->isNotEmpty()): ?>
-    <section class="networks">
-        <h2>Réseaux sociaux</h2>
-        <ul>
-            <?php foreach ($contact->networks()->toStructure() as $network): ?>
-                <li>
-                    <strong><?= $network->network()->html() ?></strong>: 
-                    <a href="<?= $network->link()->html() ?>" target="_blank"><?= $network->link()->html() ?></a>
-                </li>
-            <?php endforeach; ?>
-        </ul>
-    </section>
-<?php endif; ?>
+
+    <!-- Réseaux sociaux -->
+    <?php if ($contact->networks()->isNotEmpty()): ?>
+        <section class="networks">
+            <h2>Vous pouvez me retrouver sur ces réseaux</h2>
+            <ul>
+                <?php foreach ($contact->networks()->toStructure() as $network): ?>
+                    <li>
+                        <strong><?= $network->network()->html() ?></strong>:
+                        <a href="<?= $network->link()->html() ?>" target="_blank"><?= $network->link()->html() ?></a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </section>
+    <?php endif; ?>
 
 </main>
 
 <?= snippet('footer') ?>
+<script src="<?= $site->url() ?>/assets/js/select-option.js"></script>

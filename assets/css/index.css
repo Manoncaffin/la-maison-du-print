@@ -8,7 +8,7 @@
 :root {
     --gutter-width: 15px;
     --text-color: #181818;
-    --text-size: 20px;
+    --text-size: 1.2rem;
 }
 
 * {
@@ -33,7 +33,7 @@ a,
 li {
     font-family: "Inter", sans-serif;
     color: var(--text-color);
-    font-weight: normal;
+    /* font-weight: normal; */
     margin: 0;
     padding: 0;
 }
@@ -152,11 +152,11 @@ a {
     /* ---------------------- */
 
     /* ------- FOOTER ------- */
-    /* ---------------------- */
+    /* ---------------------- */ 
     .container_footer {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        grid-gap: var(--gutter-width);
+        padding-top: 30px;
     }
 
     .all_footer {
@@ -170,7 +170,10 @@ a {
         color: white;
     }
 
-    .name_footer,
+    .name_footer {
+        padding: 20px 40px 0 40px;
+    }
+
     .mentions_footer {
         padding: 20px 40px 30px 40px;
     }
@@ -182,7 +185,7 @@ a {
 
     .mentions_footer {
         display: flex;
-        justify-content: end;
+        justify-content: start;
     }
 
     /* -------------------- */
@@ -343,6 +346,10 @@ a {
     .name_footer,
     .mentions_footer {
         padding: 20px 80px 30px 80px;
+    }
+
+    .mentions_footer {
+        justify-content: end;
     }
 
 
