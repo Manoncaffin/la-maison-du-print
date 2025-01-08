@@ -1,3 +1,7 @@
+Title: Devis
+
+----
+
 About:
 
 Une demande de devis est traitée sous trois jours.

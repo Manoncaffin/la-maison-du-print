@@ -1,3 +1,4 @@
+h1,
 h2 {
     font-weight: 600;
 }
@@ -32,8 +33,6 @@ ul {
 }
 
 
-
-
 /* Start coding here */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -42,7 +41,11 @@ ul {
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     body {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+
+        .title-page h1 {
+            font-size: 2.2rem;
+        }
     }
 
     .container_contact {
@@ -63,6 +66,7 @@ ul {
     .shipping-info,
     .partners,
     .networks {
+        padding-top: 40px;
         grid-column: 1 / span 12;
     }
 
@@ -75,10 +79,14 @@ ul {
     }
 
     .contact {
-        padding-top: 10px;
+        padding-top: 15px;
+    }
+
+    .border {
+        border-bottom: 1px solid black;
+        margin-top: 10px;
     }
 }
-
 
 
 /* --------------------------------------------------- */
@@ -106,11 +114,11 @@ ul {
     .opening-hours,
     .payment-info,
     .shipping-info {
-        grid-column: 1 / span 5;
+        grid-column: 2 / span 5;
     }
 
     .partners,
     .networks {
-        grid-column: 7 / span 6;
+        grid-column: 8 / span 5;
     }
 }

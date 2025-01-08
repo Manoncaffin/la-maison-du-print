@@ -18,7 +18,7 @@
     ?>
 
     <div class="title-page">
-        <p>CONTACT ET INFOS PRATIQUES</p>
+        <h1>CONTACT ET INFOS PRATIQUES</h1>
         <div class="border"></div>
     </div>
 
@@ -35,8 +35,8 @@
     </div>
 
     <div class="contact">
-        <p><?= $contact->tel() ?></p>
         <p><a href="mailto:<?= $contact->email() ?>"><?= $contact->email() ?></a></p>
+        <p><?= $contact->tel() ?></p>
     </div>
 
     <!-- Horaires -->
@@ -76,7 +76,7 @@
 
     <!-- Bons plans -->
     <section class="partners">
-        <h1>La Maison du print partage ses bons plans !</h1>
+        <h2>La Maison du print partage ses bons plans !</h2>
         <p>
             Cliquez ici si vous cherchez
             <span id="selected-partner">[sélectionnez une option]</span>
@@ -98,20 +98,21 @@
 
 
     <!-- Réseaux sociaux -->
+    <!-- Ajouter facebook -->
     <?php if ($contact->networks()->isNotEmpty()): ?>
         <section class="networks">
             <h2>Vous pouvez me retrouver sur ces réseaux</h2>
             <ul>
                 <?php foreach ($contact->networks()->toStructure() as $network): ?>
                     <li>
-                        <strong><?= $network->network()->html() ?></strong>:
-                        <a href="<?= $network->link()->html() ?>" target="_blank"><?= $network->link()->html() ?></a>
+                        <a href="<?= $network->link()->html() ?>" target="_blank">
+                        <?= $network->network()->html() ?>
+                    </a>
                     </li>
                 <?php endforeach; ?>
             </ul>
         </section>
     <?php endif; ?>
-
 </main>
 
 <?= snippet('footer') ?>

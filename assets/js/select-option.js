@@ -9,14 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     partnerLinks.forEach(link => {
         link.addEventListener('click', (event) => {
-            event.preventDefault();
-
             const partnerName = link.dataset.partner;
             const partnerUrl = link.getAttribute('href');
-
-            selectedPartner.innerHTML = `<a href="${partnerUrl}" target="_blank">${partnerName}</a>`;
-
+            selectedPartner.innerHTML = partnerName;
             partnersList.style.display = 'none';
+            window.open(partnerUrl, '_blank');
         });
     });
 });
