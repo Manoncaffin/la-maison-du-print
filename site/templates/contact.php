@@ -22,10 +22,6 @@
         <div class="border"></div>
     </div>
 
-    <div class="public">
-        <p><?= $contact->about()->kti() ?></p>
-    </div>
-
     <div class="address">
         <h2>La Maison du print</h2>
         <?php foreach ($contact->address()->toStructure() as $address) : ?>
@@ -74,6 +70,23 @@
         </section>
     <?php endif; ?>
 
+    <!-- Réseaux sociaux -->
+    <!-- Ajouter facebook -->
+    <?php if ($contact->networks()->isNotEmpty()): ?>
+        <section class="networks">
+            <h2>Vous pouvez me retrouver sur ces réseaux</h2>
+            <ul>
+                <?php foreach ($contact->networks()->toStructure() as $network): ?>
+                    <li>
+                        <a href="<?= $network->link()->html() ?>" target="_blank">
+                            <?= $network->network()->html() ?>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </section>
+    <?php endif; ?>
+
     <!-- Bons plans -->
     <section class="partners">
         <h2>La Maison du print partage ses bons plans !</h2>
@@ -95,24 +108,6 @@
             <?php endif; ?>
         </ul>
     </section>
-
-
-    <!-- Réseaux sociaux -->
-    <!-- Ajouter facebook -->
-    <?php if ($contact->networks()->isNotEmpty()): ?>
-        <section class="networks">
-            <h2>Vous pouvez me retrouver sur ces réseaux</h2>
-            <ul>
-                <?php foreach ($contact->networks()->toStructure() as $network): ?>
-                    <li>
-                        <a href="<?= $network->link()->html() ?>" target="_blank">
-                        <?= $network->network()->html() ?>
-                    </a>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </section>
-    <?php endif; ?>
 </main>
 
 <?= snippet('footer') ?>
