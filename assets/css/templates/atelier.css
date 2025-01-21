@@ -1,0 +1,168 @@
+h1,
+h2 {
+    font-weight: 600;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+/* Start coding here */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 350PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 350px) {
+    body {
+        font-size: 1.1rem;
+
+        .title-page h1 {
+            font-size: 2.2rem;
+        }
+    }
+
+    .container_atelier {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: var(--gutter-width);
+        padding: 0 20px;
+    }
+
+    .title-page {
+        grid-column: 1 / span 6;
+    }
+
+    .border {
+        border-bottom: 1px solid black;
+        margin-top: 6px;
+    }
+
+    .about {
+        padding-top: 40px;
+    }
+
+    .about,
+    .technique {
+        grid-column: 1 / span 6;
+    }
+
+    .video {
+        grid-column: 1 / span 6;
+        width: 100vw;
+    }
+
+    .video video {
+        padding: 10px 0 80px 0;
+        width: 100%; /* La vidéo prend toute la largeur */
+        height: auto; /* Laissez la hauteur se définir automatiquement en fonction de la largeur */
+    }
+
+    .technique {
+        padding-top: 40px;
+        font-size: 1.9rem;
+
+        h3 {
+            padding-bottom: 20px;
+        }
+
+        img {
+            width: 95vw;
+            height: auto;
+        }
+
+        button {
+            width: fit-content;
+            color: white;
+            background-color: black;
+            border-radius: 20px;
+            padding: 10px 25px;
+            margin: 20px 0 80px 0;
+        }
+
+        p {
+            padding-bottom: 30px;
+        }
+    }
+
+    .info-question {
+        grid-column: 1 / span 6;
+    }
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 768PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 768px) {
+    .container_atelier {
+        grid-template-columns: repeat(12, 1fr); 
+    }
+
+    .title-page {
+        grid-column: 1 / span 12;
+    }
+
+    .about,
+    .video,
+    .technique {
+        grid-column: 2 / span 10;
+    }
+
+    .video video {
+        width: auto;
+        max-width: 30%;
+        height: auto;
+    }
+}
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1000PX -------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1000px) {
+    .container_atelier {
+        padding: 0 80px;
+    }
+
+    .about,
+    .video,
+    .technique {
+        grid-column: 2 / span 10;
+        padding-top: 20px;
+    }
+
+    .video video {
+        width: 30%; /* Ajuste la taille de la vidéo */
+        max-width: 30%;
+    }
+
+    .technique {
+        img {
+            width: 100vw;
+            height: auto;
+        }
+    }
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1200PX --------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1200px) {
+}
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1500PX --------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1500px) {
+}
+

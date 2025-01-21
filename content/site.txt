@@ -28,3 +28,6 @@ Networks:
   network: Instagram
   link: >
     https://www.instagram.com/lamaison.duprint/
+- 
+  network: Facebook
+  link: 'https://www.facebook.com/profile.php?id=61565550923195&locale=fr_FR'

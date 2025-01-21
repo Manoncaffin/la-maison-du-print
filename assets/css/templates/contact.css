@@ -25,23 +25,24 @@ ul {
 
     .container_contact {
         display: grid;
-        grid-template-columns: repeat(12, 1fr); 
-        grid-template-rows: auto; 
-        column-gap: var(--gutter-width); 
-        row-gap: 20px; 
-        padding: 0 40px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        column-gap: var(--gutter-width);
+        row-gap: 20px;
+        padding: 0 20px;
     }
 
     .title-page {
-        grid-column: 1 / span 12;
+        grid-column: 1 / span 6;
     }
 
     .address {
-        grid-column: 1 / span 11; 
+        grid-column: 1 / span 5;
         grid-row: auto;
     }
 
-    .address {
+    .address,
+    .networks {
         padding-top: 20px;
     }
 
@@ -49,49 +50,97 @@ ul {
     .opening-hours,
     .payment-info,
     .shipping-info {
-        grid-column: 1 / span 11; 
+        grid-column: 1 / span 5;
         grid-row: auto;
     }
 
+    .clients,
     .partners,
     .networks {
-        grid-column: 1 / span 11; 
+        grid-column: 1 / span 5;
         grid-row: auto;
     }
 
     .border {
         border-bottom: 1px solid black;
-        margin-top: 10px;
+        margin-top: 6px;
     }
-    
+
     #partners-list {
         list-style-type: none;
         margin: 10px 0;
     }
-    
+
     #partners-list li {
         color: gray;
     }
-    
+
     #partners-list li a {
         text-decoration: none;
     }
-    
+
     #partners-list li a:hover {
         color: black;
     }
 
     p {
-        display: flex; 
-        flex-direction: column; 
-        align-items: flex-start; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     #selected-partner {
         color: gray;
         cursor: pointer;
-        display: block; 
+        display: block;
     }
+
+    .client-item {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+
+    .client-name {
+        z-index: 1;
+    }
+
+    .client-logo-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        width: 550px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .client-item:hover .client-logo-container {
+        opacity: 1;
+    }
+
+    .client-logo {
+        width: 550px;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .client-logo.client-logo-nom1 {
+        object-position: top left;
+    }
+
+    .client-logo.client-logo-nom2 {
+        object-position: bottom right;
+    }
+
+    .column .column-1 {
+        margin-bottom: 20px;
+    }
+
 }
 
 
@@ -101,41 +150,52 @@ ul {
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 768px) {
+
+    .container_contact {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
     .address,
     .contact,
     .opening-hours,
     .payment-info,
     .shipping-info,
+    .clients,
     .partners,
     .networks {
         grid-column: 2 / span 10;
-        gap: 2rem; 
+        gap: 2rem;
+    }
+
+    .title-page {
+        grid-column: 1 / span 12;
     }
 
     p {
-        display: block; 
+        display: block;
     }
-    
+
     #selected-partner {
-        display: inline; 
+        display: inline;
     }
-    
+
     .partners {
-        position: relative; 
+        position: relative;
     }
 
     #partners-list {
-        position: absolute; 
-        top: 70%; 
-        width: fit-content; 
+        position: absolute;
+        top: 30%;
+        width: fit-content;
         background-color: rgba(255, 255, 255);
         padding-left: 232px;
-        z-index: 10; 
-        display: none; 
+        z-index: 10;
+        display: none;
     }
 
     #partners-list.visible {
-        display: block; 
+        display: block;
     }
 
     #partners-list li {
@@ -151,45 +211,13 @@ ul {
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
     .container_contact {
-        grid-template-columns: repeat(12, 1fr); 
-        grid-template-rows: auto; 
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
         padding: 0 80px;
     }
 
-    .address,
-    .partners {
-        padding-top: 20px;
-    }
-
     .address {
-        grid-column: 2 / span 5;
-        grid-row: 2;
-    }
-    .contact {
-        grid-column: 2 / span 5;
-        grid-row: 3;
-    }
-    .opening-hours {
-        grid-column: 2 / span 5;
-        grid-row: 4;
-    }
-    .payment-info {
-        grid-column: 2 / span 5;
-        grid-row: 5;
-    }
-    .shipping-info {
-        grid-column: 2 / span 5;
-        grid-row: 6;
-    }
-
-    .partners {
-        grid-column: 7 / span 5;
-        grid-row: 2;
-    }
-
-    .networks {
-        grid-column: 7 / span 5;
-        grid-row: 3;
+        padding-top: 20px;
     }
 }
 
@@ -204,30 +232,40 @@ ul {
         grid-column: 2 / span 5;
         grid-row: 2;
     }
+
     .contact {
         grid-column: 2 / span 5;
         grid-row: 3;
     }
+
     .opening-hours {
+        grid-column: 2 / span 5;
+        grid-row: 3;
+    }
+
+    .payment-info {
         grid-column: 2 / span 5;
         grid-row: 4;
     }
-    .payment-info {
+
+    .shipping-info {
         grid-column: 2 / span 5;
         grid-row: 5;
     }
-    .shipping-info {
-        grid-column: 2 / span 5;
-        grid-row: 6;
+
+    .clients {
+        grid-column: 8 / span 4;
+        grid-row: 2;
     }
 
     .partners {
         grid-column: 8 / span 4;
-        grid-row: 2;
+        grid-row: 3;
     }
+
     .networks {
         grid-column: 8 / span 4;
-        grid-row: 3;
+        grid-row: 4;
     }
 }
 
@@ -239,6 +277,7 @@ ul {
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
+
     .address,
     .contact,
     .opening-hours,
@@ -247,6 +286,7 @@ ul {
         grid-column: 2 / span 5;
     }
 
+    .clients,
     .partners,
     .networks {
         grid-column: 8 / span 5;

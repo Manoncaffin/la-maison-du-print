@@ -1,6 +1,8 @@
 <?= snippet('header') ?>
 <?= snippet('head') ?>
 
+<body>
+
 <main class="container_contact">
     <?php $contact = page('contact'); ?>
 
@@ -28,11 +30,10 @@
             <p id="address-<?= $address->index() ?>" data-id="address-<?= $address->index() ?>"><?= $address->number()->kti() ?> <?= $address->street()->kti() ?></p>
             <p><?= $address->zipcode()->kti() ?> <?= $address->city()->kti() ?></p>
         <?php endforeach ?>
-    </div>
-
-    <div class="contact">
-        <p><a href="mailto:<?= $contact->email() ?>"><?= $contact->email() ?></a></p>
-        <p><?= $contact->tel() ?></p>
+        <div class="contact">
+            <p><a href="mailto:<?= $contact->email() ?>"><?= $contact->email() ?></a></p>
+            <p><?= $contact->tel() ?></p>
+        </div>
     </div>
 
     <!-- Horaires -->
@@ -70,20 +71,19 @@
         </section>
     <?php endif; ?>
 
-    <!-- Réseaux sociaux -->
-    <!-- Ajouter facebook -->
-    <?php if ($contact->networks()->isNotEmpty()): ?>
-        <section class="networks">
-            <h2>Vous pouvez me retrouver sur ces réseaux</h2>
-            <ul>
-                <?php foreach ($contact->networks()->toStructure() as $network): ?>
-                    <li>
-                        <a href="<?= $network->link()->html() ?>" target="_blank">
-                            <?= $network->network()->html() ?>
-                        </a>
-                    </li>
+    <!-- Clients -->
+    <?php if ($contact->clients()->isNotEmpty()): ?>
+        <section class="clients">
+            <h2>Ils·elles ont fait confiance à La Maison du print</h2>
+                <?php foreach ($contact->clients()->toStructure() as $client): ?>
+                    <div class="client-item">
+                    <p class="client-name"><?php echo $client->client(); ?></p>
+                    <div class="client-logo-container">
+                        <!-- Utilisation d'une classe personnalisée pour chaque image -->
+                        <img src="<?php echo $client->link()->toFile()->url(); ?>" class="client-logo <?php echo 'client-logo-' . $client->client()->slug(); ?>" alt="<?php echo $client->client(); ?>" />
+                    </div>
+                </div>
                 <?php endforeach; ?>
-            </ul>
         </section>
     <?php endif; ?>
 
@@ -107,8 +107,30 @@
                 <?php endforeach; ?>
             <?php endif; ?>
         </ul>
+
+        <!-- Réseaux sociaux -->
+    <!-- Ajouter facebook -->
+    <?php if ($contact->networks()->isNotEmpty()): ?>
+        <section class="networks">
+            <h2>Vous pouvez me retrouver sur ces réseaux</h2>
+            <ul>
+                <?php foreach ($contact->networks()->toStructure() as $network): ?>
+                    <li>
+                        <a href="<?= $network->link()->html() ?>" target="_blank">
+                            <?= $network->network()->html() ?>
+                        </a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+        </section>
+    <?php endif; ?>
+
     </section>
+
+    
+
 </main>
 
 <?= snippet('footer') ?>
+</body>
 <script src="<?= $site->url() ?>/assets/js/select-option.js"></script>
