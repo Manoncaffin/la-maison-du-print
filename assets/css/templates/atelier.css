@@ -50,13 +50,12 @@ ul {
 
     .video {
         grid-column: 1 / span 6;
-        width: 100vw;
     }
 
     .video video {
-        padding: 10px 0 80px 0;
-        width: 100%; /* La vidéo prend toute la largeur */
-        height: auto; /* Laissez la hauteur se définir automatiquement en fonction de la largeur */
+        padding: 15px 0 80px 0;
+        width: 100%; 
+        height: auto; 
     }
 
     .technique {
@@ -68,7 +67,7 @@ ul {
         }
 
         img {
-            width: 95vw;
+            width: 89vw;
             height: auto;
         }
 
@@ -77,8 +76,9 @@ ul {
             color: white;
             background-color: black;
             border-radius: 20px;
-            padding: 10px 25px;
-            margin: 20px 0 80px 0;
+            padding: 10px 15px;
+            margin: 20px 0 60px 0;
+            font-size: 1.1rem;
         }
 
         p {
@@ -105,17 +105,77 @@ ul {
         grid-column: 1 / span 12;
     }
 
-    .about,
-    .video,
-    .technique {
-        grid-column: 2 / span 10;
+    .about {
+        grid-column: 2 / span 5;
+    }
+
+    .video {
+        grid-column: 8 / span 4;
     }
 
     .video video {
-        width: auto;
-        max-width: 30%;
+        width: 100%;
+        max-width: 100%;
         height: auto;
-    }
+        padding: 40px 0 80px 0;
+    } 
+
+.technique button {
+    margin-top: 0;
+}
+
+.technique,
+.info-question {
+    grid-column: 2 / span 10;
+}
+
+.info-question {
+    margin-bottom: 50px;
+}
+
+/* Disposition des sections techniques : texte et image */
+.technique-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 250px; 
+    margin-bottom: 40px;
+    grid-column: 2 / span 10;
+}
+
+/* Sections impaires : texte à gauche et image à droite */
+.technique-section:nth-of-type(odd) {
+    grid-template-columns: 1fr 1fr;
+}
+
+.technique-section:nth-of-type(odd) .text {
+    grid-column: 1 / 2; 
+}
+
+.technique-section:nth-of-type(odd) img {
+    grid-column: 2 / 3; 
+    width: 100%;
+    height: auto;
+}
+
+/* Sections paires : image à gauche et texte à droite */
+.technique-section:nth-of-type(even) {
+    grid-template-columns: 1fr 1fr;
+}
+
+.technique-section:nth-of-type(even) .text {
+    grid-column: 2 / 3; 
+}
+
+.technique-section:nth-of-type(even) img {
+    grid-column: 1 / 2; 
+    width: 100%;
+    height: auto;
+}
+
+.technique-section img {
+    max-width: 100%; 
+}
+
 }
 
 
@@ -129,21 +189,17 @@ ul {
         padding: 0 80px;
     }
 
-    .about,
-    .video,
-    .technique {
-        grid-column: 2 / span 10;
-        padding-top: 20px;
-    }
+    .title-page {
+        grid-column: 1 / span 12;
 
-    .video video {
-        width: 30%; /* Ajuste la taille de la vidéo */
-        max-width: 30%;
+        h1 {
+            font-size: 1.8rem;
+        }
     }
 
     .technique {
         img {
-            width: 100vw;
+            width: 35vw;
             height: auto;
         }
     }

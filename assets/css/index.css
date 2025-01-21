@@ -95,7 +95,6 @@ a {
         align-items: center;
         padding: 15px 20px;
         background-color: white;
-        /* position: fixed; */
         top: 0;
         width: 100%;
         z-index: 999;
@@ -163,7 +162,6 @@ a {
         position: absolute;
         bottom: 100px;
         left: 50%;
-        /* transform: translateX(-50%); */
         font-size: 3rem;
         color: white;
         cursor: pointer;
@@ -172,12 +170,10 @@ a {
 
     #toggle:checked~.all_menu+.burger .button_close {
         display: block !important;
-        /* Affiche la croix */
     }
 
     #toggle:checked~.all_menu+.burger .button_open {
         display: none !important;
-        /* Cache l'icône burger */
     }
 
     .title_header {
@@ -300,6 +296,15 @@ a {
         }
     }
 
+    .all_menu ul li {
+        width: 100px;
+        padding: 8px;
+    }
+
+    .all_menu ul li a {
+        font-size: 1rem;
+    }
+
     /* ------- HEADER ------- */
     /* ---------------------- */
 
@@ -324,12 +329,12 @@ a {
 
     /* ------- HEADER ------- */
     /* ---------------------- */
-    .container {
-        padding: 30px 100px 0px 100px;
+    .container_header {
+        padding: 40px 80px 20px 80px;
     }
 
     .logo_header {
-        width: 80px;
+        width: 50px;
         height: auto;
     }
 
@@ -338,11 +343,6 @@ a {
         gap: 20px;
         display: flex;
         flex-direction: row;
-        align-items: center;
-    }
-
-    .container_header {
-        padding: 40px 80px 20px 80px;
         align-items: center;
     }
 
@@ -375,9 +375,7 @@ a {
         width: 100%;
         height: 100%;
         display: block;
-        text-decoration: none;
         color: black;
-        transition: color 0.3s ease, background-color 0.3s ease;
     }
 
     .menu a {
@@ -392,7 +390,6 @@ a {
         font-size: 1.3rem;
         font-weight: 600;
         position: relative;
-        transition: transform 0.3s ease-in-out;
         padding: 12px 30px;
         border: 1px solid black;
         border-radius: 20px;
@@ -405,6 +402,19 @@ a {
     label,
     #toggle {
         display: none;
+    }
+
+    .all_menu ul {
+        gap: 25px;
+    }
+
+    .all_menu ul li {
+        width: 150px;
+        padding: 10px;
+    }
+
+    .all_menu ul li a {
+        font-size: 1.5rem;
     }
 
 

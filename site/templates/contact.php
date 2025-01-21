@@ -127,8 +127,6 @@
 
     </section>
 
-    
-
 </main>
 
 <?= snippet('footer') ?>

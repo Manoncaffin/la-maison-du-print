@@ -1,4 +1,15 @@
 <?php snippet('header') ?>
+<?= snippet('head') ?>
+
+<body>
+
+<main class="container_devis">
+    <?php $devis = page('devis'); ?>
+
+    <div class="title-page">
+        <h1>DEMANDE DE DEVIS</h1>
+        <div class="border"></div>
+    </div>
 
 <form action="<?= $page->url() ?>" method="post" enctype="multipart/form-data">
     <label for="model">Choix du modèle :</label>
@@ -35,4 +46,7 @@
     <p>Formulaire soumis avec succès !</p>
 <?php endif ?>
 
-<?php snippet('footer') ?>
+</main>
+
+<?= snippet('footer') ?>
+</body>

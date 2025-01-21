@@ -27,22 +27,53 @@
         <div class="border"></div>
     </div>
     <div class="technique">
-        <?php foreach ($atelier->Technique()->toBlocks() as $block): ?>
-            <div class="technique-section">
+    <?php 
+$blocks = $atelier->Technique()->toBlocks(); 
+foreach ($blocks as $index => $block): ?>
+    <div class="technique-section">
+        <?php 
+        // Assurez-vous que $index est bien un entier
+        $index = (int)$index; 
+        ?>
+
+        <!-- Alternance entre texte et image -->
+        <?php if ($index % 2 == 0): ?>
+            <!-- Impair : texte à gauche, image à droite -->
+            <div class="text">
                 <h3><?php echo $block->titre(); ?></h3>
                 <p><?php echo $block->texte(); ?></p>
                 <?php if ($block->image()->isNotEmpty()): ?>
-                    <img src="<?php echo $block->image()->toFile()->url(); ?>" alt="<?php echo $block->titre(); ?>">
                     <a href="/galerie">
                         <button>Voir la galerie</button>
                     </a>
                 <?php endif; ?>
             </div>
-        <?php endforeach; ?>
+            <?php if ($block->image()->isNotEmpty()): ?>
+                <img src="<?php echo $block->image()->toFile()->url(); ?>" alt="<?php echo $block->titre(); ?>">
+            <?php endif; ?>
+        <?php else: ?>
+            <!-- Pair : image à gauche, texte à droite -->
+            <?php if ($block->image()->isNotEmpty()): ?>
+                <img src="<?php echo $block->image()->toFile()->url(); ?>" alt="<?php echo $block->titre(); ?>">
+            <?php endif; ?>
+            <div class="text">
+                <h3><?php echo $block->titre(); ?></h3>
+                <p><?php echo $block->texte(); ?></p>
+                <?php if ($block->image()->isNotEmpty()): ?>
+                    <a href="/galerie">
+                        <button>Voir la galerie</button>
+                    </a>
+                <?php endif; ?>
+            </div>
+        <?php endif; ?>
+    </div>
+<?php endforeach; ?>
+
+
     </div>
 
     <div class="info-question">
-    <p>Si vous avez des doutes sur le procédé d'impression à choisir, je me tiens disponible pour vous accompagner et vous conseiller.</p>
+        <p>Si vous avez des doutes sur le procédé d'impression à choisir, je me tiens disponible pour vous accompagner et vous conseiller.</p>
     </div>
 
 </main>
