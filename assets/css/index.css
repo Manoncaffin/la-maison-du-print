@@ -37,7 +37,8 @@ h5,
 h6,
 p,
 a,
-li {
+li,
+label {
     font-family: "Inter", sans-serif;
     color: var(--text-color);
     margin: 0;

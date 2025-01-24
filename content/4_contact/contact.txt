@@ -115,6 +115,12 @@ Partners:
   network: Un artiste peintre incroyable
   link: >
     https://meyso.fr/?fbclid=PAZXh0bgNhZW0CMTEAAaYTNBKIqYsD6QJx7T6jTZ0fcY-WdukxhufCICgBDHKQ5bzSIJaE2CBgs1A_aem_t1ukLxIps45pDZsPT5FVsw
+- 
+  network: >
+    Pour un pâté inspiré des traditions
+    culinaires des différents pays du monde
+  link: >
+    https://www.instagram.com/la_patesserie_du_eak/
 
 ----
 

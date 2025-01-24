@@ -67,15 +67,6 @@ sections:
             type: text
             required: true
 
-      type_textile:
-        label: Choix du textile
-        type: structure
-        fields:
-          model:
-            label: Textile
-            type: text
-            required: true
-
       project_description:
         label: Description du projet
         type: textarea

@@ -19,7 +19,7 @@ ul {
         font-size: 1.1rem;
 
         .title-page h1 {
-            font-size: 2.2rem;
+            font-size: 1.8rem;
         }
     }
 
@@ -28,12 +28,27 @@ ul {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: auto;
         column-gap: var(--gutter-width);
-        row-gap: 20px;
         padding: 0 20px;
     }
 
-    .title-page {
+    .title-page,
+    .about-section,
+    .about-image {
         grid-column: 1 / span 6;
+    }
+
+    .about-section {
+        margin-top: 15px;
+
+        p {
+            padding-bottom: 15px;
+        }
+    }
+
+    .about-image {
+        max-width: 100%;
+        height: auto;
+        padding-top: 40px;
     }
 
     .border {
@@ -44,20 +59,74 @@ ul {
     label {
         display: block; 
         margin-bottom: 10px;
-        font-weight: bold; 
         color: black; 
+    }
+
+    form {
+        grid-column: 1 / span 6;
+        margin-top: 30px;
+    }
+    
+    form h2 {
+        font-size: 1.3rem;
+        color: #333;
+        padding-bottom: 4px;
+    }
+    
+    form label {
+        display: block;
+        margin-bottom: 8px;
     }
 
     #model,
     #background,
     #articles,
     #color,
-    #files,
+    #to_print,
+    #description,
     #name,
-    #email {
-        border: 1px solid black;
-        border-radius: 20px;
+    #firstname,
+    #email,
+    #phone {
+        width: 100%;
+        border: 0.5px solid black;
+        border-radius: 15px;
         margin-bottom: 15px;
+        padding: 10px 10px;
+        font-size: 1rem;
+    }
+
+    #files {
+        padding-bottom: 50px;
+    }
+    
+    form button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 15px;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 20px;
+        width: 100%;
+        box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.15);
+    }
+    
+    form button:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .icon-time {
+        font-size: 0.7rem;
+    }
+
+    .fa-hourglass-start {
+        padding-bottom: 10px;
+        margin-right: 5px;
+        color: black; 
     }
 }
 
@@ -68,6 +137,28 @@ ul {
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 768px) {
+    .container_devis {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .about-image {
+        grid-column: 2 / span 5;
+    }
+
+    .about-section {
+        grid-column: 7 / span 5;
+        padding-top: 40px;
+        margin-top: 0;
+    }
+
+    .title-page {
+        grid-column: 1 / span 12;
+    }
+
+    form {
+        grid-column: 2 / span 7;
+    }
 }
 
 /* --------------------------------------------------- */

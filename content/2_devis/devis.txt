@@ -6,9 +6,7 @@ About:
 
 Une demande de devis est traitée sous trois jours.
 
-Pour une demande de devis rapide, merci de remplir le formulaire suivant. Vous serez recontacté·e ultérieurement.
-
-Pour toute demande de projet urgent ou qui n’apparaîtrait pas dans le questionnaire, n’hésitez pas à me solliciter directement par mail à l’adresse : atelier@lamaisonduprint.fr ou par téléphone.
+Pour toute demande de projet urgent ou pour les commandes hors T-shirt, merci de me contacter directement par mail ou par téléphone.
 
 ----
 
@@ -19,14 +17,18 @@ Image: - file://X919bUWGXUdJUrrv
 Choice-model:
 
 - 
-  model: Classique
+  model: 'T-shirt unisexe classique col rond 205g, 100% coton'
+- 
+  model: T-shirt oversize lourd 240g
 
 ----
 
 Choice-background:
 
 - 
-  model: A5
+  model: T-shirt foncé
+- 
+  model: T-shirt clair
 
 ----
 
@@ -44,20 +46,21 @@ Color-number:
   model: "3"
 - 
   model: "4"
+- 
+  model: "5"
 
 ----
 
 To-print:
 
 - 
-  model: Avant
-
-----
-
-Type-textile:
-
+  model: Côté coeur
 - 
-  model: 20gr
+  model: Centre poitrine
+- 
+  model: Dos
+- 
+  model: Manche
 
 ----
 
@@ -82,6 +85,13 @@ Client-email:
 ----
 
 Client-number: 
+
+----
+
+Type-textile:
+
+- 
+  model: 20gr
 
 ----
 
