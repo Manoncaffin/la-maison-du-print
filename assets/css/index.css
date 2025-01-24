@@ -193,31 +193,14 @@ a {
 
     .all_footer {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 20px 40px;
+        flex-direction: column;
+        padding: 30px 20px;
     }
 
     .title_footer,
     .mentions_footer h3 {
         color: white;
         margin: 0;
-    }
-
-    .name_footer {
-        padding: 20px 40px 30px 40px;
-    }
-
-    .mentions_footer {
-        padding: 20px 40px 30px 40px;
-    }
-
-    .name_footer {
-        display: flex;
-    }
-
-    .mentions_footer {
-        display: flex;
     }
 
     /* -------------------- */
@@ -312,7 +295,35 @@ a {
 
     /* ------- FOOTER ------- */
     /* ---------------------- */
+    .all_footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 40px;
+    }
 
+    .title_footer,
+    .mentions_footer h3 {
+        color: white;
+        margin: 0;
+    }
+
+    .name_footer {
+        padding: 20px 40px 30px 40px;
+    }
+
+    .mentions_footer {
+        padding: 20px 40px 30px 40px;
+    }
+
+    .name_footer {
+        display: flex;
+    }
+
+    .mentions_footer {
+        display: flex;
+    }
     /* ------- FOOTER ------- */
     /* ---------------------- */
 

@@ -24,45 +24,55 @@
         <?php endif; ?>
 
         <form action="<?= $page->url() ?>" method="post" enctype="multipart/form-data">
-            <!-- Section: Votre commance -->
-            <h2>Votre commande</h2>
-            <p class="icon-time"><i class="fa fa-hourglass-start"></i> Cela prend 5+ minutes</p>
-            <label for="model">Choix du modèle :</label>
-            <input id="model" name="model" type="text" placeholder="Ex : T-shirt oversize lourd 240 g" required>
+            <!-- Section: Votre commande -->
+            <div class="first">
+                <div class="form-section-one">
+                    <h2>Votre commande</h2>
+                    <p class="icon-time"><i class="fa fa-hourglass-start"></i> Cela prend 5+ minutes</p>
+                    <label for="model">Choix du modèle :</label>
+                    <input id="model" name="model" type="text" placeholder="Ex : T-shirt oversize lourd 240 g" required>
 
-            <label for="background">Choix du fond :</label>
-            <input id="background" name="background" type="text" placeholder="Ex : T-shirt foncé" required>
+                    <label for="background">Choix du fond :</label>
+                    <input id="background" name="background" type="text" placeholder="Ex : T-shirt foncé" required>
 
-            <label for="articles">Nombre d'article :</label>
-            <input id="articles" name="articles" type="number" placeholder="Ex : 100" required>
+                    <label for="articles">Nombre d'article :</label>
+                    <input id="articles" name="articles" type="number" placeholder="Ex : 100" required>
 
-            <label for="color">Nombre de couleur :</label>
-            <input id="color" name="color" type="text" placeholder="Ex : Rouge, vert" required>
+                    <label for="color">Nombre de couleur :</label>
+                    <input id="color" name="color" type="text" placeholder="Ex : Rouge, vert" required>
 
-            <label for="to_print">Zone à imprimer :</label>
-            <input id="to_print" name="to_print" type="text" placeholder="Ex : Centre poitrine" required>
+                    <label for="to_print">Zone à imprimer :</label>
+                    <input id="to_print" name="to_print" type="text" placeholder="Ex : Centre poitrine" required>
 
-            <label for="description">Description du projet :</label>
-            <textarea id="description" name="description" placeholder="Détaillez votre projet ici si besoin"></textarea>
+                    <label for="description">Description du projet :</label>
+                    <textarea id="description" name="description" placeholder="Détaillez votre projet ici si besoin"></textarea>
 
-            <label for="files">Fichiers à transférer :</label>
-            <input id="files" name="files[]" type="file" multiple required accept=".pdf,.ai">
+                    <label for="files">Fichiers à transférer :</label>
+                    <input id="files" name="files[]" type="file" multiple required accept=".pdf,.ai">
+                </div>
+                <!-- Section: Informations client -->
+                <div class="form-section-two">
+                    <h2>Vos informations</h2>
+                    <label for="name">Nom :</label>
+                    <input id="name" name="name" type="text" placeholder="Votre nom" required>
 
-            <!-- Section: Informations client -->
-            <h2>Vos informations</h2>
-            <label for="name">Nom :</label>
-            <input id="name" name="name" type="text" placeholder="Votre nom" required>
+                    <label for="firstname">Prénom :</label>
+                    <input id="firstname" name="firstname" type="text" placeholder="Votre prénom" required>
 
-            <label for="firstname">Prénom :</label>
-            <input id="firstname" name="firstname" type="text" placeholder="Votre prénom" required>
+                    <label for="email">Email :</label>
+                    <input id="email" name="email" type="email" placeholder="Votre email" required>
 
-            <label for="email">Email :</label>
-            <input id="email" name="email" type="email" placeholder="Votre email" required>
-
-            <label for="phone">Numéro de téléphone :</label>
-            <input id="phone" name="phone" type="text" placeholder="Votre numéro" required>
-
-            <button type="submit">Envoyer le formulaire</button>
+                    <label for="phone">Numéro de téléphone :</label>
+                    <input id="phone" name="phone" type="text" placeholder="Votre numéro" required>
+                </div>
+                </div>
+                <div class="form-submit">
+                    <button type="submit">Envoyer le formulaire</button>
+                </div>
+                <div class="legal-message">
+                En tant que responsable de traitement, La Maison du print met en œuvre un traitement de données personnelles vous concernant aux fins de gestion de vos demandes de prise de contact et de réponse à vos devis. Pour en savoir plus sur la gestion de vos données et de vos droits par La Maison du print, vous êtes invité·es à vous rendre à l’adresse suivante : lamaisonduprint.fr/mentions-legales. 
+                </div>
+            
         </form>
 
         <?php if (!empty($errors)): ?>

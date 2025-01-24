@@ -31,6 +31,16 @@ ul {
         padding: 0 20px;
     }
 
+    .form-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first {
+        display: flex;
+        flex-direction: column;
+    }
+
     .title-page,
     .about-section,
     .about-image {
@@ -100,8 +110,14 @@ ul {
         padding-bottom: 50px;
     }
     
-    form button {
-        display: inline-block;
+    .form-submit {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .form-submit button {
         padding: 10px 20px;
         background-color: black;
         color: white;
@@ -109,12 +125,11 @@ ul {
         border-radius: 15px;
         font-size: 1rem;
         cursor: pointer;
-        margin-top: 20px;
-        width: 100%;
         box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.15);
+        width: 100%;
     }
-    
-    form button:hover {
+
+    .form-submit button:hover {
         background-color: white;
         color: black;
     }
@@ -128,6 +143,17 @@ ul {
         margin-right: 5px;
         color: black; 
     }
+
+    .legal-message {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-family: "Inter", sans-serif;
+        font-size: 0.7rem;
+        margin: 20px 0 0 0;
+    }
+    
 }
 
 
@@ -156,8 +182,40 @@ ul {
         grid-column: 1 / span 12;
     }
 
+    .first {
+        display: flex;
+        flex-direction: row;
+        gap: 80px;
+    }
+
     form {
-        grid-column: 2 / span 7;
+        grid-column: 2 / span 10;
+    }
+
+    .form-section-one {
+        grid-column: 2 / span 5;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .form-section-two {
+        grid-column: 6 / span 5;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .form-submit {
+        margin-top: 0;
+    }
+
+    .form-submit button {
+        width: 30%;
+    }
+
+    .legal-message {
+        margin: 30px 150px 0 150px;
     }
 }
 
@@ -167,6 +225,38 @@ ul {
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
+    .container_devis {
+        padding: 0 80px;
+    }
+    
+    .first {
+        display: flex;
+        justify-content: space-between;
+        gap: 80px;
+        flex-direction: row;
+    }
+
+    .form-section {
+        flex: 1;
+    }
+
+    .form-section h2 {
+        font-size: 1.3rem;
+        color: black;
+        padding-bottom: 4px;
+    }
+
+    .form-section:first-child {
+        flex-basis: 48%; 
+    }
+
+    .form-section:last-child {
+        flex-basis: 48%; 
+    }
+
+    .legal-message {
+        margin: 30px 250px 0 250px;
+    }
 }
 
 /* --------------------------------------------------- */
@@ -175,6 +265,9 @@ ul {
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
+    .legal-message {
+        margin: 30px 450px 0 450px;
+    }
 }
 
 /* --------------------------------------------------- */
