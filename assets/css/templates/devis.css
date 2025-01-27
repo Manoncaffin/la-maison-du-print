@@ -154,6 +154,18 @@ ul {
         margin: 20px 0 0 0;
     }
     
+    input::placeholder,
+    textarea::placeholder {
+        font-family: "Inter-Italic", sans-serif;
+        font-size: 0.9rem;
+        color: #888;
+        font-style: italic; 
+    }
+
+    input:focus {
+        border-color: #001f8d;
+    }
+
 }
 
 

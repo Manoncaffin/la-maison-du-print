@@ -1,7 +1,24 @@
-.inter-uniquifier {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/fonts/Inter-Regular.woff2') format('woff2'),
+        url('/assets/fonts/Inter-Regular.woff') format('woff');
+        font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter-Italic';
+    src: url('/assets/fonts/Inter-Italic.woff2') format('woff2'),
+        url('/assets/fonts/Inter-Italic.woff') format('woff');
+        font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter-Semibold';
+    src: url('/assets/fonts/Inter-SemiBold.woff2') format('woff2'),
+        url('/assets/fonts/Inter-SemiBold.woff') format('woff');
+        font-weight: 600;
     font-style: normal;
 }
 
@@ -26,8 +43,7 @@ body {
 
 main {
     display: block;
-    flex: 1;
-    min-height: 50vh;
+    /* flex: 1; */
 }
 
 h1,
@@ -218,6 +234,10 @@ a {
 
     /* ------- HEADER ------- */
     /* ---------------------- */
+    .container_header {
+        padding: 15px 40px;
+    }
+
     .burger {
         display: none;
     }
@@ -235,7 +255,7 @@ a {
 
     .all_menu ul {
         display: flex;
-        gap: 20px;
+        gap: 10px;
     }
 
     .all_menu ul li {
@@ -324,6 +344,7 @@ a {
     .mentions_footer {
         display: flex;
     }
+
     /* ------- FOOTER ------- */
     /* ---------------------- */
 

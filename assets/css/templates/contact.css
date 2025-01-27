@@ -17,6 +17,7 @@ ul {
 @media screen and (min-width: 350px) {
     body {
         font-size: 1.1rem;
+        overflow-y: hidden;
 
         .title-page h1 {
             font-size: 1.8rem;
@@ -33,7 +34,7 @@ ul {
     }
 
     .title-page {
-        grid-column: 1 / span 6;
+        padding: 0 20px;
     }
 
     .border {
@@ -46,9 +47,12 @@ ul {
         grid-row: auto;
     }
 
-    .address,
     .networks {
         padding-top: 20px;
+    }
+
+    .address {
+        padding-top: 40px;
     }
 
     .contact,
@@ -169,7 +173,7 @@ ul {
     }
 
     .title-page {
-        grid-column: 1 / span 12;
+        padding: 0 40px;
     }
 
     p {
@@ -212,12 +216,12 @@ ul {
 @media only screen and (min-width: 1000px) {
     .container_contact {
         grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: auto;
         padding: 0 80px;
+        min-height: calc(70vh);
     }
 
-    .address {
-        padding-top: 20px;
+    .title-page {
+        padding: 0 80px;
     }
 }
 
@@ -228,44 +232,53 @@ ul {
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
+    .container_contact {
+        grid-template-rows: 165px 130px 65px 65px; 
+    }
+
     .address {
         grid-column: 2 / span 5;
-        grid-row: 2;
+        grid-row: 1;
+    }
+
+    .clients {
+        padding-top: 40px;
     }
 
     .contact {
         grid-column: 2 / span 5;
-        grid-row: 3;
+        grid-row: 1;
+        padding-top: 21px;
     }
 
     .opening-hours {
         grid-column: 2 / span 5;
-        grid-row: 3;
+        grid-row: 2;
     }
 
     .payment-info {
         grid-column: 2 / span 5;
-        grid-row: 4;
+        grid-row: 3;
     }
 
     .shipping-info {
         grid-column: 2 / span 5;
-        grid-row: 5;
+        grid-row: 4;
     }
 
     .clients {
         grid-column: 8 / span 4;
-        grid-row: 2;
+        grid-row: 1;
     }
 
     .partners {
         grid-column: 8 / span 4;
-        grid-row: 3;
+        grid-row: 2;
     }
 
     .networks {
         grid-column: 8 / span 4;
-        grid-row: 4;
+        grid-row: 3;
     }
 }
 

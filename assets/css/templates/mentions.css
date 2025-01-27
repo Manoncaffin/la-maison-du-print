@@ -17,6 +17,7 @@ ul {
 @media screen and (min-width: 350px) {
     body {
         font-size: 1.1rem;
+        overflow-y: hidden;
 
         .title-page h1 {
             font-size: 1.8rem;
@@ -31,7 +32,7 @@ ul {
     }
 
     .title-page {
-        grid-column: 1 / span 6;
+        padding: 0 20px;
     }
 
     .border {
@@ -59,7 +60,7 @@ ul {
     }
 
     .title-page {
-        grid-column: 1 / span 12;
+        padding: 0 40px;
     }
 
     .legal-notice {
@@ -77,6 +78,12 @@ ul {
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
     .container_mentions {
+        padding: 0 80px;
+        min-height: calc(70vh);
+        margin-top: 0;
+    }
+
+    .title-page {
         padding: 0 80px;
     }
 
