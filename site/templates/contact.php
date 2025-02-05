@@ -81,7 +81,8 @@
                             <p class="client-name"><?php echo $client->client(); ?></p>
                             <div class="client-logo-container">
                                 <!-- Utilisation d'une classe personnalisée pour chaque image -->
-                                <img src="<?php echo $client->link()->toFile()->url(); ?>" class="client-logo <?php echo 'client-logo-' . $client->client()->slug(); ?>" alt="<?php echo $client->client(); ?>" />
+                                <img src="<?php echo $client->link()->toFile()->url(); ?>" class="client-logo <?php echo 'client-logo-' . $client->client()->slug(); ?>"
+                                />
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -110,7 +111,6 @@
                 </ul>
 
                 <!-- Réseaux sociaux -->
-                <!-- Ajouter facebook -->
                 <?php if ($contact->networks()->isNotEmpty()): ?>
                     <article class="networks">
                         <h2>Vous pouvez me retrouver sur ces réseaux</h2>
@@ -126,7 +126,6 @@
                     </article>
                 <?php endif; ?>
             </article>
-
         </section>
     </main>
 

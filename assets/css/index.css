@@ -2,7 +2,7 @@
     font-family: 'Inter';
     src: url('/assets/fonts/Inter-Regular.woff2') format('woff2'),
         url('/assets/fonts/Inter-Regular.woff') format('woff');
-        font-weight: normal;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -10,7 +10,7 @@
     font-family: 'Inter-Italic';
     src: url('/assets/fonts/Inter-Italic.woff2') format('woff2'),
         url('/assets/fonts/Inter-Italic.woff') format('woff');
-        font-weight: normal;
+    font-weight: normal;
     font-style: italic;
 }
 
@@ -18,7 +18,7 @@
     font-family: 'Inter-Semibold';
     src: url('/assets/fonts/Inter-SemiBold.woff2') format('woff2'),
         url('/assets/fonts/Inter-SemiBold.woff') format('woff');
-        font-weight: 600;
+    font-weight: 600;
     font-style: normal;
 }
 
@@ -32,18 +32,29 @@
     box-sizing: border-box;
 }
 
-html,
-body {
+html {
     -webkit-scroll-behavior: smooth;
     scroll-behavior: smooth;
-    padding: 0;
-    margin: 0;
-    min-height: 100vh;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 1rem 0rem 0;
+    margin: 0 auto;
+    max-width: 1500px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    padding-top: 160px;
+    
+    .title-page h1 {
+        font-size: 1.8rem;
+    }
 }
 
 main {
     display: block;
-    /* flex: 1; */
 }
 
 h1,
@@ -104,17 +115,35 @@ a {
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
 
+
     /* ------- HEADER ------- */
     /* ---------------------- */
+    .header-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background-color: white; 
+        display: flex;
+        justify-content: center;
+    }
+    
     .container_header {
+        max-width: 1500px; 
+        width: 100%;
+        margin: 0 auto; 
+        padding: 15px 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 20px;
-        background-color: white;
-        top: 0;
-        width: 100%;
-        z-index: 999;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        font-size: 2.2rem;
+        gap: 10px;
     }
 
     .title_header .title_footer {
@@ -144,7 +173,6 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        transition: top 0.5s ease;
         z-index: 998;
     }
 
@@ -163,10 +191,10 @@ a {
         margin: 20px 0;
     }
 
-    .all_menu a {
+    .all_menu a,
+    .dropdown>span {
         color: white;
         text-decoration: none;
-        transition: color 0.3s ease;
         font-size: 2.2rem;
     }
 
@@ -196,6 +224,11 @@ a {
     .title_header {
         display: none;
     }
+
+    .mobile-only {
+        display: block;
+    }
+
 
     /* ------- HEADER ------- */
     /* ---------------------- */
@@ -238,6 +271,18 @@ a {
         padding: 15px 40px;
     }
 
+    .logo {
+        font-size: 1.1rem;
+    }
+
+    .all_menu li.active {
+        background-color: black;
+    }
+
+    .all_menu li.active a {
+        color: white;
+    }
+
     .burger {
         display: none;
     }
@@ -253,6 +298,13 @@ a {
         transition: none;
     }
 
+    .all_menu a,
+    .dropdown>span {
+        color: black;
+        text-decoration: none;
+        font-size: 1.1rem;
+    }
+
     .all_menu ul {
         display: flex;
         gap: 10px;
@@ -261,15 +313,94 @@ a {
     .all_menu ul li {
         border: 1px solid black;
         border-radius: 20px;
-        width: 140px;
+        width: 110px;
         padding: 10px;
         position: relative;
     }
 
-    .all_menu ul li a {
-        color: black;
-        font-size: 1.5rem;
-        transition: color 0.3s ease;
+    /* Menu déroulant (dropdown) */
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown-menu {
+        display: none !important;
+        position: absolute;
+        left: 0;
+        top: 105%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block !important;
+    }
+
+    .dropdown-menu li {
+        padding: 10px;
+        width: 200px;
+        background-color: rgba(128, 128, 128, 0.1);
+        padding: 10px;
+        border: none !important;
+    }
+
+    .dropdown-menu li a {
+        display: block;
+        font-size: 1rem;
+        text-align: center;
+        color: black !important;
+    }
+
+    .dropdown-menu li a:hover {
+        background-color: black;
+        color: white !important;
+    }
+
+    .dropdown-menu li a:hover+li.contact,
+    .contact.active {
+        background-color: black;
+    }
+
+    .dropdown-menu li a:hover+li.contact a,
+    .contact.active a {
+        color: white;
+    }
+
+    .dropdown-menu li:nth-child(1) {
+        min-width: 140px;
+        margin-bottom: -8px;
+        margin-top: 10px;
+    }
+
+    .dropdown-menu li:nth-child(2) {
+        min-width: 160px;
+    }
+
+    .dropdown>span {
+        display: block;
+        cursor: pointer;
+    }
+
+    .dropdown.active {
+        background-color: black;
+    }
+    
+    .dropdown.active > span {
+        color: white;
+    }
+    
+    /* Étendre le hover sur tout le <li> */
+    .dropdown:hover {
+        background-color: black;
+    }
+    
+    .dropdown:hover > span {
+        color: white;
+    }
+    
+    /* Affiche le menu déroulant si actif */
+    .dropdown.active .dropdown-menu {
         display: block;
     }
 
@@ -277,7 +408,7 @@ a {
         background-color: black;
     }
 
-    .all_menu ul li a:hover {
+    .all_menu ul li:hover a {
         color: white;
     }
 
@@ -300,14 +431,10 @@ a {
         }
     }
 
-    .all_menu ul li {
-        width: 100px;
-        padding: 8px;
+    .mobile-only {
+        display: none;
     }
 
-    .all_menu ul li a {
-        font-size: 1rem;
-    }
 
     /* ------- HEADER ------- */
     /* ---------------------- */
@@ -330,11 +457,11 @@ a {
     }
 
     .name_footer {
-        padding: 20px 40px 30px 40px;
+        padding: 20px 40px 30px 0px;
     }
 
     .mentions_footer {
-        padding: 20px 40px 30px 40px;
+        padding: 20px 0px 30px 40px;
     }
 
     .name_footer {
@@ -364,6 +491,10 @@ a {
     /* ---------------------- */
     .container_header {
         padding: 40px 80px 20px 80px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
     }
 
     .logo_header {
@@ -437,17 +568,17 @@ a {
         display: none;
     }
 
+    .all_menu a {
+        font-size: 1.2rem;
+    }
+
     .all_menu ul {
-        gap: 25px;
+        gap: 15px;
     }
 
     .all_menu ul li {
-        width: 150px;
+        width: 120px;
         padding: 10px;
-    }
-
-    .all_menu ul li a {
-        font-size: 1.5rem;
     }
 
 
@@ -480,6 +611,18 @@ a {
 
     /* ------- HEADER ------- */
     /* ---------------------- */
+    .all_menu a,
+    .dropdown>span {
+        font-size: 1.2rem;
+    }
+
+    .all_menu ul {
+        gap: 15px;
+    }
+
+    .all_menu ul li {
+        width: 140px;
+    }
 
     /* ------- HEADER ------- */
     /* ---------------------- */

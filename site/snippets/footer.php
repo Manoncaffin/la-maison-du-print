@@ -8,7 +8,7 @@
         </div>
 
         <div class="mentions_footer">
-            <h3><a href="<?= url('mentions') ?>">Mentions légales</a></h3>
+            <h3><a href="<?= url('mentions') ?>">MENTIONS LÉGALES</a></h3>
         </div>
     </div>
 

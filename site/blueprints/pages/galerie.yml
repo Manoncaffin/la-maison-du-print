@@ -18,8 +18,10 @@ sections:
             label: Type d'impression
             type: tags
             options:
-              - Sérigraphie
-              - Impression DTF
+              serigraphie: Sérigraphie
+              dtf: Impression DTF
+            option: query
+            query: site.children.published
           image:
             label: Image
             type: files

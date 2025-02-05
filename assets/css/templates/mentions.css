@@ -79,7 +79,7 @@ ul {
 @media only screen and (min-width: 1000px) {
     .container_mentions {
         padding: 0 80px;
-        min-height: calc(70vh);
+        min-height: calc(68vh);
         margin-top: 0;
     }
 

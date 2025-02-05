@@ -3,31 +3,58 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="<?= url('assets/css/index.css') ?>">
+<?php
+$current_page = basename($_SERVER['REQUEST_URI'], ".php");
+$isGalerieActive = in_array($current_page, ['galerie', 'serigraphie', 'impression-dtf']);
+?>
+
 
 <body>
-    <header class="container_header">
+    <div class="header-wrapper">
+        <header class="container_header">
 
-        <a href="<?= url('home') ?>" class="all_logo">
-            <img src="<?= $site->logo()->first()->url() ?>" alt="Logo" class="logo_header">
-        </a>
+            <div class="logo">
+                <a href="<?= url('home') ?>" class="all_logo">
+                    <img src="<?= $site->logo()->first()->url() ?>" alt="Logo" class="logo_header">
+                </a>
+                <h1>LA MAISON DU PRINT</h1>
+            </div>
 
-        <!-- Bouton burger -->
-    <input id="toggle" type="checkbox" />
-    <label for="toggle" class="burger">
-        <!-- Icône burger -->
-        <div class="button_open"><i class="fas fa-bars"></i></div>
-        <!-- Croix de fermeture -->
-        <div class="button_close">&times;</div>
-    </label>
+            <!-- Bouton burger -->
+            <input id="toggle" type="checkbox" />
+            <label for="toggle" class="burger">
+                <!-- Icône burger -->
+                <div class="button_open"><i class="fas fa-bars"></i></div>
+                <!-- Croix de fermeture -->
+                <div class="button_close">&times;</div>
+            </label>
 
-        <nav class="all_menu">
-        <ul>
-            <li><a href="<?= url('home') ?>">ACCUEIL</a></li>
-            <li><a href="<?= url('atelier') ?>">ATELIER</a></li>
-            <li><a href="<?= url('devis') ?>">DEVIS</a></li>
-            <li><a href="<?= url('galerie') ?>">GALERIE</a></li>
-            <li><a href="<?= url('contact') ?>">CONTACT</a></li>
-            <li class="language"><a href="<?= url('EN') ?>">EN</a></li>
-        </ul>
-    </nav>
-    </header>
+            <nav class="all_menu">
+                <ul>
+                    <li class="mobile-only"><a href="<?= url('home') ?>">ACCUEIL</a></li>
+                    <li class="<?= ($page == 'atelier') ? 'active' : '' ?>">
+                        <a href="<?= url('atelier') ?>">L'ATELIER</a>
+                    </li>
+                    <li class="<?= ($page == 'devis') ? 'active' : '' ?>">
+                        <a href="<?= url('devis') ?>">DEVIS</a>
+                    </li>
+                    <li class="<?= ($page == 'galerie') ? 'active' : '' ?>">
+                        <a href="<?= url('galerie') ?>">GALERIE</a>
+                    </li>
+                    <!-- <li class="dropdown <?= $isGalerieActive ? 'active' : '' ?>">
+                    <span>GALERIE</span>
+                    <ul class="dropdown-menu">
+                        <li><a href="serigraphie.php">SÉRIGRAPHIE</a></li>
+                        <li><a href="impression-dtf.php">IMPRESSION DTF</a></li>
+                    </ul>
+                </li> -->
+                    <li class="<?= ($page == 'contact') ? 'active' : '' ?>">
+                        <a href="<?= url('contact') ?>">CONTACT</a>
+                    </li>
+                    <li class="language"><a href="<?= url('EN') ?>">EN</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <script src="<?= $site->url() ?>/assets/js/dropdown.js"></script>
