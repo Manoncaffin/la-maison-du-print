@@ -1,12 +1,10 @@
 <?= snippet('header') ?>
 <?= snippet('head') ?>
 
-
 <main class="container_homepage">
 
-    <?php $home = page('site'); ?>
-
-    <h1><?= $site->title()->kti() ?></h1>
+<?php $home = page('site'); ?>
+    <h1><?= $page->title()->kti() ?></h1>
 
     <!-- Logo -->
     <?php if ($site->logo()->first()): ?>
@@ -17,25 +15,25 @@
 
     <!-- Présentation -->
         <article class="about">
-            <p><?= $site->presentation()->kti() ?></p>
+            <p><?= $page->presentation()->kti() ?></p>
         </article>
 
     <!-- Image -->
-    <?php if ($image = $site->image()->first()): ?>
+    <?php if ($image = $page->image()): ?>
         <div class="image_homepage">
-        <img src="<?= $site->image()->first()->url() ?>" alt="Image d'accueil">
+        <img src="<?= $page->image()->first()->url() ?>" alt="Image d'accueil">
         </div>
     <?php endif ?>
 
     <!-- Email -->
         <div class="contact">
-            <p>Email: <a href="mailto:<?= $site->contact_home() ?>"><?= $site->contact_home() ?></a></p>
+            <p>Email: <a href="mailto:<?= $page->contact_home() ?>"><?= $page->contact_home() ?></a></p>
         </div>
 
     <!-- Réseaux sociaux -->
         <div class="networks">
             <ul>
-                <?php foreach ($site->networks()->toStructure() as $network): ?>
+                <?php foreach ($page->networks()->toStructure() as $network): ?>
                     <li>
                         <a href="<?= $network->link() ?>" target="_blank"><?= $network->network() ?></a>
                     </li>

@@ -91,9 +91,7 @@ Partners:
   link: >
     https://www.instagram.com/lecabinet_?igsh=MW54cWoycm9pYTJpcw==
 - 
-  network: >
-    Un magicien du corps humain
-    (ostéopathe)
+  network: 'Un magicien du corps humain '
   link: https://g.co/kgs/s1BSMQs
 - 
   network: 'Des bombes de peinture sur Marseille '
@@ -116,9 +114,7 @@ Partners:
   link: >
     https://meyso.fr/?fbclid=PAZXh0bgNhZW0CMTEAAaYTNBKIqYsD6QJx7T6jTZ0fcY-WdukxhufCICgBDHKQ5bzSIJaE2CBgs1A_aem_t1ukLxIps45pDZsPT5FVsw
 - 
-  network: >
-    Pour un pâté inspiré des traditions
-    culinaires des différents pays du monde
+  network: Pour des pâtés aux saveurs incroyables
   link: >
     https://www.instagram.com/la_patesserie_du_eak/
 

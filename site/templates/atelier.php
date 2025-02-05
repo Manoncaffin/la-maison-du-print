@@ -26,7 +26,7 @@
             <h1>DEUX TECHNIQUES D’IMPRESSIONS</h1>
             <div class="border"></div>
         </div>
-        <div class="technique">
+        <article class="technique">
             <?php
             $blocks = $atelier->Technique()->toBlocks();
             foreach ($blocks as $index => $block): ?>
@@ -68,7 +68,7 @@
                 </div>
             <?php endforeach; ?>
 
-        </div>
+        </article>
 
         <div class="info-question">
             <p>Si vous avez des doutes sur le procédé d'impression à choisir, je me tiens disponible pour vous accompagner et vous conseiller.</p>

@@ -1,38 +1,36 @@
-title: La Maison du print
+title: Accueil
 icon: home
 
-options:
-  changeStatus: false
-  changeSlug: false
-  delete: false
-
-# fields:
-#   presentation:
-#     label: Présentation
-#     type: textarea
-    
-#   image:
-#     label: Image
-#     type: files
-#     max: 1
-#     min: 1
-#     required: true
-
-#   contact_home:
-#     label: Email
-#     type: email
-
-#   networks:
-#     label: Réseaux
-#     type: structure
-#     fields:
-#       network:
-#         label: Nom du réseau
-#         type: text
-#         required: true
-#       link:
-#         label: Lien
-#         type: url
-#         required: true
+fields:
+  presentation:
+    label: Présentation
+    type: textarea
+    width: 2/3
+  image:
+    label: Image
+    type: files
+    max: 1
+    min: 1
+    required: true
+    width: 2/3
+  contact_home:
+    label: Email
+    type: email
+    width: 2/3
+  networks:
+    label: Réseaux
+    type: structure
+    width: 2/3
+    fields:
+      network:
+        label: Nom du réseau
+        type: text
+        required: true
+        width: 2/3
+      link:
+        label: Lien
+        type: url
+        required: true
+        width: 2/3
         
 

@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'home' => 'home',
     // Active debug mode
     'debug' => true,
 
@@ -58,6 +59,5 @@ return [
                 }
             }
         }
-    ],
-    'home' => 'home',
+    ]
 ];

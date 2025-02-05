@@ -1,52 +1,31 @@
 title: Site
 
+options:
+  changeStatus: false
+  changeSlug: false
+  delete: false
+
 tabs:
   accueil:
     label: Accueil
     columns:
       main:
-      - width: 1/3
+      - width: 2/3
         sections:
           pages:
-            headline:
+            headline: Pages
             type: pages
             template: 
+              - home
               - atelier
               - devis
               - galerie
               - contact
               - mentions
-            create: false
+            create: true
             layout: list
             sortable: true
             images: false
-      - width: 2/3
-        sections:
-        fields:
-          presentation:
-            label: Présentation de l'atelier
-            type: textarea
-          image:
-            label: Image
-            type: files
-            max: 2
-            min: 1
-            required: true
-          contact_home:
-              label: Email
-              type: email
-          networks:
-            label: Réseaux
-            type: structure
-            fields:
-              network:
-                label: Nom du réseau
-                type: text
-                required: true
-              link:
-                label: Lien
-                type: url
-                required: true
   identite:
     label: Identité visuelle
     columns:
