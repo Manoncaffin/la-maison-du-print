@@ -15,6 +15,11 @@ ul {
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
+    body {
+        .title-page h1 {
+            font-size: 1.8rem;
+        }
+    }
 
     .container_contact {
         display: grid;
@@ -22,12 +27,12 @@ ul {
         grid-template-rows: auto;
         column-gap: var(--gutter-width);
         row-gap: 20px;
-        padding: 0 20px;
+        padding: 30px 20px 0 20px;
         flex: 1 0 auto;
     }
 
     .title-page {
-        padding: 0 20px;
+        padding: 120px 20px 0 20px;
     }
 
     .border {
@@ -40,12 +45,8 @@ ul {
         grid-row: auto;
     }
 
-    .networks {
+    .partners {
         padding-top: 20px;
-    }
-
-    .address {
-        padding-top: 40px;
     }
 
     .contact,
@@ -57,7 +58,6 @@ ul {
     }
 
     .clients,
-    .partners,
     .networks {
         grid-column: 1 / span 6;
         grid-row: auto;
@@ -96,41 +96,6 @@ ul {
         margin-bottom: 20px;
     }
 
-}
-
-
-/* --------------------------------------------------- */
-/* --------------------------------------------------- */
-/* ------------- MEDIA MIN-WIDTH 768PX --------------- */
-/* ------------------ SUP. OU ÉGALE ------------------ */
-/* --------------------------------------------------- */
-@media screen and (min-width: 768px) {
-
-    .container_contact {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-    }
-
-    .address,
-    .contact,
-    .opening-hours,
-    .payment-info,
-    .shipping-info,
-    .clients,
-    .partners,
-    .networks {
-        grid-column: 2 / span 10;
-        gap: 2rem;
-    }
-
-    .title-page {
-        padding: 0 40px;
-    }
-
-    p {
-        display: block;
-    }
-
     #selected-partner {
         display: inline;
     }
@@ -140,12 +105,10 @@ ul {
     }
 
     #partners-list {
-        position: absolute;
-        top: 30%;
         width: fit-content;
         background-color: rgba(255, 255, 255);
         padding-left: 223px;
-        z-index: 10;
+        margin-top: 0;
         display: none;
     }
 
@@ -159,15 +122,15 @@ ul {
 
     .client-item {
         position: relative;
-        overflow: visible; 
+        overflow: visible;
     }
-    
+
     .client-name {
         position: relative;
-        z-index: 2; 
+        z-index: 2;
         cursor: pointer;
     }
-    
+
     .client-logo-container {
         position: absolute;
         top: 50%;
@@ -177,45 +140,79 @@ ul {
         transition: opacity 0.3s ease-in-out;
         width: 100%;
         height: auto;
-        max-width: 600px; 
+        max-width: 600px;
         display: flex;
         justify-content: center;
         align-items: center;
-        pointer-events: none; 
+        pointer-events: none;
     }
-    
+
     .client-item:hover .client-logo-container {
         opacity: 1;
     }
-    
+
     .client-logo {
         width: 100%;
-        max-width: 150px; 
+        max-width: 150px;
         height: auto;
         object-fit: contain;
         transition: transform 0.3s ease-in-out;
     }
-    
+
     .client-item:hover .client-logo.client-logo-biribi-tattoo-shop {
-        transform: rotate(3deg) scale(1.1); 
+        transform: rotate(3deg) scale(1.1);
     }
-    
+
     .client-item:hover .client-logo.client-logo-gribouilleurz {
-        transform: rotate(2deg) scale(1.1); 
+        transform: rotate(2deg) scale(1.1);
     }
-    
+
     .client-item:hover .client-logo.client-logo-la-carpe-tattoo {
-        transform: rotate(-4deg) scale(1.1); 
+        transform: rotate(-4deg) scale(1.1);
     }
-    
+
     .client-item:hover .client-logo.client-logo-lowcosterie {
-        transform: rotate(-5deg) scale(1.1); 
+        transform: rotate(-5deg) scale(1.1);
     }
 
     .client-item:hover .client-logo.client-logo-rene-la-muise {
         transform: rotate(-1deg) scale(1.1);
     }
-    
+
+}
+
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 768PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 768px) {
+
+    .container_contact {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        padding: 40px 40px 0 40px;
+    }
+
+    .address,
+    .contact,
+    .opening-hours,
+    .payment-info,
+    .shipping-info,
+    .clients,
+    .networks {
+        grid-column: 2 / span 10;
+        gap: 2rem;
+    }
+
+    .title-page {
+        padding: 120px 40px 0 40px;
+    }
+
+    p {
+        display: block;
+    }
 }
 
 
@@ -227,12 +224,15 @@ ul {
 @media only screen and (min-width: 1000px) {
     .container_contact {
         grid-template-columns: repeat(12, 1fr);
-        padding: 0 80px;
-        min-height: calc(68vh);
+        max-width: 1500px;
+        margin: 0 auto;
+        margin-top: 0;
     }
 
     .title-page {
-        padding: 0 80px;
+        padding: 130px 80px 0 80px;
+        max-width: 1500px;
+        margin: 0 auto;
     }
 
     .shipping-info {
@@ -247,17 +247,22 @@ ul {
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
+    main {
+        min-height: calc(87vh);
+    }
+
+    body {
+        overflow-y: hidden;
+    }
+
     .container_contact {
-        grid-template-rows: 165px 130px 65px 65px; 
+        grid-template-rows: 125px 130px 65px 65px;
     }
 
     .address {
         grid-column: 2 / span 5;
         grid-row: 1;
-    }
-
-    .clients {
-        padding-top: 40px;
+        padding-top: 0;
     }
 
     .contact {
@@ -286,14 +291,9 @@ ul {
         grid-row: 1;
     }
 
-    .partners {
-        grid-column: 8 / span 4;
-        grid-row: 2;
-    }
-
     .networks {
         grid-column: 8 / span 4;
-        grid-row: 3;
+        grid-row: 2;
     }
 }
 
@@ -306,10 +306,6 @@ ul {
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
 
-    body {
-        overflow-y: hidden;
-    }
-
     .address,
     .contact,
     .opening-hours,
@@ -319,7 +315,6 @@ ul {
     }
 
     .clients,
-    .partners,
     .networks {
         grid-column: 8 / span 5;
     }

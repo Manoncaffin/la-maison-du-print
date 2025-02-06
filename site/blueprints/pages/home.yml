@@ -2,6 +2,10 @@ title: Accueil
 icon: home
 
 fields:
+  atelier:
+    label: Atelier
+    type: textarea
+    width: 2/3
   presentation:
     label: Présentation
     type: textarea

@@ -16,8 +16,6 @@ ul {
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     body {
-        font-size: 1.1rem;
-
         .title-page h1 {
             font-size: 1.8rem;
         }
@@ -28,7 +26,7 @@ ul {
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: auto;
         column-gap: var(--gutter-width);
-        padding: 0 20px;
+        padding: 120px 20px 0 20px;
     }
 
     .form-section {
@@ -49,10 +47,6 @@ ul {
 
     .about-section {
         margin-top: 15px;
-
-        p {
-            padding-bottom: 15px;
-        }
     }
 
     .about-image {

@@ -10,8 +10,10 @@
         </div>
 
         <div class="about">
-            <p><?php echo $atelier->about()->text(); ?></p>
-        </div>
+    <?php foreach (explode("\n", $atelier->about()->text()) as $paragraph): ?>
+        <p><?php echo trim($paragraph); ?></p>
+    <?php endforeach; ?>
+</div>
 
         <div class="video">
             <?php if ($atelier->video()->isNotEmpty()): ?>

@@ -5,18 +5,94 @@
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
     .container_homepage {
-        display: grid;
-        grid-template-columns: repeat(12, 1fr);
-        grid-gap: var(--gutter-width);
-        padding: 20px 40px 0 40px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        flex: 1 0 auto;
     }
 
+    .all_logo_homepage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-    .border_homepage_horizontal {
-        border: 1px solid black;
-        grid-column: 1 / span 12;
-        padding: 0 100px 0 100px;
-        margin: 15px 0 15px 0;
+    .all_logo_homepage img {
+        display: flex;
+        justify-content: center;
+        max-width: 300px;
+    }
+
+    .about {
+        padding-top: 25px;
+        text-align: center;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: normal;
+            padding-bottom: 10px;
+        }
+
+        p {
+            padding-bottom: 25px;
+        }
+    }
+
+    .contact {
+        padding-top: 25px;
+    }
+
+    .network-icon {
+        display: inline-block;
+        font-size: 1.8em;
+        margin-right: 10px;
+    }
+
+    .network-item .network-icon.fa-facebook {
+        margin: 0 !important;
+    }
+
+    .network-text {
+        display: none;
+    }
+
+    .foot {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .social-networks {
+        display: flex;
+        justify-content: end;
+    }
+
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 768PX --------------- */
+/* ------------------ SUP. OU ÉGALE ------------------ */
+/* --------------------------------------------------- */
+@media screen and (min-width: 768px) {
+    .container_homepage {
+        width: 50vw;
+    }
+
+    .all_logo_homepage img {
+        max-width: 500px;
+    }
+
+    .about {
+        padding-top: 0;
+
+        p {
+            padding-bottom: 0;
+        }
+    }
+
+    .contact {
+        padding-top: 0;
     }
 }
 
@@ -29,11 +105,46 @@
 @media only screen and (min-width: 1000px) {
 
     .container_homepage {
-        padding: 20px 100px 0 100px;
+        padding: 0 110px 0 110px;
+        min-height: calc(68vh);
     }
 
-    .border_homepage_horizontal {
-        border: 1px solid black;
-        grid-column: 1 / span 12;
+    .all_logo_homepage {
+        padding-top: 25px;
+    }
+
+    .about {
+        padding-top: 25px;
+
+        p {
+            padding-bottom: 0;
+        }
+    }
+
+    .contact {
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .foot {
+    width: 40vw;
+    position: absolute;
+    bottom: 50;
+    left: 110;
+    }
+
+    .social-networks {
+        flex-direction: column;
+    }
+
+    .network-icon.fa-facebook,
+    .network-icon.fa-instagram {
+        display: none;
+    }
+
+    .network-text {
+        display: flex;
+        flex-direction: column;
     }
 }

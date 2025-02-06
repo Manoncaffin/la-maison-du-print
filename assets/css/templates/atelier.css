@@ -90,6 +90,10 @@ ul {
     .info-question {
         grid-column: 1 / span 6;
     }
+
+    .about p {
+        margin-top: 15px; 
+    }
 }
 
 /* --------------------------------------------------- */
@@ -187,7 +191,9 @@ ul {
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
     .container_atelier {
-        padding: 0 80px;
+        padding: 130px 80px;
+        max-width: 1500px;
+        margin: 0 auto;
     }
 
     .title-page {

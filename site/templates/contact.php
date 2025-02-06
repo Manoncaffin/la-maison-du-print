@@ -81,12 +81,28 @@
                             <p class="client-name"><?php echo $client->client(); ?></p>
                             <div class="client-logo-container">
                                 <!-- Utilisation d'une classe personnalisée pour chaque image -->
-                                <img src="<?php echo $client->link()->toFile()->url(); ?>" class="client-logo <?php echo 'client-logo-' . $client->client()->slug(); ?>"
-                                />
+                                <img src="<?php echo $client->link()->toFile()->url(); ?>" class="client-logo <?php echo 'client-logo-' . $client->client()->slug(); ?>" />
                             </div>
                         </div>
                     <?php endforeach; ?>
                 </article>
+            <?php endif; ?>
+
+
+            <!-- Réseaux sociaux -->
+            <?php if ($contact->networks()->isNotEmpty()): ?>
+                <article class="networks">
+                    <h2>Vous pouvez me retrouver sur ces réseaux</h2>
+                    <ul>
+                        <?php foreach ($contact->networks()->toStructure() as $network): ?>
+                            <li>
+                                <a href="<?= $network->link()->html() ?>" target="_blank">
+                                    <?= $network->network()->html() ?>
+                                </a>
+                            </li>
+                        <?php endforeach; ?>
+                    </ul>
+                
             <?php endif; ?>
 
             <!-- Bons plans -->
@@ -109,22 +125,7 @@
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </ul>
-
-                <!-- Réseaux sociaux -->
-                <?php if ($contact->networks()->isNotEmpty()): ?>
-                    <article class="networks">
-                        <h2>Vous pouvez me retrouver sur ces réseaux</h2>
-                        <ul>
-                            <?php foreach ($contact->networks()->toStructure() as $network): ?>
-                                <li>
-                                    <a href="<?= $network->link()->html() ?>" target="_blank">
-                                        <?= $network->network()->html() ?>
-                                    </a>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </article>
-                <?php endif; ?>
+            </article>
             </article>
         </section>
     </main>
