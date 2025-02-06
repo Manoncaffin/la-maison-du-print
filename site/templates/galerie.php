@@ -10,29 +10,31 @@
 <main class="container_gallery">
     <section class="gallery">
         <?php
-        // Récupérer tous les éléments de la galerie
         $galleryItems = $page->gallery_items()->toStructure();
 
-        // Récupérer le filtre depuis l'URL
-        $filter = get('filter') ?? ''; // Utiliser get() avec une valeur par défaut (vide) pour éviter null
+        $filter = get('filter') ?? ''; 
 
-        // Filtrer les éléments si un filtre est appliqué
         if ($filter) {
             $galleryItems = $galleryItems->filter(function ($item) use ($filter) {
-                // On vérifie si le champ 'category' correspond au filtre
                 return $item->category() == $filter;
             });
         }
 
-        // Afficher les éléments de la galerie
         if ($galleryItems->isEmpty()) {
             echo "<p>Aucun élément trouvé.</p>";
         } else {
+            $counter = 0;
+            $columns = 20; 
+
             foreach ($galleryItems as $item) {
-                echo '<div class="gallery-item">';
+                $columnClass = 'column-' . ($counter % $columns + 1); 
+
+                echo '<div class="gallery-item ' . $columnClass . '">';
                 echo '<img src="' . $item->image()->toFile()->url() . '" alt="">';
                 echo '<p>' . $item->about()->text() . '</p>';
                 echo '</div>';
+
+                $counter++;
             }
         }
         ?>

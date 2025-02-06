@@ -22,6 +22,13 @@
         <p><?= $page->presentation()->kti() ?></p>
     </article>
 
+    <!-- Photo -->
+    <?php if ($image = $page->image()->first()): ?>
+        <div class="image_homepage-home">
+            <img src="<?= image()->url() ?>" alt="Image d'accueil">
+        </div>
+    <?php endif ?>
+
     <!-- Email -->
     <div class="foot">
         <div class="contact">

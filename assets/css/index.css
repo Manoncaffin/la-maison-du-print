@@ -132,7 +132,7 @@ a {
     }
 
     .header-wrapper-home {
-        background-color: none;
+        background-color: transparent;
     }
 
     .container_header {
@@ -150,7 +150,7 @@ a {
         margin: 0 auto;
         padding: 15px 20px;
         display: flex;
-        justify-content: space-between;
+        justify-content: end;
         align-items: center;
     }
 
@@ -180,8 +180,7 @@ a {
     }
 
     /* Début menu déroulant */
-    .all_menu,
-    .all_menu-home {
+    .all_menu {
         position: fixed;
         top: -100%;
         left: 0;
@@ -249,6 +248,14 @@ a {
         display: none !important;
     }
 
+    #toggle:checked~.burger-home .button_close {
+        display: block !important;
+    }
+
+    #toggle:checked~.burger-home .button_open {
+        display: none !important;
+    }
+
     /* #toggle:checked~.all_menu+.burger .button_close,
     #toggle:checked~.all_menu-home+.burger .button_close {
         display: block !important;
@@ -271,6 +278,10 @@ a {
     .mobile-only,
     .mobile-only-home {
         display: block;
+    }
+
+    .image_homepage img {
+        display: none;
     }
 
     /* ------- HEADER ------- */
@@ -311,7 +322,7 @@ a {
 
     /* ------- HEADER ------- */
     /* ---------------------- */
-    
+
     .container_header,
     .container_header-home {
         padding: 15px 40px;
@@ -326,8 +337,7 @@ a {
         font-size: 1.1rem;
     }
 
-    .all_menu li.active,
-    .all_menu-home li.active {
+    .all_menu li.active {
         background-color: black;
     }
 
@@ -339,8 +349,7 @@ a {
         display: none;
     }
 
-    .all_menu,
-    .all_menu-home {
+    .all_menu {
         position: static;
         display: flex;
         justify-content: center;
@@ -369,14 +378,12 @@ a {
         color: white;
     }
 
-    .all_menu ul,
-    .all_menu-home ul {
+    .all_menu ul {
         display: flex;
         gap: 10px;
     }
 
-    .all_menu ul li,
-    .all_menu-home ul li {
+    .all_menu ul li {
         border-radius: 20px;
         width: 110px;
         padding: 10px;
@@ -385,10 +392,7 @@ a {
 
     .all_menu ul li {
         border: 1px solid black;
-    }
-
-    .all_menu-home ul li {
-        border: 1px solid white;
+        width: 120px;
     }
 
     .language,
@@ -485,20 +489,7 @@ a {
         background-color: black;
     }
 
-    .all_menu-home ul li:hover {
-        background-color: white;
-    }
-
-    .all_menu ul li:hover a {
-        color: white;
-    }
-
-    .all_menu-home ul li:hover a {
-        color: black;
-    }
-
-    .all_menu .language,
-    .all_menu-home .language-home {
+    .all_menu .language {
         border-radius: 50%;
         width: fit-content;
     }
@@ -512,8 +503,7 @@ a {
         }
     }
 
-    .all_menu-home .language-home {
-        border: 1px solid white;
+    .all_menu .language:hover {
         background-color: white;
 
         a {
@@ -521,21 +511,7 @@ a {
         }
     }
 
-    .all_menu .language:hover,
-    .all_menu-home .language-home:hover {
-        background-color: white;
-
-        a {
-            color: black;
-        }
-    }
-
-    .all_menu-home .language-home:hover {
-        border: 1px solid black;
-    }
-
-    .mobile-only,
-    .mobile-only-home {
+    .mobile-only {
         display: none;
     }
 
@@ -592,19 +568,16 @@ a {
 
     /* ------- HEADER ------- */
     /* ---------------------- */
+
     .container_header {
         padding: 20px 80px 20px 80px;
     }
 
     .container_header-home {
         position: relative;
-        z-index: 1;
-        padding: 20px 100px 20px 100px;
-    }
-
-    .container_homepage-home {
-        padding-top: 50vh;
-        z-index: 2;
+        width: 50vw; 
+        display: flex;
+        justify-content: end;
     }
 
     .logo h1 {
@@ -621,10 +594,18 @@ a {
     }
 
     .image_homepage img {
+        display: block;
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center top;
+    }
+
+    .all_menu-home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
 
     .logo {
@@ -644,29 +625,87 @@ a {
         align-items: center;
     }
 
-    .burger {
-        display: none;
-    }
-
     label,
     #toggle {
         display: none;
     }
 
+    .mobile-only-home {
+        display: none;
+    }
+
     .all_menu a,
     .all_menu-home a {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
-    .all_menu ul,
-    .all_menu-home ul {
-        gap: 15px;
+    .all_menu-home .language-home {
+        border: 1px solid white;
+        background-color: white;
+
+        a {
+            color: black;
+        }
     }
 
-    .all_menu ul li,
+    .all_menu .language:hover,
+    .all_menu-home .language-home:hover {
+        background-color: white;
+
+        a {
+            color: black;
+        }
+    }
+
+    .all_menu-home .language-home:hover {
+        border: 1px solid black;
+    }
+
+    .all_menu ul {
+        gap: 10px;
+    }
+
+    .all_menu-home .language-home {
+        border-radius: 50%;
+        width: fit-content;
+    }
+
+    .all_menu li.active,
+    .all_menu-home li.active {
+        background-color: black;
+    }
+
+    .all_menu-home ul li:hover {
+        background-color: white;
+    }
+
+    .all_menu ul li:hover a {
+        color: white;
+    }
+
+    .all_menu-home ul li:hover a {
+        color: black;
+    }
+
     .all_menu-home ul li {
         width: 120px;
         padding: 10px;
+    }
+
+    .all_menu-home ul {
+        display: flex;
+        gap: 10px;
+    }
+
+    .all_menu-home ul li {
+        border-radius: 20px;
+        width: 110px;
+        padding: 8px;
+        position: relative;
+    }
+
+    .all_menu-home ul li {
+        border: 1px solid white;
     }
 
     /* ------- FOOTER ------- */
@@ -694,30 +733,24 @@ a {
 
     /* ------- HEADER ------- */
     /* ---------------------- */
-    .container_header-home {
-        position: relative;
-        z-index: 1;
-        padding: 20px 150px 20px 150px;
-    }
-
     .all_menu a,
     .dropdown>span {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .all_menu ul,
     .all_menu-home ul {
-        gap: 15px;
+        gap: 10px;
     }
 
     .all_menu ul li,
     .all_menu-home ul li {
-        width: 140px;
+        width: 110px;
     }
 
     .all_menu-home a,
     .dropdown>span {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     /* ------- HEADER ------- */

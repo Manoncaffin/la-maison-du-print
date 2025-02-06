@@ -74,7 +74,7 @@
                     <button type="submit">Envoyer le formulaire</button>
                 </div>
                 <div class="legal-message">
-                En tant que responsable de traitement, La Maison du print met en œuvre un traitement de données personnelles vous concernant aux fins de gestion de vos demandes de prise de contact et de réponse à vos devis. Pour en savoir plus sur la gestion de vos données et de vos droits par La Maison du print, vous êtes invité·es à vous rendre à l’adresse suivante : lamaisonduprint.fr/mentions-legales. 
+                En tant que responsable de traitement, La Maison du print met en œuvre un traitement de données personnelles vous concernant aux fins de gestion de vos demandes de prise de contact et de réponse à vos devis. Pour en savoir plus sur la gestion de vos données et de vos droits par La Maison du print, vous êtes invité·es à vous rendre à l’adresse suivante : <a href="<?= page('mentions')->url() ?>">la-maison-du-print.fr/mentions</a>. 
                 </div>
             
         </form>

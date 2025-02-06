@@ -125,6 +125,7 @@ ul {
     }
 
     .form-submit button:hover {
+        border: 0.5px solid black;
         background-color: white;
         color: black;
     }
@@ -141,12 +142,17 @@ ul {
 
     .legal-message {
         display: flex;
+        flex-direction: column;
         text-align: center;
         justify-content: center;
         align-items: center;
         font-family: "Inter", sans-serif;
         font-size: 0.7rem;
         margin: 20px 0 0 0;
+
+        a {
+            font-size: 0.7rem;
+        }
     }
     
     input::placeholder,
