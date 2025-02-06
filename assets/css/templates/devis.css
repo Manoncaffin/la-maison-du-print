@@ -69,6 +69,7 @@ ul {
     form {
         grid-column: 1 / span 6;
         margin-top: 30px;
+        margin-bottom: 0;
     }
     
     form h2 {
@@ -108,7 +109,7 @@ ul {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 30px;
+        margin-top: 10px;
     }
 
     .form-submit button {
@@ -172,6 +173,7 @@ ul {
     .container_devis {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
+        padding: 120px 40px 0 40px;
     }
 
     .about-image {
@@ -191,7 +193,7 @@ ul {
     .first {
         display: flex;
         flex-direction: row;
-        gap: 80px;
+        gap: 50px;
     }
 
     form {
@@ -217,7 +219,7 @@ ul {
     }
 
     .form-submit button {
-        width: 30%;
+        width: 50%;
     }
 
     .legal-message {
@@ -232,7 +234,10 @@ ul {
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
     .container_devis {
-        padding: 0 80px;
+        padding: 130px 80px 0 80px;
+        max-width: 1500px;
+        margin: 0 auto;
+        margin-top: 0;
     }
     
     .first {
@@ -260,9 +265,10 @@ ul {
         flex-basis: 48%; 
     }
 
-    .legal-message {
-        margin: 30px 250px 0 250px;
+    #files {
+        padding-bottom: 30px;
     }
+
 }
 
 /* --------------------------------------------------- */
@@ -272,7 +278,7 @@ ul {
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
     .legal-message {
-        margin: 30px 450px 0 450px;
+        margin: 30px 250px 0 250px;
     }
 }
 

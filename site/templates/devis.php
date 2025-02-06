@@ -1,6 +1,10 @@
 <?php snippet('header') ?>
 <?= snippet('head') ?>
 
+<?php var_dump($errors, $success); ?>
+<?php if ($_SERVER['REQUEST_METHOD'] === 'POST') { var_dump($_POST, $_FILES); } ?>
+
+
 <body>
 
     <main class="container_devis">
@@ -19,7 +23,7 @@
 
         <?php if ($devis->about()->isNotEmpty()): ?>
             <div class="about-section">
-                <p><?= $devis->about()->kt() ?></p>
+                <p><?= $devis->about()->kti() ?></p>
             </div>
         <?php endif; ?>
 
