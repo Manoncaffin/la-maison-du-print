@@ -1,0 +1,9 @@
+Title: Redirection
+
+----
+
+Redirection-content: <p>VOTRE DEMANDE DE DEVIS A BIEN ÉTÉ ENVOYÉE ! <br><br>VOUS ALLEZ ÊTRE REDIRIGÉ·E VERS LA PAGE D’ACCUEIL.</p>
+
+----
+
+Uuid: MxAgU1QKllSJyxIo

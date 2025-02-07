@@ -75,5 +75,11 @@ return function ($kirby, $pages, $page) {
         }
     }
 
+    if ($success) {
+        header("Location: " . url('redirection'));
+        exit();
+    }
+
     return compact('errors', 'success');
+    
 };

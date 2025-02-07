@@ -59,5 +59,16 @@ return [
                 }
             }
         }
-    ]
+    ],
+    'languages' => [
+        'fr' => [
+            'name' => 'Français',
+            'default' => true,
+            'url' => '/',
+        ],
+        'en' => [
+            'name' => 'English',
+            'url' => '/en',
+        ],
+    ],
 ];

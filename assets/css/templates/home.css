@@ -187,19 +187,20 @@
         padding-top: 25px;
 
         img {
-            width: 450px;
+            width: 950px;
         }
     }
 
     .about {
         padding-top: 25px;
+        text-align: left;
 
         p {
             padding-bottom: 0;
         }
 
         h1 {
-            font-size: 1.6rem;
+            font-size: 2.2rem;
         }
     }
 
@@ -237,7 +238,7 @@
     
     .container_homepage {
         width: 50vw;
-        padding: 0 60px 0 60px;
+        padding: 0 110px 0 110px;
         justify-content: space-evenly;
     }
 

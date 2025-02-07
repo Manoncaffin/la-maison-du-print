@@ -22,6 +22,7 @@ tabs:
               - galerie
               - contact
               - mentions
+              - redirection
             create: true
             layout: list
             sortable: true

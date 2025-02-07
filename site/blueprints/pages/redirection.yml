@@ -1,0 +1,16 @@
+title: Redirection
+icon: document
+
+columns:
+  - width: 2/3
+    fields:
+      redirection_content:
+        label: Contenu de la redirection
+        type: writer
+        fieldsets:
+          - heading
+          - text
+          - image
+          - gallery
+          - video
+          - markdown

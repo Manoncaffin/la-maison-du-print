@@ -1,6 +1,8 @@
 <?= snippet('head') ?>
 <?= snippet('header') ?>
 
+<body>
+
 <nav id='nav-center'>
     <p><a href="<?= $page->url() ?>">Tout</a></p>
     <p><a href="<?= $page->url(['params' => ['filter' => 'serigraphie']]) ?>">Sérigraphie</a></p>
@@ -39,6 +41,8 @@
         }
         ?>
     </section>
+    
 </main>
-
 <?= snippet('footer') ?>
+</body>
+<script src="<?= $site->url() ?>/assets/js/select-option.js"></script>
