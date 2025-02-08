@@ -1,0 +1,25 @@
+Title: Atelier
+
+----
+
+Titre: WORKSHOP INTRODUCTION
+
+----
+
+About:
+
+Passionate about graphic design and tattooing, I discovered screen printing after several years of traveling. Once settled in Lyon, I spent eight years working in various workshops to master the technique, blending tradition and innovation. 
+
+Today, I’ve decided to launch my own workshop to share this passion and offer original prints that combine precision and originality.
+
+----
+
+Video: - file://ECnLCLZlhwLYGgQ4
+
+----
+
+Technique: [{"content":{"titre":"SÉRIGRAPHIE","texte":"La sérigraphie sur textile est une technique d'impression qui permet d'appliquer des motifs sur des tissus. Elle fonctionne en utilisant un écran (pochoir) sur lequel l'image à imprimer est transférée. L'encre est ensuite passée à travers l'écran pour imprimer le design sur le textile. \nCe procédé est très apprécié pour sa durabilité et la richesse de ses couleurs. Il est particulièrement adapté pour les impressions en série sur des t-shirts, sweats, sacs, etc. De plus, il conserve sa qualité et sa résistance, même après plusieurs lavages.","image":["file://fP2lZSZhSQm6tJw8"]},"id":"b989a8ed-b70a-4e68-a901-91dd07a8a573","isHidden":false,"type":"section"},{"content":{"titre":"IMPRESSION DTF","texte":"L'impression DTF (Direct to Film) consiste à imprimer un motif sur un film spécial, puis à le transférer sur le tissu à chaud. Ce procédé permet d'imprimer à l'unité, contrairement à la sérigraphie, et offre un nombre illimité de couleurs, pour des designs très détaillés et durables, même après lavage.","image":["file://w88PUTtV3ON5FiLR"]},"id":"1ceae9e9-b592-4e69-ba71-bf06b1c422d3","isHidden":false,"type":"section"}]
+
+----
+
+Uuid: cCAcmdHa2ffkeeYG

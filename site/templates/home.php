@@ -4,6 +4,7 @@
 <main class="container_homepage">
 
     <?php $home = page('site'); ?>
+    
 
     <!-- Logo -->
     <?php

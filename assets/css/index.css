@@ -407,7 +407,8 @@ a {
 
     .language,
     .language-home {
-        display: block;
+        display: flex;
+        align-items: center;
     }
 
     /* Menu déroulant (dropdown) */
@@ -589,7 +590,9 @@ a {
         position: relative;
         width: 50vw; 
         display: flex;
-        justify-content: end;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
     }
 
     .logo h1 {
@@ -613,11 +616,16 @@ a {
         object-position: center top;
     }
 
+    .header-wrapper,
+    .header-wrapper-home {
+        justify-content: end;
+    }
+
     .all_menu-home {
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
     }
 
     .logo {
@@ -646,9 +654,35 @@ a {
         display: none;
     }
 
-    .all_menu a,
-    .all_menu-home a {
+    .all_menu a {
         font-size: 1rem;
+    }
+
+    .language-home {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        border: 1px solid black;
+        background-color: black;
+        border-radius: 30px;
+        cursor: pointer;
+        font-size: 1rem;
+        color: white;
+    }
+    
+    .language-home a {
+        color: inherit;
+        text-decoration: none;
+    }
+    
+    .language-home:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    .language-home:hover a {
+        color: inherit;
     }
 
     .all_menu-home .language-home {
@@ -679,6 +713,11 @@ a {
 
     .all_menu-home .language-home {
         border-radius: 50%;
+        width: fit-content;
+    }
+
+    .all_menu .language,
+    .all_menu-home .language-home {
         width: fit-content;
     }
 
@@ -750,19 +789,30 @@ a {
         font-size: 1rem;
     }
 
-    .all_menu ul,
-    .all_menu-home ul {
+    .all_menu ul {
         gap: 10px;
     }
 
-    .all_menu ul li,
-    .all_menu-home ul li {
+    .all_menu-home ul {
+        gap: 20px;
+    }
+
+    .all_menu ul li {
         width: 110px;
+    }
+
+    .all_menu-home ul li {
+        padding: 10px;
+        width: 130px;
     }
 
     .all_menu-home a,
     .dropdown>span {
         font-size: 1rem;
+    }
+
+    .all_menu-home a {
+        font-size: 1.3rem;
     }
 
     /* ------- HEADER ------- */

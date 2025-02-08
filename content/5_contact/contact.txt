@@ -114,7 +114,7 @@ Partners:
   link: >
     https://meyso.fr/?fbclid=PAZXh0bgNhZW0CMTEAAaYTNBKIqYsD6QJx7T6jTZ0fcY-WdukxhufCICgBDHKQ5bzSIJaE2CBgs1A_aem_t1ukLxIps45pDZsPT5FVsw
 - 
-  network: Pour des pâtés aux saveurs incroyables
+  network: Des pâtés aux saveurs incroyables
   link: >
     https://www.instagram.com/la_patesserie_du_eak/
 

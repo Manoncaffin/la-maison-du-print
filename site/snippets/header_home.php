@@ -51,12 +51,14 @@ $isGalerieActive = in_array($current_page, ['galerie', 'serigraphie', 'impressio
                         <a href="<?= url('contact') ?>">CONTACT</a>
                     </li>
                     <li class="language-home">
-                    <a href="<?= $site->language()->url() == '/' ? url('en') : url() ?>">
-            <?= $site->language()->code() == 'fr' ? 'EN' : 'FR' ?>
-        </a></li>
+                        <a href="<?= $site->language()->code() == 'fr' ? url('en') : url('fr') ?>">
+                            <?= $site->language()->code() == 'fr' ? 'EN' : 'FR' ?>
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </header>
     </div>
 
     <script src="<?= $site->url() ?>/assets/js/dropdown.js"></script>
+</body>

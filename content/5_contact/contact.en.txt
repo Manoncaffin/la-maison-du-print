@@ -1,0 +1,135 @@
+Title: Contact
+
+----
+
+Address:
+
+- 
+  number: 123
+  street: rue de la Soie
+  zipcode: 38110
+  city: La Bâtie-Mongascon
+
+----
+
+Email: atelier@lamaisonduprint.fr
+
+----
+
+Tel: 07 68 18 48 96
+
+----
+
+Open:
+
+- 
+  day: monday
+  time_start: 09:00:00
+  time_end: 18:00:00
+- 
+  day: tuesday
+  time_start: 09:00:00
+  time_end: 18:00:00
+- 
+  day: wednesday
+  time_start: 09:00:00
+  time_end: 13:30:00
+- 
+  day: thursday
+  time_start: 09:00:00
+  time_end: 18:00:00
+- 
+  day: friday
+  time_start: 09:00:00
+  time_end: 18:00:00
+
+----
+
+Buy:
+
+Payments are made by bank transfer or cash when collecting the order.
+A 30% deposit may be requested.
+
+----
+
+Send: Your orders can be shipped to the address indicated or hand-delivered to the workshop.
+
+----
+
+Clients:
+
+- 
+  client: BIRIBI TATTOO SHOP
+  link:
+    - file://NAAjSZr4O9yg9Fn7
+- 
+  client: GRIBOUILLEURZ
+  link:
+    - file://XaIm4rXxhnVBmtDK
+- 
+  client: LA CARPE TATTOO
+  link:
+    - file://BxoLCzS8c1qusBMM
+- 
+  client: LOWCOSTERIE
+  link:
+    - file://A7AF6HjLqob0Komy
+- 
+  client: RENÉ LA MUISE
+  link:
+    - file://bJyIJr1OCxPIIcN2
+
+----
+
+Partners:
+
+- 
+  network: A good bottle of natural wine
+  link: https://domaine-lesgauchers.fr/
+- 
+  network: A top graphic designer
+  link: >
+    https://www.instagram.com/lecabinet_?igsh=MW54cWoycm9pYTJpcw==
+- 
+  network: 'A magician of the human bod'
+  link: https://g.co/kgs/s1BSMQs
+- 
+  network: 'Spray paint on Marseille'
+  link: https://www.instagram.com/backjumpstore/
+- 
+  network: Or on Lyon
+  link: http://eightyonestore.com/
+- 
+  network: Screen printing but on paper
+  link: https://editionscomete.com/
+- 
+  network: A great site like this one
+  link: >
+    https://manon-portfolio.projets.garage404.com/
+- 
+  network: Motion design!
+  link: https://thibaultfavre.com
+- 
+  network: An incredible painter
+  link: >
+    https://meyso.fr/?fbclid=PAZXh0bgNhZW0CMTEAAaYTNBKIqYsD6QJx7T6jTZ0fcY-WdukxhufCICgBDHKQ5bzSIJaE2CBgs1A_aem_t1ukLxIps45pDZsPT5FVsw
+- 
+  network: Pâtés with incredible flavors
+  link: >
+    https://www.instagram.com/la_patesserie_du_eak/
+
+----
+
+Networks:
+
+- 
+  network: Instagram
+  link: >
+    https://www.instagram.com/lamaison.duprint/
+- 
+  network: Facebook
+  link: 'https://www.facebook.com/profile.php?id=61565550923195&locale=fr_FR'
+
+----
+
+Uuid: J0bkwalu6tR7NiQn
