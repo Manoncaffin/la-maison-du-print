@@ -30,38 +30,6 @@
         </div>
     <?php endif ?>
 
-    <!-- Email -->
-    <div class="foot">
-        <div class="contact">
-            <p>Contact</p>
-            <p><a href="mailto:<?= $page->contact_home() ?>"><?= $page->contact_home() ?></a></p>
-        </div>
-
-        <!-- Réseaux sociaux -->
-        <?php if ($page->networks()->isNotEmpty()): ?>
-            <div class="social-networks">
-                <?php foreach ($page->networks()->toStructure() as $network): ?>
-                    <div class="network-item">
-                        <?php
-                        $networkName = $network->network()->value();
-                        $networkLink = $network->link()->value();
-                        $iconClass = '';
-
-                        if (strtolower($networkName) == 'instagram') {
-                            $iconClass = 'fa-brands fa-instagram'; 
-                        } elseif (strtolower($networkName) == 'facebook') {
-                            $iconClass = 'fa-brands fa-facebook';  
-                        }
-                        ?>
-
-                        <a href="<?= $networkLink ?>" class="network-link">
-                            <span class="network-icon <?= $iconClass ?>"></span>
-                            <span class="network-text"><?= $networkName ?></span>
-                        </a>
-                    </div>
-                <?php endforeach; ?>
-            </div>
-        <?php endif; ?>
     </div>
 
 </main>

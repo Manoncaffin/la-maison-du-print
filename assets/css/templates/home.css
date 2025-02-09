@@ -71,7 +71,7 @@
         display: flex;
         justify-content: space-between;
         align-items: end;
-        padding: 40px 0 30px 0;
+        padding-bottom: 30px;
     }
 
     .social-networks {
@@ -97,8 +97,6 @@
     }
 
     .about {
-        padding-top: 20px;
-
         p {
             padding-bottom: 0;
         }
@@ -175,8 +173,9 @@
 @media only screen and (min-width: 1000px) {
 
     .container_homepage {
-        padding: 0 100px 0 100px;
+        padding: 0 50px 0 50px;
         min-height: calc(87vh);
+        width: 50vw;
     }
 
     .image_homepage-home {
@@ -184,19 +183,20 @@
     }
 
     .all_logo_homepage {
-        padding-top: 25px;
+        padding-top: 0;
 
         img {
-            width: 950px;
+            width: 400px;
         }
     }
 
     .about {
-        padding-top: 25px;
         text-align: left;
 
         p {
             padding-bottom: 0;
+            padding-bottom: 35px;
+            font-size: 1.2rem;
         }
 
         h1 {
@@ -242,7 +242,57 @@
         justify-content: space-evenly;
     }
 
+    .all_logo_homepage {
+
+        img {
+            width: 400px;
+        }
+    }
+
     .foot {
-        padding-top: 80px;
+        padding: 20px 0 30px 0;
+    }
+
+    .about {
+        text-align: left;
+
+        p {
+            padding-bottom: 0;
+            padding-bottom: 35px;
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+        }
+    }
+}
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ------------- MEDIA MIN-WIDTH 1500PX --------------- */
+/* ----------------- SUP. OU ÉGALE ------------------- */
+/* --------------------------------------------------- */
+@media only screen and (min-width: 1500px) {
+    .all_logo_homepage {
+        padding-top: 25px;
+
+        img {
+            width: 950px;
+        }
+    }
+
+    .about {
+        text-align: left;
+
+        p {
+            padding-bottom: 0;
+            padding-bottom: 35px;
+            font-size: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
     }
 }

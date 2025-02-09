@@ -23,16 +23,55 @@ columns:
         accept:
           - video/mp4
           - video/mov
-      Technique:
-        type: blocks
-        fieldsets:
-            - type: section
-              name: Section
-              preview: fields
-              fields:
-                titre:
-                  type: text
-                texte:
-                  type: textarea
-                image:
-                  type: files
+
+  - width: 2/3
+    sections:
+      serigraphie:
+        label: Sérigraphie
+        type: fields
+        fields:
+          serigraphie:
+            label: Sérigraphie
+            type: blocks
+            fieldsets:
+              section:
+                label: Section
+                preview: fields
+                fields:
+                  titre:
+                    label: Titre
+                    type: text
+                    required: true
+                  texte:
+                    label: Description
+                    type: textarea
+                    required: true
+                  image:
+                    label: Image
+                    type: files
+                    required: true
+
+      dtf:
+        label: Impression DTF
+        type: fields
+        fields:
+          impression_dtf:
+            label: Impression DTF
+            type: blocks
+            fieldsets:
+              section:
+                label: Section
+                preview: fields
+                fields:
+                  titre:
+                    label: Titre
+                    type: text
+                    required: true
+                  texte:
+                    label: Description
+                    type: textarea
+                    required: true
+                  image:
+                    label: Image
+                    type: files
+                    required: true
