@@ -14,11 +14,11 @@ Video: - file://ECnLCLZlhwLYGgQ4
 
 ----
 
-Serigraphie: [{"content":{"titre":"SÉRIGRAPHIE","texte":"La sérigraphie sur textile est une technique d'impression qui permet d'appliquer des motifs sur des tissus. Elle fonctionne en utilisant un écran (pochoir) sur lequel l'image à imprimer est transférée. L'encre est ensuite passée à travers l'écran pour imprimer le design sur le textile. \nCe procédé est très apprécié pour sa durabilité et la richesse de ses couleurs. Il est particulièrement adapté pour les impressions en série sur des t-shirts, sweats, sacs, etc. De plus, il conserve sa qualité et sa résistance, même après plusieurs lavages.","image":["file://fP2lZSZhSQm6tJw8"]},"id":"c9ec94f2-2d53-4069-8c2a-66c22509336d","isHidden":false,"type":"section"}]
+Serigraphie: [{"content":{"titre":"Sérigraphie","texte":"La sérigraphie sur textile est une technique d'impression qui permet d'appliquer des motifs sur des tissus. Elle fonctionne en utilisant un écran (pochoir) sur lequel l'image à imprimer est transférée. L'encre est ensuite passée à travers l'écran pour imprimer le design sur le textile. \nCe procédé est très apprécié pour sa durabilité et la richesse de ses couleurs. Il est particulièrement adapté pour les impressions en série sur des t-shirts, sweats, sacs, etc. De plus, il conserve sa qualité et sa résistance, même après plusieurs lavages.","image":["file://TE7jFPXNWcy3a9vM"]},"id":"c9ec94f2-2d53-4069-8c2a-66c22509336d","isHidden":false,"type":"section"}]
 
 ----
 
-Impression-dtf: [{"content":{"titre":"IMPRESSION DTF","texte":"L'impression DTF (Direct to Film) consiste à imprimer un motif sur un film spécial, puis à le transférer sur le tissu à chaud. Ce procédé permet d'imprimer à l'unité, contrairement à la sérigraphie, et offre un nombre illimité de couleurs, pour des designs très détaillés et durables, même après lavage.","image":["file://WpkUPJlHARZ8EYcu"]},"id":"504479cf-ca37-4b63-ada8-24f58d239785","isHidden":false,"type":"section"}]
+Impression-dtf: [{"content":{"titre":"Impression DTF","texte":"L'impression DTF (Direct to Film) consiste à imprimer un motif sur un film spécial, puis à le transférer sur le tissu à chaud. Ce procédé permet d'imprimer à l'unité, contrairement à la sérigraphie, et offre un nombre illimité de couleurs, pour des designs très détaillés et durables, même après lavage.","image":["file://NTQ08cbQMRuJzP4k"]},"id":"504479cf-ca37-4b63-ada8-24f58d239785","isHidden":false,"type":"section"}]
 
 ----
 

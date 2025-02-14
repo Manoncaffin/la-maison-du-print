@@ -7,7 +7,7 @@ Gallery-items:
 - 
   category: serigraphie
   image:
-    - file://SzECWBe7nTF8ajzD
+    - file://K81pklFMgoRsgo54
   about: Alice et Sarah
 - 
   category: serigraphie

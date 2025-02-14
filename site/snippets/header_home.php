@@ -50,11 +50,6 @@ $isGalerieActive = in_array($current_page, ['galerie', 'serigraphie', 'impressio
                     <li class="<?= ($page == 'contact') ? 'active' : '' ?>">
                         <a href="<?= url('contact') ?>">CONTACT</a>
                     </li>
-                    <!-- <li class="language-home">
-                        <a href="<?= $site->language()->code() == 'fr' ? url('en') : url('fr') ?>">
-                            <?= $site->language()->code() == 'fr' ? 'EN' : 'FR' ?>
-                        </a>
-                    </li> -->
                 </ul>
             </nav>
         </header>

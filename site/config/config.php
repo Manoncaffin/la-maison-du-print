@@ -25,8 +25,23 @@ return [
 
     'upload' => [
     'maxsize' => 50 * 1024 * 1024,
-    'types' => ['mp4', 'mov', 'avi']
+    'types' => ['mp4', 'mov', 'avi', 'svg', 'png', 'jpg', 'jpeg']
     ],
+
+    'content' => [
+        'allowedMimeTypes' => [
+            'image/svg+xml' => 'svg',
+            'image/png' => 'png',
+            'image/jpeg' => 'jpg'
+        ]
+        ],
+
+        'panel' => [
+            'install' => true,
+            'slug' => 'panel',
+            'language' => 'fr',
+            'css' => 'assets/css/panel.css'
+        ],
 
     //Image srcsets thumbs presets
     'thumbs' => [
@@ -43,12 +58,7 @@ return [
     'config' => [
         'instagram_url' => 'https://www.instagram.com/lamaison.duprint/'
     ],
-    'panel' => [
-        'install' => true,
-        'slug' => 'panel',
-        'language' => 'fr',
-        'css' => 'assets/css/panel.css'
-    ],
+
     'hooks' => [
         'file.create:before' => function ($file) {
             // Limiter les dimensions d'image, par exemple 2000x2000px
@@ -70,5 +80,5 @@ return [
             'name' => 'English',
             'url' => '/en',
         ],
-    ],
+    ]
 ];

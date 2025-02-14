@@ -7,18 +7,18 @@
     <!-- Primary Meta Tags -->
     <title><?= $site->title() ?></title>
     <meta name="title" content="<?= $site->title() ?>" />
-    <meta name="description" content=" " />
+    <meta name="description" content="" />
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<?= $site->url() ?>" />
     <meta property="og:title" content="<?= $site->title() ?>" />
-    <meta property="og:description" content=" " />
+    <meta property="og:description" content="" />
     <meta property="og:image" content="<?= $site->url() ?>/assets/imgs/meta-tags.png" />
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="<?= $site->url() ?>" />
     <meta property="twitter:title" content="<?= $site->title() ?>" />
-    <meta property="twitter:description" content=" " />
+    <meta property="twitter:description" content="" />
     <meta property="twitter:image" content="<?= $site->url() ?>/assets/imgs/meta-tags.png" />
 
     <meta name="<?= $site->title() ?>" content="">
@@ -41,5 +41,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <!-- <link rel="icon" href="./images/favicon.ico" type="image/x-icon"> -->
 
 </head>

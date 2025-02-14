@@ -17,7 +17,7 @@ ul {
 @media screen and (min-width: 350px) {
     body {
         .title-page h1 {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -66,6 +66,11 @@ ul {
     #partners-list {
         list-style-type: none;
         margin: 10px 0;
+        width: fit-content;
+        background-color: rgba(255, 255, 255);
+        padding-left: 201px;
+        margin-top: 0;
+        display: none;
     }
 
     #partners-list li {
@@ -102,14 +107,6 @@ ul {
 
     .partners {
         position: relative;
-    }
-
-    #partners-list {
-        width: fit-content;
-        background-color: rgba(255, 255, 255);
-        padding-left: 223px;
-        margin-top: 0;
-        display: none;
     }
 
     #partners-list.visible {
@@ -252,7 +249,7 @@ ul {
     }
 
     .title-page {
-        padding: 130px 80px 0 80px;
+        padding: 100px 80px 0 80px;
         max-width: 1500px;
         margin: 0 auto;
     }
@@ -339,5 +336,9 @@ ul {
     .clients,
     .networks {
         grid-column: 8 / span 5;
+    }
+
+    .title-page {
+        padding: 130px 80px 0 80px;
     }
 }

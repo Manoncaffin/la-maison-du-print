@@ -17,7 +17,7 @@ ul {
 @media screen and (min-width: 350px) {
     body {
         .title-page h1 {
-            font-size: 1.8rem;
+            font-size: 1.5rem;
         }
     }
 
@@ -85,7 +85,7 @@ ul {
     }
 
     .title-page {
-        padding: 130px 80px 0 80px;
+        padding: 100px 80px 0 80px;
         max-width: 1500px;
         margin: 0 auto;
     }
@@ -127,4 +127,8 @@ ul {
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
+
+    .title-page {
+        padding: 130px 80px 0 80px;
+    }
 }

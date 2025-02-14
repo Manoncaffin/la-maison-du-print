@@ -28,6 +28,9 @@
             <h1>DEUX TECHNIQUES D’IMPRESSIONS</h1>
             <div class="border"></div>
         </div>
+        <!-- <div class="info-question">
+        <p>Si vous avez des doutes sur le procédé d'impression à choisir, je me tiens disponible pour vous accompagner et vous conseiller.</p>
+    </div> -->
     </section>
 
     <article class="technique">
@@ -40,16 +43,18 @@
                 <div class="gallery_text">
                     <p><?= $block->texte()->kt() ?></p>
                     <div class="gallery_button">
-                <a href="/galerie">
-                    <button>Voir la galerie</button>
-                </a>
-            </div>
+                        <a href="<?= $site->url() ?>/galerie">
+                            <button>Voir la galerie</button>
+                        </a>
+                    </div>
                 </div>
                 <div class="gallery_img">
                     <img src="<?= $block->image()->toFile()->url() ?>" alt="Impression sérigraphie, Alice et Sarah">
                 </div>
             <?php endforeach; ?>
+            <div class="border_two"></div>
         </section>
+
         <!-- Impression DTF -->
         <section class="technique-section_two">
             <?php foreach ($atelier->impression_dtf()->toBlocks() as $block): ?>
@@ -62,16 +67,13 @@
                 <div class="gallery_text_two">
                     <p><?= $block->texte()->kt() ?></p>
                     <div class="gallery_button_two">
-                <a href="/galerie">
-                    <button>Voir la galerie</button>
-                </a>
-            </div>
+                        <a href="<?= $site->url() ?>/galerie">
+                            <button>Voir la galerie</button>
+                        </a>
+                    </div>
                 </div>
             <?php endforeach; ?>
 
-            <div class="info-question">
-        <p>Si vous avez des doutes sur le procédé d'impression à choisir, je me tiens disponible pour vous accompagner et vous conseiller.</p>
-    </div>
         </section>
     </article>
 

@@ -25,7 +25,7 @@
 :root {
     --gutter-width: 15px;
     --text-color: #181818;
-    --text-size: 1.1rem;
+    --text-size: 1rem;
 }
 
 * {
@@ -43,10 +43,10 @@ body {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    font-size: 1.1rem;
+    justify-content: space-between;
 
     .title-page h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -104,6 +104,17 @@ a {
     margin: 0;
 }
 
+.page {
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.page.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 /* Start coding here */
 /* --------------------------------------------------- */
@@ -113,6 +124,11 @@ a {
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
 
+    button:hover {
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+    }
 
     /* ------- HEADER ------- */
     /* ---------------------- */
@@ -294,11 +310,12 @@ a {
         0% {
             transform: rotate(0deg) scale(1);
         }
+
         100% {
             transform: rotate(360deg) scale(1);
         }
     }
-    
+
     .logo_header {
         width: 60px;
         height: auto;
@@ -308,7 +325,7 @@ a {
     .logo_homepage {
         animation: rotateLogo 1s ease-in-out;
     }
-    
+
 
     /* ------- HEADER ------- */
     /* ---------------------- */
@@ -324,7 +341,7 @@ a {
     .all_footer {
         display: flex;
         flex-direction: column;
-        padding: 30px 20px;
+        padding: 0 20px;
     }
 
     .title_footer,
@@ -555,7 +572,7 @@ a {
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
-        padding: 15px 40px;
+        padding: 0 40px;
     }
 
     .title_footer,
@@ -604,7 +621,7 @@ a {
 
     .container_header-home {
         position: relative;
-        width: 50vw; 
+        width: 50vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -688,17 +705,17 @@ a {
         font-size: 1rem;
         color: white;
     }
-    
+
     .language-home a {
         color: inherit;
         text-decoration: none;
     }
-    
+
     .language-home:hover {
         background-color: white;
         color: black;
     }
-    
+
     .language-home:hover a {
         color: inherit;
     }
@@ -781,7 +798,7 @@ a {
     /* ---------------------- */
 
     .all_footer {
-        padding: 20px 80px;
+        padding: 0 80px;
         max-width: 1500px;
         margin: 0 auto;
     }

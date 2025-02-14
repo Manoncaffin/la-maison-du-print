@@ -5,6 +5,11 @@
 
     <?php $home = page('site'); ?>
     
+    <!-- Présentation -->
+    <article class="about">
+        <h1><?= $page->atelier()->kti() ?></h1>
+        <p><?= $page->presentation()->kti() ?></p>
+    </article>
 
     <!-- Logo -->
     <?php
@@ -16,12 +21,6 @@
     <?php else: ?>
         <p>Logo non trouvé</p>
     <?php endif; ?>
-
-    <!-- Présentation -->
-    <article class="about">
-        <h1><?= $page->atelier()->kti() ?></h1>
-        <p><?= $page->presentation()->kti() ?></p>
-    </article>
 
     <!-- Photo -->
     <?php if ($image = $page->image()->first()): ?>

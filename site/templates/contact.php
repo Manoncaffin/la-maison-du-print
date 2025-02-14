@@ -49,7 +49,8 @@
                             ?>
                             <li>
                                 <strong><?= $dayInFrench ?>:</strong>
-                                <?= $entry->time_start()->toDate('H:i') ?> - <?= $entry->time_end()->toDate('H:i') ?>
+                                <?= str_replace(":", "h", $entry->time_start()->toDate('H:i')) ?> - 
+    <?= str_replace(":", "h", $entry->time_end()->toDate('H:i')) ?>
                             </li>
                         <?php endforeach; ?>
                     </ul>

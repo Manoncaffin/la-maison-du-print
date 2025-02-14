@@ -8,7 +8,7 @@
         display: flex;
         flex-direction: column;
         padding: 0 20px;
-        flex: 1 0 auto;
+        /* flex: 1 0 auto; */
     }
 
     .all_logo_homepage {
@@ -238,14 +238,14 @@
     
     .container_homepage {
         width: 50vw;
-        padding: 0 110px 0 110px;
+        padding: 15px 110px 0 110px;
         justify-content: space-evenly;
     }
 
     .all_logo_homepage {
 
         img {
-            width: 400px;
+            width: 450px;
         }
     }
 
@@ -283,7 +283,7 @@
     }
 
     .about {
-        text-align: left;
+        text-align: center;
 
         p {
             padding-bottom: 0;

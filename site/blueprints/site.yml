@@ -38,3 +38,17 @@ tabs:
             type: files
             max: 1
             min: 1
+            accept: 
+              - image/svg+xml
+              - image/png
+              - image/jpeg
+
+          # favicon: 
+          #   label: Favicon
+          #   type: files
+          #   max: 1
+          #   min: 1
+          #   accept: 
+          #     - image/svg+xml
+          #     - image/png
+          #     - image/jpeg
