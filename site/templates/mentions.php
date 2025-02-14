@@ -4,7 +4,7 @@
 
 <?php $contact = page('mentions'); ?>
 
-<main>
+<main class="page-enter">
 
     <div class="title-page">
         <h1>MENTIONS LÉGALES</h1>
@@ -22,7 +22,7 @@
         </div>
     </sectionn>
 
-
 </main>
 
 <?= snippet('footer') ?>
+<script src="<?= $site->url() ?>/assets/js/transition.js"></script>

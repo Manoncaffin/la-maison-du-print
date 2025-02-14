@@ -32,3 +32,4 @@
     </div>
 
 </main>
+<script src="<?= $site->url() ?>/assets/js/transition.js"></script>

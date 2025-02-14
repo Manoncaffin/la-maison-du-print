@@ -7,7 +7,7 @@
 
 <body>
 
-    <main class="container_devis">
+    <main class="container_devis page-enter">
         <?php $devis = page('devis'); ?>
 
         <div class="title-page">
@@ -92,4 +92,4 @@
     </main>
 
     <?= snippet('footer') ?>
-</body>
+    <script src="<?= $site->url() ?>/assets/js/transition.js"></script>

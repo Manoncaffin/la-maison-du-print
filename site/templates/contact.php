@@ -2,7 +2,7 @@
 <?= snippet('head') ?>
 
 <body>
-    <main>
+    <main class="page-enter">
 
         <?php $contact = page('contact'); ?>
 
@@ -134,3 +134,4 @@
     <?= snippet('footer') ?>
 </body>
 <script src="<?= $site->url() ?>/assets/js/select-option.js"></script>
+<script src="<?= $site->url() ?>/assets/js/transition.js"></script>

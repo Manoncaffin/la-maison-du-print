@@ -1,3 +1,20 @@
+.page-enter {
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: slideDown 0.8s ease-out forwards;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* --------------------------------------------------- */
 /* ------------- MEDIA MIN-WIDTH 350PX --------------- */
 /* ------------------ SUP. OU ÉGALE ------------------ */

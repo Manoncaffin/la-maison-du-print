@@ -1,7 +1,7 @@
 <?= snippet('header') ?>
 <?= snippet('head') ?>
 
-<main>
+<main class="page-enter">
     <section class="container_atelier">
         <?php $atelier = page('atelier'); ?>
 
@@ -80,3 +80,4 @@
 </main>
 
 <?= snippet('footer') ?>
+<script src="<?= $site->url() ?>/assets/js/transition.js"></script>
