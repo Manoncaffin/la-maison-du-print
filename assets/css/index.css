@@ -435,11 +435,13 @@ a {
     .all_menu a,
     .dropdown>span {
         color: black;
+        font-size: 1rem;
     }
 
     .all_menu-home a,
     .dropdown>span {
         color: white;
+        font-size: 1rem;
     }
 
     .all_menu ul {
@@ -450,13 +452,9 @@ a {
     .all_menu ul li {
         border-radius: 20px;
         width: 110px;
-        padding: 10px;
-        position: relative;
-    }
-
-    .all_menu ul li {
+        padding: 8px;
         border: 1px solid black;
-        width: 120px;
+        position: relative;
     }
 
     .language,
