@@ -21,13 +21,13 @@
         ?>
 
         <div class="title-page">
-            <h1>CONTACT ET INFOS PRATIQUES</h1>
+            <h2>CONTACT ET INFOS PRATIQUES</h2>
             <div class="border"></div>
         </div>
 
         <section class="container_contact">
             <div class="address">
-                <h2>La Maison du print</h2>
+                <h3>La Maison du print</h3>
                 <?php foreach ($contact->address()->toStructure() as $address) : ?>
                     <p id="address-<?= $address->index() ?>" data-id="address-<?= $address->index() ?>"><?= $address->number()->kti() ?> <?= $address->street()->kti() ?></p>
                     <p><?= $address->zipcode()->kti() ?> <?= $address->city()->kti() ?></p>
@@ -41,7 +41,7 @@
             <!-- Horaires -->
             <?php if ($contact->open()->isNotEmpty()): ?>
                 <article class="opening-hours">
-                    <h2>Horaires et jours d'ouverture</h2>
+                    <h3>Horaires et jours d'ouverture</h3>
                     <ul>
                         <?php foreach ($contact->open()->toStructure() as $entry): ?>
                             <?php
@@ -61,7 +61,7 @@
             <!-- Règlement -->
             <?php if ($contact->buy()->isNotEmpty()): ?>
                 <article class="payment-info">
-                    <h2>Règlement</h2>
+                    <h3>Règlement</h3>
                     <p><?= $contact->buy()->kti() ?></p>
                 </article>
             <?php endif; ?>
@@ -69,7 +69,7 @@
             <!-- Envoi -->
             <?php if ($contact->send()->isNotEmpty()): ?>
                 <article class="shipping-info">
-                    <h2>Envoi</h2>
+                    <h3>Envoi</h3>
                     <p><?= $contact->send()->kti() ?></p>
                 </article>
             <?php endif; ?>
@@ -77,7 +77,7 @@
             <!-- Clients -->
             <?php if ($contact->clients()->isNotEmpty()): ?>
                 <article class="clients">
-                    <h2>Ils·elles ont fait confiance à La Maison du print</h2>
+                    <h3>Ils·elles ont fait confiance à La Maison du print</h3>
                     <?php foreach ($contact->clients()->toStructure() as $client): ?>
                         <div class="client-item">
                             <p class="client-name"><?php echo $client->client(); ?></p>
@@ -94,7 +94,7 @@
             <!-- Réseaux sociaux -->
             <?php if ($contact->networks()->isNotEmpty()): ?>
                 <article class="networks">
-                    <h2>Vous pouvez me retrouver sur ces réseaux</h2>
+                    <h3>Vous pouvez me retrouver sur ces réseaux</h3>
                     <ul>
                         <?php foreach ($contact->networks()->toStructure() as $network): ?>
                             <li>
@@ -109,7 +109,7 @@
 
             <!-- Bons plans -->
             <article class="partners">
-                <h2>La Maison du print partage ses bons plans !</h2>
+                <h3>La Maison du print partage ses bons plans !</h3>
                 <p>
                     Cliquez ici si vous cherchez
                     <span id="selected-partner">[sélectionnez une option]</span>

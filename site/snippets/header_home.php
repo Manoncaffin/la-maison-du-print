@@ -44,14 +44,14 @@ $isGalerieActive = in_array($current_page, ['galerie', 'serigraphie', 'impressio
                         <a href="<?= url('contact') ?>">CONTACT</a>
                     </li>
                     <?php foreach (kirby()->languages() as $language): ?>
-        <?php if ($language !== kirby()->language()): ?>
-            <li class="language-home">
-                <a href="<?= $page->url($language->code()) ?>">
-                    <?= $language->code() === 'an' ? 'EN' : strtoupper($language->code()) ?>
-                </a>
-            </li>
-        <?php endif; ?>
-    <?php endforeach; ?>
+                        <?php if ($language !== kirby()->language()): ?>
+                            <li class="language-home">
+                                <a href="<?= $page->url($language->code()) ?>">
+                                    <?= $language->code() === 'an' ? 'EN' : strtoupper($language->code()) ?>
+                                </a>
+                            </li>
+                        <?php endif; ?>
+                    <?php endforeach; ?>
                 </ul>
             </nav>
         </header>

@@ -51,7 +51,7 @@ main {
 }
 
 h1 {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: "Inter-Semibold", sans-serif;
     font-weight: 600;
     color: var(--text-color);
@@ -59,7 +59,29 @@ h1 {
     padding: 0;
 }
 
-h2,
+h2 {
+    font-family: "Inter-Semibold", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+h3 {
+    font-family: "Inter-Semibold", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+h3 a {
+    font-family: "Inter-Light", sans-serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
 h4,
 h5,
 h6,
@@ -69,20 +91,6 @@ li,
 label {
     font-family: "Inter-Light", sans-serif;
     color: var(--text-color);
-    margin: 0;
-    padding: 0;
-}
-
-h3 {
-    font-family: "Inter-Light", sans-serif;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
-}
-
-h3 a {
-    font-family: "Inter-Light", sans-serif;
-    font-weight: normal;
     margin: 0;
     padding: 0;
 }
@@ -100,8 +108,6 @@ a:active {
     color: currentColor;
 }
 
-h1,
-h2,
 p,
 a {
     font-size: var(--text-size);
