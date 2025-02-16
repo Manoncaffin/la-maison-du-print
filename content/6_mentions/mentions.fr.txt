@@ -6,7 +6,7 @@ Column1: <p><strong>Éditeur du site</strong> <br>La Maison du print</p><p><stro
 
 ----
 
-Column2: <p><strong>Responsabilité</strong> <br>La Maison du print met tout en œuvre pour assurer l’exactitude des informations publiées sur le site. Cependant, la société ne saurait être tenue responsable des erreurs ou omissions dans les contenus publiés. L'utilisation des informations et contenus présents sur ce site relève de la seule responsabilité de l'utilisateur.<br><br><strong>Conception visuelle et développement</strong><br><strong>Identité visuelle :</strong> Simon Fleury et Gaspard Audrain<br><strong>Photographies et vidéos :</strong> Simon Fleury<br><strong>UX/UI design et code :</strong> Manon Caffin<br><strong>Typographie :</strong> Inter par Rasmus Andersson</p>
+Column2: <p><strong>Responsabilité</strong> <br>La Maison du print met tout en œuvre pour assurer l’exactitude des informations publiées sur le site. Cependant, la société ne saurait être tenue responsable des erreurs ou omissions dans les contenus publiés. L'utilisation des informations et contenus présents sur ce site relève de la seule responsabilité de l'utilisateur.<br><br><strong>Conception visuelle et développement</strong><br><strong>Identité visuelle :</strong> Simon Fleury et Gaspard Audrain<br><strong>Photographies et vidéos :</strong> Simon Fleury<br><strong>Webdesign et code :</strong> Manon Caffin<br><strong>Typographie :</strong> Inter par Rasmus Andersson</p>
 
 ----
 

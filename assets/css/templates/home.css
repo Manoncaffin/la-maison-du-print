@@ -24,21 +24,21 @@
     .container_homepage {
         display: flex;
         flex-direction: column;
-        padding: 0 20px;
-        /* flex: 1 0 auto; */
+        padding: 40px 20px 20px 20px;
     }
 
     .all_logo_homepage {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     .all_logo_homepage img {
         display: flex;
         justify-content: center;
-        max-width: 300px;
+        max-width: 350px;
+        rotate: -20deg;
     }
 
     .image_homepage-home {
@@ -52,7 +52,6 @@
     }
 
     .about {
-        padding-top: 15px;
         text-align: center;
 
         h1 {
@@ -107,15 +106,20 @@
 @media screen and (min-width: 768px) {
     .container_homepage {
         width: 100vw;
+        padding: 40px 40px;
     }
 
     .all_logo_homepage img {
         max-width: 500px;
     }
 
+    .all_logo_homepage {
+        padding-top: 30px;
+    }
+
     .about {
         p {
-            padding-bottom: 0;
+            padding: 0 150px;
         }
 
         h1 {
@@ -168,7 +172,7 @@
     }
 
     .image_homepage-home {
-        padding: 40px 0 40px 0;
+        padding-top: 0;
     }
 
     .social-networks {
@@ -190,9 +194,14 @@
 @media only screen and (min-width: 1000px) {
 
     .container_homepage {
-        padding: 0 50px 0 50px;
         min-height: calc(87vh);
         width: 50vw;
+        padding: 35px 40px;
+    }
+
+    .all_menu a, .dropdown>span, .all_menu-home a, .dropdown>span {
+        text-decoration: none;
+        font-size: 1rem;
     }
 
     .image_homepage-home {
@@ -201,23 +210,21 @@
 
     .all_logo_homepage {
         padding-top: 0;
-
-        img {
-            width: 400px;
-        }
     }
 
     .about {
-        text-align: left;
+        text-align: center;
+        padding-top: 0;
 
         p {
+            padding: 0 50px 0 50px;
             padding-bottom: 0;
             padding-bottom: 35px;
-            font-size: 1.2rem;
+            font-size: 1rem;
         }
 
         h1 {
-            font-size: 2.2rem;
+            font-size: 2rem;
         }
     }
 
@@ -255,34 +262,28 @@
     
     .container_homepage {
         width: 50vw;
-        padding: 15px 110px 0 110px;
-        justify-content: space-evenly;
+        padding: 15px 80px 0 80px;
     }
 
     .all_logo_homepage {
+        padding-top: 50px;
 
         img {
-            width: 450px;
+            max-width: 450px;
         }
     }
+
+    .about {
+        padding-top: 20px;
+    p {
+        padding: 0;
+    }
+}
 
     .foot {
         padding: 20px 0 30px 0;
     }
 
-    .about {
-        text-align: left;
-
-        p {
-            padding-bottom: 0;
-            padding-bottom: 35px;
-            font-size: 1.2rem;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-        }
-    }
 }
 
 /* --------------------------------------------------- */
@@ -295,7 +296,7 @@
         padding-top: 25px;
 
         img {
-            width: 950px;
+            max-width: 650px;
         }
     }
 
@@ -303,13 +304,12 @@
         text-align: center;
 
         p {
-            padding-bottom: 0;
-            padding-bottom: 35px;
-            font-size: 1.5rem;
+            padding: 0 110px 35px 110px;
+            font-size: 1.1rem;
         }
 
         h1 {
-            font-size: 2.5rem;
+            font-size: 2.1rem;
         }
     }
 }

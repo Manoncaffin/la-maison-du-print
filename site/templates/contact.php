@@ -1,3 +1,4 @@
+<body class="page-enter">
 <?= snippet('header') ?>
 <?= snippet('head') ?>
 

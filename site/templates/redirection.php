@@ -1,3 +1,4 @@
+<body class="page-enter">
 <?= snippet('header') ?>
 <?= snippet('head') ?>
 <?= css('assets/css/redirection.css') ?>
@@ -9,7 +10,7 @@
     </div>
 </main>
 <script src="<?= $site->url() ?>/assets/js/transition.js"></script>
-
+</body>
 <script>
     setTimeout(function() {
         window.location.href = "<?= url('home') ?>";

@@ -103,10 +103,10 @@ ul {
             border: 1px solid black;
             color: black;
             background-color: white;
-            border-radius: 20px;
-            padding: 10px 15px;
+            border-radius: 10px;
+            padding: 8px 10px;
             margin: 15px 0 40px 0;
-            font-size: 1.1rem;
+            font-size: 0.7rem;
         }
 
         button:hover {
@@ -247,7 +247,7 @@ img {
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
     .container_atelier {
-        padding: 100px 80px 0 80px;
+        padding: 120px 80px 0 80px;
         max-width: 1500px;
         margin: 0 auto;
     }

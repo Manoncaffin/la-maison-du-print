@@ -1,0 +1,36 @@
+Title: Accueil
+
+----
+
+Atelier:
+
+ATELIER DE SÉRIGRAPHIE 
+ET D’IMPRESSION TEXTILE
+
+----
+
+Presentation: La Maison du print is a workshop specialized in textile printing using screen printing and heat press (DTF transfers)
+
+----
+
+Image: - file://m1vO1sikadHTMp9T
+
+----
+
+Contact-home: atelier@lamaisonduprint.fr
+
+----
+
+Networks:
+
+- 
+  network: Instagram
+  link: >
+    https://www.instagram.com/lamaison.duprint/
+- 
+  network: Facebook
+  link: 'https://www.facebook.com/profile.php?id=61565550923195&locale=fr_FR'
+
+----
+
+Template: home

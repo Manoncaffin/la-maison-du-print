@@ -40,16 +40,18 @@ $isGalerieActive = in_array($current_page, ['galerie', 'serigraphie', 'impressio
                     <li class="<?= ($page == 'galerie') ? 'active' : '' ?>">
                         <a href="<?= url('galerie') ?>">GALERIE</a>
                     </li>
-                    <!-- <li class="dropdown <?= $isGalerieActive ? 'active' : '' ?>">
-                    <span>GALERIE</span>
-                    <ul class="dropdown-menu">
-                        <li><a href="serigraphie.php">SÉRIGRAPHIE</a></li>
-                        <li><a href="impression-dtf.php">IMPRESSION DTF</a></li>
-                    </ul>
-                </li> -->
                     <li class="<?= ($page == 'contact') ? 'active' : '' ?>">
                         <a href="<?= url('contact') ?>">CONTACT</a>
                     </li>
+                    <?php foreach (kirby()->languages() as $language): ?>
+        <?php if ($language !== kirby()->language()): ?>
+            <li class="language-home">
+                <a href="<?= $page->url($language->code()) ?>">
+                    <?= $language->code() === 'an' ? 'EN' : strtoupper($language->code()) ?>
+                </a>
+            </li>
+        <?php endif; ?>
+    <?php endforeach; ?>
                 </ul>
             </nav>
         </header>

@@ -1,8 +1,7 @@
 @font-face {
-    font-family: 'Inter';
-    src: url('/assets/fonts/Inter-Regular.woff2') format('woff2'),
-        url('/assets/fonts/Inter-Regular.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Inter-Light';
+    src: url('/assets/fonts/Inter-Light.woff2') format('woff2');
+    font-weight: 100;
     font-style: normal;
 }
 
@@ -44,17 +43,22 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    .title-page h1 {
-        font-size: 1.5rem;
-    }
+    font-weight: 100;
 }
 
 main {
     display: block;
 }
 
-h1,
+h1 {
+    font-size: 1.5rem;
+    font-family: "Inter-Semibold", sans-serif;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
 h2,
 h4,
 h5,
@@ -63,21 +67,21 @@ p,
 a,
 li,
 label {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter-Light", sans-serif;
     color: var(--text-color);
     margin: 0;
     padding: 0;
 }
 
 h3 {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter-Light", sans-serif;
     font-weight: normal;
     margin: 0;
     padding: 0;
 }
 
 h3 a {
-    font-family: "Inter", sans-serif;
+    font-family: "Inter-Light", sans-serif;
     font-weight: normal;
     margin: 0;
     padding: 0;
@@ -347,7 +351,7 @@ a {
     .all_footer {
         display: flex;
         flex-direction: column;
-        padding: 0 20px;
+        padding: 5px 20px;
     }
 
     .title_footer,
@@ -544,9 +548,6 @@ a {
         width: fit-content;
         display: flex;
         align-items: center;
-    }
-
-    .all_menu .language {
         border: 1px solid black;
         background-color: black;
 
@@ -561,6 +562,60 @@ a {
         a {
             color: black;
         }
+    }
+
+    .all_menu-home .language-home {
+        border-radius: 50%;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        background-color: white;
+
+        a {
+            color: black;
+        }
+    }
+
+    .all_menu-home .language-home:hover {
+        border: 1px solid black;
+        background-color: black;
+
+        a {
+            color: white;
+        }
+    }
+
+    .language,
+    .language-home {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+        font-size: 1rem;
+        color: white;
+    }
+
+    .language,
+    .language-home a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .language,
+    .language-home:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .language
+    .language-home:hover a {
+        color: inherit;
+    }
+
+    .all_menu .language:hover,
+    .all_menu-home .language-home:hover {
+        border: 1px solid black;
     }
 
     .mobile-only {
@@ -607,6 +662,7 @@ a {
     /* ---------------------- */
 
 }
+
 
 
 
@@ -699,59 +755,11 @@ a {
         font-size: 1rem;
     }
 
-    .language-home {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 20px;
-        border: 1px solid black;
-        background-color: black;
-        border-radius: 30px;
-        cursor: pointer;
-        font-size: 1rem;
-        color: white;
-    }
-
-    .language-home a {
-        color: inherit;
-        text-decoration: none;
-    }
-
-    .language-home:hover {
-        background-color: white;
-        color: black;
-    }
-
-    .language-home:hover a {
-        color: inherit;
-    }
-
-    .all_menu-home .language-home {
-        border: 1px solid white;
-        background-color: white;
-
-        a {
-            color: black;
-        }
-    }
-
-    .all_menu .language:hover,
-    .all_menu-home .language-home:hover {
-        background-color: white;
-
-        a {
-            color: black;
-        }
-    }
-
-    .all_menu-home .language-home:hover {
-        border: 1px solid black;
-    }
-
     .all_menu ul {
         gap: 10px;
     }
 
+    .all_menu .language-home
     .all_menu-home .language-home {
         border-radius: 50%;
         width: fit-content;
@@ -844,7 +852,7 @@ a {
 
     .all_menu-home ul li {
         padding: 10px;
-        width: 130px;
+        width: 110px;
     }
 
     .all_menu-home a,

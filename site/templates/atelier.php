@@ -1,7 +1,8 @@
+<body class="page-enter">
 <?= snippet('header') ?>
 <?= snippet('head') ?>
 
-<main class="page-enter">
+<main>
     <section class="container_atelier">
         <?php $atelier = page('atelier'); ?>
 
@@ -44,7 +45,7 @@
                     <p><?= $block->texte()->kt() ?></p>
                     <div class="gallery_button">
                         <a href="<?= $site->url() ?>/galerie">
-                            <button>Voir la galerie</button>
+                            <button>VOIR LA GALERIE</button>
                         </a>
                     </div>
                 </div>
@@ -68,7 +69,7 @@
                     <p><?= $block->texte()->kt() ?></p>
                     <div class="gallery_button_two">
                         <a href="<?= $site->url() ?>/galerie">
-                            <button>Voir la galerie</button>
+                            <button>VOIR LA GALERIE</button>
                         </a>
                     </div>
                 </div>
@@ -80,4 +81,5 @@
 </main>
 
 <?= snippet('footer') ?>
+</body>
 <script src="<?= $site->url() ?>/assets/js/transition.js"></script>

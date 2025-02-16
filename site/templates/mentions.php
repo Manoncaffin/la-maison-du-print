@@ -1,3 +1,4 @@
+<body class="page-enter">
 <?= snippet('header') ?>
 <?= snippet('head') ?>
 
@@ -25,4 +26,5 @@
 </main>
 
 <?= snippet('footer') ?>
+</body>
 <script src="<?= $site->url() ?>/assets/js/transition.js"></script>
