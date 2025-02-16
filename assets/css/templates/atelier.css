@@ -88,7 +88,6 @@ ul {
         font-size: 1.9rem;
 
         h3 {
-            font-size: 1.8rem;
             padding-bottom: 15px;
         }
 
@@ -233,7 +232,7 @@ img {
 
 .gallery_button, 
 .gallery_button_two {
-    padding-top: 30px;
+    padding-top: 15px;
     width: fit-content;
 }
 

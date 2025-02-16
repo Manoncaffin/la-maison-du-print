@@ -7,7 +7,7 @@
         <?php $atelier = page('atelier'); ?>
 
         <div class="title-page">
-            <h1>L’HISTOIRE DE L’ATELIER</h1>
+            <h2>L’HISTOIRE DE L’ATELIER</h2>
             <div class="border"></div>
         </div>
 
@@ -26,7 +26,7 @@
             <?php endif; ?>
         </div>
         <div class="title-page">
-            <h1>DEUX TECHNIQUES D’IMPRESSIONS</h1>
+            <h2>DEUX TECHNIQUES D’IMPRESSIONS</h2>
             <div class="border"></div>
         </div>
         <!-- <div class="info-question">
