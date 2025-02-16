@@ -72,7 +72,7 @@ h3 {
     font-weight: 600;
     margin: 0;
     padding: 0;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 h3 a {
@@ -82,12 +82,19 @@ h3 a {
     padding: 0;
 }
 
-h4,
+h4 {
+    font-family: "Inter-Semibold", sans-serif;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    font-size: 1.3rem;
+}
+
+li,
 h5,
 h6,
 p,
 a,
-li,
 label {
     font-family: "Inter-Light", sans-serif;
     color: var(--text-color);
@@ -125,6 +132,7 @@ a {
         opacity: 0;
         transform: translateY(-100px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -258,6 +266,11 @@ a {
     .all_menu li,
     .all_menu-home li {
         margin: 20px 0;
+        font-family: "Inter-Semibold", sans-serif;
+        font-weight: 600;
+        margin: 0;
+        padding: 0;
+        font-size: 1.3rem;
     }
 
     .all_menu a,
@@ -420,14 +433,6 @@ a {
     }
 
     .all_menu a,
-    .dropdown>span,
-    .all_menu-home a,
-    .dropdown>span {
-        text-decoration: none;
-        font-size: 1.1rem;
-    }
-
-    .all_menu a,
     .dropdown>span {
         color: black;
     }
@@ -469,7 +474,7 @@ a {
         display: none !important;
         position: absolute;
         left: 0;
-        top: 105%;
+        top: 100%;
         list-style: none;
         padding: 0;
         margin: 0;
@@ -614,8 +619,7 @@ a {
         color: black;
     }
 
-    .language
-    .language-home:hover a {
+    .language .language-home:hover a {
         color: inherit;
     }
 
@@ -725,9 +729,6 @@ a {
     .all_menu-home {
         position: static;
         background-color: transparent;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         gap: 20px;
     }
 
@@ -765,20 +766,9 @@ a {
         gap: 10px;
     }
 
-    .all_menu .language-home
-    .all_menu-home .language-home {
+    .all_menu .language-home .all_menu-home .language-home {
         border-radius: 50%;
         width: fit-content;
-    }
-
-    .all_menu .language,
-    .all_menu-home .language-home {
-        width: fit-content;
-    }
-
-    .all_menu li.active,
-    .all_menu-home li.active {
-        background-color: black;
     }
 
     .all_menu-home ul li:hover {
@@ -839,10 +829,6 @@ a {
 
     /* ------- HEADER ------- */
     /* ---------------------- */
-    .all_menu a,
-    .dropdown>span {
-        font-size: 1rem;
-    }
 
     .all_menu ul {
         gap: 10px;
@@ -864,10 +850,6 @@ a {
     .all_menu-home a,
     .dropdown>span {
         font-size: 1rem;
-    }
-
-    .all_menu-home a {
-        font-size: 1.3rem;
     }
 
     /* ------- HEADER ------- */

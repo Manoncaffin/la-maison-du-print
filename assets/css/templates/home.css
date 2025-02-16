@@ -199,11 +199,6 @@
         padding: 35px 40px;
     }
 
-    .all_menu a, .dropdown>span, .all_menu-home a, .dropdown>span {
-        text-decoration: none;
-        font-size: 1rem;
-    }
-
     .image_homepage-home {
         display: none;
     }
