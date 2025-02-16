@@ -9,10 +9,11 @@
         <p><?= $page->redirection_content()->kti() ?></p>
     </div>
 </main>
-<script src="<?= $site->url() ?>/assets/js/transition.js"></script>
-</body>
+<script src="<?= url('assets/js/transition.js') ?>"></script>
 <script>
     setTimeout(function() {
         window.location.href = "<?= url('home') ?>";
     }, 5000);
 </script>
+</body>
+

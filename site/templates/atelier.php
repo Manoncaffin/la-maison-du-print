@@ -81,5 +81,5 @@
 </main>
 
 <?= snippet('footer') ?>
+<script src="<?= url('assets/js/transition.js') ?>"></script>
 </body>
-<script src="<?= $site->url() ?>/assets/js/transition.js"></script>

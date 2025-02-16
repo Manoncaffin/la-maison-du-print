@@ -35,13 +35,17 @@
         flex-direction: column;
     }
 
-    .gallery {
+    /* .gallery {
         display: grid;
         grid-template-columns: repeat(6, 1fr); 
         grid-template-rows: auto;
         column-gap: var(--gutter-width);
         row-gap: 20px;
         padding: 120px 20px 0 20px;
+    } */
+
+    .gallery-item[data-category] {
+        display: block;
     }
 
     #nav-center {
@@ -173,6 +177,10 @@
 @media screen and (min-width: 768px) {
     .container_gallery {
         padding: 40px 40px 0 40px;
+    }
+
+    .gallery-item {
+        display: none;
     }
 
     .gallery {
