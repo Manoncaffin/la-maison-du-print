@@ -8,57 +8,57 @@ Gallery-items:
   category: serigraphie
   image:
     - file://w0Neteo4EWqT9RvQ
-  about: Alice et Sarah
+  about: ALICE ET SARAH
 - 
   category: serigraphie
   image:
     - file://2kcoG8rkhkvQGIsU
-  about: Cabriole
+  about: CABRIOLE
 - 
   category: serigraphie
   image:
     - file://DBbxOFL4UL1E3aO5
-  about: Cheese Naan
+  about: CHEESE NAAN
 - 
   category: serigraphie
   image:
     - file://SYYhnyZjRMhA4xGK
-  about: Drunk and sleep
+  about: DRUNK AND SLEEP
 - 
   category: serigraphie
   image:
     - file://2i1CLvKHyq16V0kN
-  about: Fourbi
+  about: FOURBI
 - 
   category: serigraphie
   image:
     - file://LTvg6bNfdU0qFutZ
-  about: Gribouilleurz
+  about: GRIBOUILLEURZ
 - 
   category: serigraphie
   image:
     - file://QwYtbSZmEssAXwCC
-  about: Highbudub et Lambin Turnbine
+  about: HIGHBUDUB ET LAMBIN TURNBINE
 - 
   category: serigraphie
   image:
     - file://5OF4Tobz6lH8BF5p
-  about: Omarker et Jaarud Store
+  about: OMARKER ET JAARUD STORE
 - 
   category: serigraphie
   image:
     - file://a4rK6yPWOKy8LA3v
-  about: René la muise
+  about: RENÉ LA MUISE
 - 
   category: dtf
   image:
     - file://6VdLIcwzBfkHZVPz
-  about: Arth.m co
+  about: ARTH.M CO
 - 
   category: dtf
   image:
     - file://Q55WJKmkKOglxK4P
-  about: Biribi Tattoo
+  about: BIRIBI TATTOO
 
 ----
 

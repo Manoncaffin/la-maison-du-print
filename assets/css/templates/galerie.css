@@ -41,7 +41,7 @@
         grid-template-rows: auto;
         column-gap: var(--gutter-width);
         row-gap: 20px;
-        padding: 120px 20px 0 20px;
+        padding: 90px 20px 0 20px;
     }
 
     .gallery-item[data-category] {
@@ -51,22 +51,35 @@
     .tags-desktop {
         grid-column: 1 / span 6;
         grid-row: 1 / span 1;
-        height: fit-content;
         display: flex;
+        align-items: center;
         position: relative;
-        justify-content: space-between;
+        flex-direction: row;
+        gap: 5px;
+
+        p {
+            color: white;
+        }
     }
 
     .gallery-item {
         display: block; 
     }
 
-    button {
-        width: fit-content;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 5px;
-        padding: 8px;
+    .custom-button {
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+
+    .custom-button:hover {
+        text-decoration: underline;
+        background-color: transparent;
+        color: white;
+        border: none;
+        cursor: pointer;
     }
 
     .gallery-item {
@@ -81,8 +94,10 @@
     .gallery-item p {
         color: white;
         padding-bottom: 30px;
-        padding: 8px;
+        padding: 6px;
         text-decoration: underline;
+        font-size: 0.7rem;
+        font-style: italic;
     }
 
     .gallery-item.column-1 {
@@ -188,17 +203,23 @@
 
     .gallery {
         grid-template-columns: repeat(12, 1fr); 
-        padding: 120px 40px 0 40px;
+        padding: 80px 40px 0 40px;
     }
 
-    .gallery-item.column-1 {
-        grid-column: 1 / span 5;
+    .tags-desktop {
+        grid-row: 1;
+        justify-content: start;
+        gap: 10px;
+    }
+
+    /* .gallery-item.column-1 {
+        grid-column: 8 / span 5;
         grid-row: 1;
         margin-top: 300px;
     }
 
     .gallery-item.column-2 {
-        grid-column: 8 / span 5; 
+        grid-column: 5 / span 5; 
         grid-row: 1;
         margin-top: 100px;
     }
@@ -251,6 +272,61 @@
         grid-column: 1 / span 5;
         grid-row: 7;
         margin-top: 500px; 
+    } */
+
+    .gallery-item.column-1 {
+        grid-column: 1 / span 5;
+        grid-row: 2;
+    }
+
+    .gallery-item.column-2 {
+        grid-column: 8 / span 5; 
+        grid-row: 2;
+    }
+
+    .gallery-item.column-3 {
+        grid-column: 1 / span 5;
+        grid-row: 3; 
+    }
+
+    .gallery-item.column-4 {
+        grid-column: 8 / span 5;
+        grid-row: 3;
+        }
+
+    .gallery-item.column-5 {
+        grid-column: 1 / span 5;
+        grid-row: 4; 
+    }
+
+    .gallery-item.column-6 {
+        grid-column: 8 / span 5;
+        grid-row: 4; 
+    }
+
+    .gallery-item.column-7 {
+        grid-column: 1 / span 5;
+        grid-row: 5; 
+    }
+
+    .gallery-item.column-8 {
+        grid-column: 8 / span 5;
+        grid-row: 5; 
+    }
+
+    .gallery-item.column-9 {
+        grid-column: 1 / span 5;
+        grid-row: 6; 
+    }
+
+    .gallery-item.column-10 {
+        grid-column: 8 / span 5;
+        grid-row: 6; 
+    }
+
+    .gallery-item.column-11 {
+        grid-column: 1 / span 5;
+        grid-row: 7;
     }
 }
 
@@ -265,10 +341,6 @@
 
     .desktop-only {
         display: flex;
-        flex-direction: row;
-        gap: 10px;
-        grid-column: 1 / span 5;
-        grid-row: 1;
     }
 
     .container_gallery {
@@ -278,10 +350,10 @@
     }
 
     .gallery {
-        padding: 120px 80px 0 80px;
+        padding: 80px 80px 0 80px;
     }
 
-    .gallery-item.column-1 {
+    /* .gallery-item.column-1 {
         grid-column: 1 / span 5;
         grid-row: 1;
         margin-top: 300px;
@@ -342,7 +414,7 @@
         grid-column: 8 / span 5;
         grid-row: 7;
         margin-top: 300px; 
-    }
+    } */
 }
 
 /* --------------------------------------------------- */
@@ -350,11 +422,8 @@
 /* ----------------- SUP. OU ÉGALE ------------------- */
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
-    .desktop-only {
-        grid-column: 1 / span 4;
-    }
 
-    .gallery-item.column-1 {
+    /* .gallery-item.column-1 {
         grid-column: 1 / span 5;
         grid-row: 1;
         margin-top: 300px;
@@ -416,7 +485,7 @@
         grid-column: 8 / span 5;
         grid-row: 7;
         margin-top: 300px; 
-    }
+    } */
 }
 
 /* --------------------------------------------------- */
@@ -425,6 +494,6 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1500px) {
     .gallery {
-        padding: 130px 80px 0 80px;
+        padding: 90px 80px 0 80px;
     }
 }
