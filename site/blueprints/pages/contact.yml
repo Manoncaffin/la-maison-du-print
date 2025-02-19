@@ -39,16 +39,16 @@ columns:
         label: Horaires
         type: structure
         fields:
-          day:
+          days:
             label: Jour
             type: select
             translate: true
-            day:
-              day:
-                label: Jour
-                type: select
-                options: query
-                query: site.translations('days')
+            options:
+              monday: "Monday"
+              tuesday: "Tuesday"
+              wednesday: "Wednesday"
+              thursday: "Thursday"
+              friday: "Friday"
           time_start:
             label: Début
             type: time

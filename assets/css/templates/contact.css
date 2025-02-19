@@ -19,6 +19,7 @@ ul {
         opacity: 0;
         transform: translateY(-100px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -249,8 +250,12 @@ ul {
         }
     }
 
-    #partners-list {
+    body[lang="fr"] #partners-list {
         padding-left: 203px;
+    }
+
+    body[lang="en"] #partners-list {
+        padding-left: 225px;
     }
 }
 
@@ -273,10 +278,6 @@ ul {
         max-width: 1500px;
         margin: 0 auto;
     }
-
-    .shipping-info {
-        padding-top: 20px;
-    }
 }
 
 
@@ -294,8 +295,12 @@ ul {
         overflow-y: hidden;
     }
 
-    .container_contact {
-        grid-template-rows: 125px 130px 65px 65px;
+    body[lang="fr"] .container_contact {
+        grid-template-rows: 110px 110px 70px 65px;
+    }
+
+    body[lang="en"] .container_contact {
+        grid-template-rows: 110px 110px 55px 65px;
     }
 
     .address {

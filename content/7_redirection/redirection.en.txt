@@ -2,8 +2,4 @@ Title: Redirection
 
 ----
 
-Redirection-content: <p><br>YOUR QUOTE REQUEST HAS BEEN SENT!<br>YOU WILL BE REDIRECTED TO THE HOME PAGE.</p>
-
-----
-
-Uuid: MxAgU1QKllSJyxIo
+Redirection-content: <p><br>YOUR QUOTE REQUEST HAS BEEN SUCCESSFULLY SENT!<br>YOU WILL BE REDIRECTED TO THE HOMEPAGE.</p>
