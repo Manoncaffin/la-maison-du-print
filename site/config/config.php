@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'languages' => true,
     'home' => 'home',
     // Active debug mode
     'debug' => true,
@@ -74,10 +75,12 @@ return [
         'fr' => [
             'name' => 'Français',
             'default' => true,
+            'locale' => 'fr_FR',
             'url' => '/',
         ],
         'en' => [
             'name' => 'English',
+            'locale' => 'en_GB',
             'url' => '/en',
         ],
     ]

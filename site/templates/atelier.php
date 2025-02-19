@@ -7,7 +7,7 @@
         <?php $atelier = page('atelier'); ?>
 
         <div class="title-page">
-            <h2>L’HISTOIRE DE L’ATELIER</h2>
+            <h2><?php echo t('atelier_history_title'); ?></h2>
             <div class="border"></div>
         </div>
 
@@ -26,7 +26,7 @@
             <?php endif; ?>
         </div>
         <div class="title-page">
-            <h2>DEUX TECHNIQUES D’IMPRESSIONS</h2>
+            <h2><?php echo t('atelier_techniques_title'); ?></h2>
             <div class="border"></div>
         </div>
         <!-- <div class="info-question">
@@ -45,7 +45,7 @@
                     <p><?= $block->texte()->kt() ?></p>
                     <div class="gallery_button">
                         <a href="<?= $site->url() ?>/galerie">
-                            <button>VOIR LA GALERIE</button>
+                        <button><?php echo t('atelier_gallery_button'); ?></button>
                         </a>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
                     <p><?= $block->texte()->kt() ?></p>
                     <div class="gallery_button_two">
                         <a href="<?= $site->url() ?>/galerie">
-                            <button>VOIR LA GALERIE</button>
+                        <button><?php echo t('atelier_gallery_button'); ?></button>
                         </a>
                     </div>
                 </div>

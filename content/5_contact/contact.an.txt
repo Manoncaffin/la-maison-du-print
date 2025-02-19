@@ -16,30 +16,30 @@ Email: atelier@lamaisonduprint.fr
 
 ----
 
-Tel: 07 68 18 48 96
+Tel: +33 7 68 18 48 96
 
 ----
 
 Open:
 
 - 
-  day: ""
+  day: monday
   time_start: 09:00:00
   time_end: 18:00:00
 - 
-  day: ""
+  day: tuesday
   time_start: 09:00:00
   time_end: 18:00:00
 - 
-  day: ""
+  day: wednesday
   time_start: 09:00:00
   time_end: 13:30:00
 - 
-  day: ""
+  day: thursday
   time_start: 09:00:00
   time_end: 18:00:00
 - 
-  day: ""
+  day: friday
   time_start: 09:00:00
   time_end: 18:00:00
 
@@ -47,12 +47,15 @@ Open:
 
 Buy:
 
-Payments are made by bank transfer or cash when collecting the order.
+Payments can be made via bank transfer or in cash upon order pickup.
 A 30% deposit may be requested.
 
 ----
 
-Send: Your orders can be shipped to the address indicated or hand-delivered to the workshop.
+Send:
+
+Your orders can be shipped to the provided address or handed over personally at the workshop.
+They trusted La Maison du Print.
 
 ----
 
@@ -87,30 +90,29 @@ Partners:
   network: A good bottle of natural wine
   link: https://domaine-lesgauchers.fr/
 - 
-  network: A top graphic designer
+  network: A top-notch graphic designer
   link: >
     https://www.instagram.com/lecabinet_?igsh=MW54cWoycm9pYTJpcw==
 - 
-  network: A magician of the human bod
+  network: A magician of the human body
   link: https://g.co/kgs/s1BSMQs
 - 
-  network: Spray paint on Marseille
+  network: Spray paint experts in Marseille
   link: https://www.instagram.com/backjumpstore/
 - 
-  network: Or on Lyon
+  network: Or in Lyon
   link: http://eightyonestore.com/
 - 
-  network: Screen printing but on paper
+  network: 'Screen printing, but on paper '
   link: https://editionscomete.com/
 - 
-  network: A great site like this one
-  link: >
-    https://manon-portfolio.projets.garage404.com/
+  network: 'A fantastic website like this one '
+  link: https://www.manoncaffin.fr
 - 
-  network: Motion design!
+  network: 'Motion design! '
   link: https://thibaultfavre.com
 - 
-  network: An incredible painter
+  network: An amazing painter
   link: >
     https://meyso.fr/?fbclid=PAZXh0bgNhZW0CMTEAAaYTNBKIqYsD6QJx7T6jTZ0fcY-WdukxhufCICgBDHKQ5bzSIJaE2CBgs1A_aem_t1ukLxIps45pDZsPT5FVsw
 - 

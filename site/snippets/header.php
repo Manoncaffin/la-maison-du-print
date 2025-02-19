@@ -30,18 +30,20 @@ $logo = $site->files()->find('logo.png');
 
             <nav class="all_menu">
                 <ul>
-                    <li class="mobile-only"><a href="<?= url('home') ?>">ACCUEIL</a></li>
+                    <li class="mobile-only">
+                        <a href="<?= url('home') ?>"><?= t('menu_home'); ?></a>
+                    </li>
                     <li class="<?= ($page == 'atelier') ? 'active' : '' ?>">
-                        <a href="<?= url('atelier') ?>">L'ATELIER</a>
+                        <a href="<?= url('atelier') ?>"><?= t('menu_workshop'); ?></a>
                     </li>
                     <li class="<?= ($page == 'devis') ? 'active' : '' ?>">
-                        <a href="<?= url('devis') ?>">DEVIS</a>
+                        <a href="<?= url('devis') ?>"><?= t('menu_quote'); ?></a>
                     </li>
                     <li class="<?= ($page == 'galerie') ? 'active' : '' ?>">
-                        <a href="<?= url('galerie') ?>">GALERIE</a>
+                        <a href="<?= url('galerie') ?>"><?= t('menu_gallery'); ?></a>
                     </li>
                     <li class="<?= ($page == 'contact') ? 'active' : '' ?>">
-                        <a href="<?= url('contact') ?>">CONTACT</a>
+                        <a href="<?= url('contact') ?>"><?= t('menu_contact'); ?></a>
                     </li>
                     <?php foreach (kirby()->languages() as $language): ?>
                         <?php if ($language !== kirby()->language()): ?>

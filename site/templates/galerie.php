@@ -6,11 +6,17 @@
     <main class="container_gallery">
         <section class="gallery">
             <div class="tags-desktop desktop-only">
-                <button class="custom-button tag-desktop active" data-category="all">TOUT</button>
+                <button class="custom-button tag-desktop active" data-category="all">
+                    <?php echo t('gallery_all'); ?>
+                </button>
                 <p>|</p>
-                <button class="custom-button tag-desktop" data-category="serigraphie">SÉRIGRAPHIE</button>
+                <button class="custom-button tag-desktop" data-category="serigraphie">
+                    <?php echo t('gallery_serigraphy'); ?>
+                </button>
                 <p>|</p>
-                <button class="custom-button tag-desktop" data-category="dtf">IMPRESSION DTF</button>
+                <button class="custom-button tag-desktop" data-category="dtf">
+                    <?php echo t('gallery_dtf'); ?>
+                </button>
             </div>
             <?php
             $index = 1;

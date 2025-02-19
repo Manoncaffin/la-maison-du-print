@@ -1,0 +1,35 @@
+<?php
+
+return [
+    'code' => 'en',
+    'default' => false,
+    'name' => 'English',
+    'translations' => [
+        'days.monday' => 'Monday',
+        'days.tuesday' => 'Tuesday',
+        'days.wednesday' => 'Wednesday',
+        'days.thursday' => 'Thursday',
+        'days.friday' => 'Friday',
+    'contact_title' => 'CONTACT AND PRACTICAL INFORMATION',
+    'opening_hours_title' => 'Opening hours and days',
+    'payment_title' => 'Payment',
+    'shipping_title' => 'Shipping',
+    'clients_title' => 'They trusted La Maison du print',
+    'social_networks_title' => 'You can find me on these networks',
+    'partners_title' => 'La Maison du print shares its good deals!',
+    'partners_description' => 'Click here if you are looking for',
+    'partners_select_option' => '[select an option]',
+    'atelier_history_title' => 'THE STORY OF THE WORKSHOP',
+    'atelier_techniques_title' => 'TWO PRINTING TECHNIQUES',
+    'atelier_gallery_button' => 'SEE THE GALLERY',
+    'gallery_all' => 'ALL',
+    'gallery_serigraphy' => 'SERIGRAPHY',
+    'gallery_dtf' => 'DTF PRINTING',
+    'menu_home' => 'HOME',
+    'menu_workshop' => 'WORKSHOP',
+    'menu_quote' => 'QUOTE',
+    'menu_gallery' => 'GALLERY',
+    'menu_contact' => 'CONTACT',
+    ],
+
+];

@@ -1,0 +1,5 @@
+Title: Redirection
+
+----
+
+Redirection-content: <p>YOUR QUOTE REQUEST HAS BEEN SENT! </p><p>YOU WILL BE REDIRECTED TO THE HOME PAGE.</p>

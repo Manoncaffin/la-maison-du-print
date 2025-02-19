@@ -2,10 +2,6 @@ Title: Atelier
 
 ----
 
-Titre: WORKSHOP INTRODUCTION
-
-----
-
 About:
 
 Passionate about graphic design and tattooing, I discovered screen printing after several years of traveling. Once settled in Lyon, I spent eight years working in various workshops to master the technique, blending tradition and innovation. 
@@ -18,8 +14,16 @@ Video: - file://ECnLCLZlhwLYGgQ4
 
 ----
 
-Technique: [{"content":{"titre":"SÉRIGRAPHIE","texte":"La sérigraphie sur textile est une technique d'impression qui permet d'appliquer des motifs sur des tissus. Elle fonctionne en utilisant un écran (pochoir) sur lequel l'image à imprimer est transférée. L'encre est ensuite passée à travers l'écran pour imprimer le design sur le textile. \nCe procédé est très apprécié pour sa durabilité et la richesse de ses couleurs. Il est particulièrement adapté pour les impressions en série sur des t-shirts, sweats, sacs, etc. De plus, il conserve sa qualité et sa résistance, même après plusieurs lavages.","image":["file://fP2lZSZhSQm6tJw8"]},"id":"b989a8ed-b70a-4e68-a901-91dd07a8a573","isHidden":false,"type":"section"},{"content":{"titre":"IMPRESSION DTF","texte":"L'impression DTF (Direct to Film) consiste à imprimer un motif sur un film spécial, puis à le transférer sur le tissu à chaud. Ce procédé permet d'imprimer à l'unité, contrairement à la sérigraphie, et offre un nombre illimité de couleurs, pour des designs très détaillés et durables, même après lavage.","image":["file://w88PUTtV3ON5FiLR"]},"id":"1ceae9e9-b592-4e69-ba71-bf06b1c422d3","isHidden":false,"type":"section"}]
+Serigraphie: [{"content":{"titre":"Screen printing","texte":"Screen printing on fabric is a printing technique used to apply designs onto textiles. It works by using a screen (stencil) where the image to be printed is transferred. Ink is then pushed through the screen to imprint the design onto the fabric.\nThis method is highly valued for its durability and vibrant colors. It's especially suited for mass printing on items like t-shirts, sweatshirts, bags, and more. Plus, it maintains its quality and resistance, even after multiple washes.","image":["file://TE7jFPXNWcy3a9vM"]},"id":"c9ec94f2-2d53-4069-8c2a-66c22509336d","isHidden":false,"type":"section"}]
 
 ----
 
-Uuid: cCAcmdHa2ffkeeYG
+Impression-dtf: [{"content":{"titre":"Impression DTF","texte":"DTF printing (Direct to Film) involves printing a design onto a special film, which is then transferred onto the fabric using heat. This method allows for single-item printing, unlike screen printing, and offers an unlimited range of colors, making it perfect for highly detailed and durable designs, even after washing.\nIf you're unsure about which printing method to choose, I’m here to help and offer guidance.","image":["file://NTQ08cbQMRuJzP4k"]},"id":"504479cf-ca37-4b63-ada8-24f58d239785","isHidden":false,"type":"section"}]
+
+----
+
+Titre: WORKSHOP INTRODUCTION
+
+----
+
+Technique: [{"content":{"titre":"SÉRIGRAPHIE","texte":"La sérigraphie sur textile est une technique d'impression qui permet d'appliquer des motifs sur des tissus. Elle fonctionne en utilisant un écran (pochoir) sur lequel l'image à imprimer est transférée. L'encre est ensuite passée à travers l'écran pour imprimer le design sur le textile. \nCe procédé est très apprécié pour sa durabilité et la richesse de ses couleurs. Il est particulièrement adapté pour les impressions en série sur des t-shirts, sweats, sacs, etc. De plus, il conserve sa qualité et sa résistance, même après plusieurs lavages.","image":["file://fP2lZSZhSQm6tJw8"]},"id":"b989a8ed-b70a-4e68-a901-91dd07a8a573","isHidden":false,"type":"section"},{"content":{"titre":"IMPRESSION DTF","texte":"L'impression DTF (Direct to Film) consiste à imprimer un motif sur un film spécial, puis à le transférer sur le tissu à chaud. Ce procédé permet d'imprimer à l'unité, contrairement à la sérigraphie, et offre un nombre illimité de couleurs, pour des designs très détaillés et durables, même après lavage.","image":["file://w88PUTtV3ON5FiLR"]},"id":"1ceae9e9-b592-4e69-ba71-bf06b1c422d3","isHidden":false,"type":"section"}]

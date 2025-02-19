@@ -42,14 +42,13 @@ columns:
           day:
             label: Jour
             type: select
-            options:
-              monday: Lundi
-              tuesday: Mardi
-              wednesday: Mercredi
-              thursday: Jeudi
-              friday: Vendredi
-              Saturday: Samedi
-              Sunday: Dimanche
+            translate: true
+            day:
+              day:
+                label: Jour
+                type: select
+                options: query
+                query: site.translations('days')
           time_start:
             label: Début
             type: time
