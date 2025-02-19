@@ -13,9 +13,11 @@ sections:
       about:
         label: À propos
         type: textarea
+        width: 2/3
       image:
         label: Image
         type: files
+        width: 2/3
         max: 1
         min: 1
         required: true
@@ -26,10 +28,12 @@ sections:
       headline_formulaire:
         type: headline
         label: Formulaire
+        width: 2/3
 
       choice_model:
         label: Choix du modèle
         type: structure
+        width: 2/3
         fields:
           model:
             label: Modèle
@@ -39,6 +43,7 @@ sections:
       choice_background:
         label: Choix du fond
         type: structure
+        width: 2/3
         fields:
           model:
             label: Fond
@@ -48,10 +53,12 @@ sections:
       model_number:
         label: Nombre d'article
         type: number
+        width: 2/3
 
       color_number:
         label: Nombre de couleur
         type: structure
+        width: 2/3
         fields:
           model:
             label: Nombre
@@ -61,6 +68,7 @@ sections:
       to_print:
         label: Zone à imprimer
         type: structure
+        width: 2/3
         fields:
           model:
             label: Zone
@@ -70,6 +78,7 @@ sections:
       project_description:
         label: Description du projet
         type: textarea
+        width: 2/3
 
   files_section:
     type: fields
@@ -77,6 +86,7 @@ sections:
       send_files:
         label: Fichier à transférer
         type: files
+        width: 2/3
         multiple: true
         uploads:
           template: file
@@ -89,15 +99,19 @@ sections:
       client_name:
         label: Nom du client
         type: text
+        width: 2/3
 
       client_firstname:
         label: Prénom du client
         type: text
+        width: 2/3
 
       client_email:
         label: Email du client
         type: email
+        width: 2/3
 
       client_number:
         label: Numéro du client
         type: number
+        width: 2/3

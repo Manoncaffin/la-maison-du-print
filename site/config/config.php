@@ -5,6 +5,7 @@ return [
     'home' => 'home',
     // Active debug mode
     'debug' => true,
+    'cache' => false,
 
     // Activate multiples languages and auto detect
     // 'languages' => [

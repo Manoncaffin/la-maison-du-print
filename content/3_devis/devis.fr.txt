@@ -2,21 +2,17 @@ Title: Devis
 
 ----
 
-Template: devis
-
-----
-
 About:
 
 Une demande de devis est traitée sous trois jours.
 
 Pour toute demande de projet urgent ou pour les commandes hors T-shirt, merci de me contacter directement par mail ou par téléphone.
 
----
+----
 
-Image: - file://X919bUWGXUdJUrrv
+Image: - file://m3agpTLYfUinqLEX
 
----
+----
 
 Choice-model:
 
@@ -25,7 +21,7 @@ Choice-model:
 - 
   model: T-shirt oversize lourd 240g
 
----
+----
 
 Choice-background:
 
@@ -34,11 +30,11 @@ Choice-background:
 - 
   model: T-shirt clair
 
----
+----
 
 Model-number: 
 
----
+----
 
 Color-number:
 
@@ -53,7 +49,7 @@ Color-number:
 - 
   model: "5"
 
----
+----
 
 To-print:
 
@@ -66,54 +62,30 @@ To-print:
 - 
   model: Manche
 
----
+----
 
 Project-description: 
 
----
+----
 
 Send-files: 
 
----
+----
 
 Client-name: 
 
----
+----
 
 Client-firstname: 
 
----
+----
 
 Client-email: 
 
----
+----
 
 Client-number: 
 
----
+----
 
-Type-textile:
-
-- 
-  model: 20gr
-
----
-
-Layout:
-
-- 
-  attrs: [ ]
-  columns:
-    - 
-      blocks: [ ]
-      id: 07f4fcbe-6e31-46c9-b3e8-2bee6d692445
-      width: 1/1
-  id: cee3d2be-5575-4364-a086-c320934b14f8
-- 
-  attrs: [ ]
-  columns:
-    - 
-      blocks: [ ]
-      id: a1f117bc-3a6a-47c1-8de4-90d0dbdffbb8
-      width: 1/1
-  id: b7156a3a-4136-472f-b845-4a976e10896f
+Uuid: FzNY8GivPK45uW6F
