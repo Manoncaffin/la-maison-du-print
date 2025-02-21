@@ -8,7 +8,7 @@
 <main class="page-enter">
 
     <div class="title-page">
-        <h1>MENTIONS LÉGALES</h1>
+        <h2>MENTIONS LÉGALES</h2>
         <div class="border"></div>
     </div>
 

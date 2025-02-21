@@ -1,62 +1,29 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//     const buttons = document.querySelectorAll(".tag-desktop");
-//     const galleryItems = document.querySelectorAll(".gallery-item");
+document.addEventListener('DOMContentLoaded', () => {
+    const tags = document.querySelectorAll('.tag-desktop'); // Cibler tous les boutons
+    const galleryItems = document.querySelectorAll('.gallery-item'); // Cibler toutes les images
 
-//     console.log("Boutons trouvés :", buttons.length);
-//     console.log("Éléments trouvés :", galleryItems.length);
+    tags.forEach(tag => {
+        tag.addEventListener('click', () => {
+            const category = tag.getAttribute('data-category');
+            
+            // Gérer l'activation de la catégorie
+            tags.forEach(t => t.classList.remove('active'));  // Enlever 'active' des autres boutons
+            tag.classList.add('active');  // Ajouter 'active' au bouton actuel
 
-//     buttons.forEach(button => {
-//         button.addEventListener("click", function () {
-//             console.log("Bouton cliqué :", button.getAttribute("data-category"));
-
-//             buttons.forEach(btn => btn.classList.remove("active"));
-//             button.classList.add("active");
-
-//             const selectedCategory = button.getAttribute("data-category");
-
-//             galleryItems.forEach(item => {
-//                 const itemCategories = item.getAttribute("data-category").split(" ");
-//                 console.log("Catégories de l'élément :", itemCategories);
-
-//                 if (selectedCategory === "all" || itemCategories.includes(selectedCategory)) {
-//                     item.style.display = "block";
-//                 } else {
-//                     item.style.display = "none";
-//                 }
-//             });
-//         });
-//     });
-// });
-document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".tag-desktop");
-    const gallery = document.querySelector(".gallery");
-    const galleryItems = Array.from(document.querySelectorAll(".gallery-item"));
-
-    buttons.forEach(button => {
-        button.addEventListener("click", function () {
-            buttons.forEach(btn => btn.classList.remove("active"));
-            button.classList.add("active");
-
-            const selectedCategory = button.getAttribute("data-category");
-
+            // Afficher/masquer les éléments en fonction de la catégorie
             galleryItems.forEach(item => {
-                const itemCategories = item.getAttribute("data-category").split(" ");
-                if (selectedCategory === "all" || itemCategories.includes(selectedCategory)) {
-                    item.style.display = "block";
+                // Si "all" est sélectionné, on montre tous les items
+                if (category === 'all') {
+                    item.classList.remove('hidden');
                 } else {
-                    item.style.display = "none";
+                    // Sinon, on vérifie si l'élément correspond à la catégorie
+                    if (item.classList.contains(category)) {
+                        item.classList.remove('hidden');  // Afficher l'élément
+                    } else {
+                        item.classList.add('hidden');  // Masquer l'élément
+                    }
                 }
             });
-
-            // Forcer le recalcul de la grille après filtrage
-            setTimeout(() => {
-                galleryItems.forEach(item => {
-                    if (item.style.display === "block") {
-                        gallery.appendChild(item);
-                    }
-                });
-            }, 10);
         });
     });
 });
-
