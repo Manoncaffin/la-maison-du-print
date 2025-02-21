@@ -200,6 +200,7 @@ ul {
         margin: 15px 0 40px 0;
         font-size: 0.7rem;
         cursor: pointer;
+        box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.15);
     }
 
     .devis_button a:hover {

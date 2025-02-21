@@ -139,6 +139,11 @@ a {
     }
 }
 
+::selection {
+    background-color:black; 
+    color: white; 
+}
+
 
 /* Start coding here */
 /* --------------------------------------------------- */
@@ -147,12 +152,6 @@ a {
 /* ------------------ SUP. OU ÉGALE ------------------ */
 /* --------------------------------------------------- */
 @media screen and (min-width: 350px) {
-
-    button:hover {
-        background-color: white;
-        border: 1px solid black;
-        color: black;
-    }
 
     /* ------- HEADER ------- */
     /* ---------------------- */

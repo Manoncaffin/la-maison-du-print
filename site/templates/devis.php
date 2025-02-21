@@ -14,7 +14,7 @@
             <?php $devis = page('devis'); ?>
 
             <div class="title-page">
-                <h1><?= t('devis.title') ?></h1>
+                <h2><?= t('devis.title') ?></h2>
                 <div class="border"></div>
             </div>
 
