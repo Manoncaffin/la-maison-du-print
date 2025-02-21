@@ -8,7 +8,7 @@ $isGalerieActive = in_array($current_page, ['galerie', 'serigraphie', 'impressio
 ?>
 
 
-<body>
+<body class="page-enter">
     <?php if ($image = $page->image()->first()): ?>
         <div class="image_homepage">
             <img src="<?= image()->url() ?>" alt="Image d'accueil">

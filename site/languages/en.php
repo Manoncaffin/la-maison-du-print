@@ -23,6 +23,7 @@ return [
     'atelier_history_title' => 'THE STORY OF THE WORKSHOP',
     'atelier_techniques_title' => 'TWO PRINTING TECHNIQUES',
     'atelier_gallery_button' => 'SEE THE GALLERY',
+    'devis_button' => 'START',
     'gallery_all' => 'ALL',
     'gallery_serigraphy' => 'SERIGRAPHY',
     'gallery_dtf' => 'DTF PRINTING',

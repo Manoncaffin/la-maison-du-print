@@ -23,6 +23,7 @@ return [
     'atelier_history_title' => 'L’HISTOIRE DE L’ATELIER',
     'atelier_techniques_title' => 'DEUX TECHNIQUES D’IMPRESSIONS',
     'atelier_gallery_button' => 'VOIR LA GALERIE',
+    'devis_button' => 'DÉMARRER',
     'gallery_all' => 'TOUT',
     'gallery_serigraphy' => 'SÉRIGRAPHIE',
     'gallery_dtf' => 'IMPRESSION DTF', 

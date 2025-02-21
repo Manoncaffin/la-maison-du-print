@@ -147,10 +147,26 @@ ul {
         cursor: pointer;
     }
 
-    .client-logo-container {
+    html[lang="en"] body .client-logo-container {
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 105%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        width: 100%;
+        height: auto;
+        max-width: 600px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        pointer-events: none;
+    }
+    
+    html[lang="fr"] body .client-logo-container {
+        position: absolute;
+        top: 50%;
+        left: 70%;
         transform: translate(-50%, -50%);
         opacity: 0;
         transition: opacity 0.3s ease-in-out;

@@ -28,10 +28,13 @@
                 <div class="about-section">
                     <p><?= $devis->about()->kti() ?></p>
                     <p class="icon-time"><i class="fa fa-hourglass-start"></i> <?= t('devis.time') ?></p>
+                    <div class="devis_button">
+                        <a href="#devisForm"><?php echo t('devis_button'); ?></a>
+                    </div>
                 </div>
             <?php endif; ?>
 
-            <form action="<?= $page->url() ?>" method="post" enctype="multipart/form-data">
+            <form id="devisForm" action="<?= $page->url() ?>" method="post" enctype="multipart/form-data">
                 <!-- Section: Votre commande -->
                 <div class="first">
                     <div class="form-section-one">

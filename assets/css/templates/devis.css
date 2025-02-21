@@ -181,8 +181,31 @@ ul {
         font-style: italic; 
     }
 
-    input:focus {
+    input:focus,
+    textarea:focus {
         outline: 2px solid #001f8d;
+    }
+
+    .devis_button {
+        margin-top: 10px;
+    }
+
+    .devis_button a {
+        width: 100%;
+        border: 1px solid black;
+        color: white !important;
+        background-color: black;
+        border-radius: 10px;
+        padding: 8px 10px;
+        margin: 15px 0 40px 0;
+        font-size: 0.7rem;
+        cursor: pointer;
+    }
+
+    .devis_button a:hover {
+        border: 1px solid black;
+        color: black !important;
+        background-color: white;
     }
 }
 
@@ -248,6 +271,10 @@ ul {
     .legal-message {
         margin: 30px 150px 0 150px;
     }
+
+    .devis_button{
+    width: fit-content;
+}
 }
 
 /* --------------------------------------------------- */

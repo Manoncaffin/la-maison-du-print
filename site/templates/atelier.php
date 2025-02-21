@@ -29,9 +29,6 @@
             <h2><?php echo t('atelier_techniques_title'); ?></h2>
             <div class="border"></div>
         </div>
-        <!-- <div class="info-question">
-        <p>Si vous avez des doutes sur le procédé d'impression à choisir, je me tiens disponible pour vous accompagner et vous conseiller.</p>
-    </div> -->
     </section>
 
     <article class="technique">
