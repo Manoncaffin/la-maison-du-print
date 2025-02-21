@@ -40,11 +40,12 @@ ul {
     }
 
     .container_contact {
-        display: grid;
+        display: flex;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: auto;
         column-gap: var(--gutter-width);
         row-gap: 20px;
+        position: relative;
         padding: 30px 20px 0 20px;
         flex: 1 0 auto;
     }
@@ -79,6 +80,7 @@ ul {
     .networks {
         grid-column: 1 / span 6;
         grid-row: auto;
+        position: absolute;
     }
 
     #partners-list {
@@ -250,12 +252,12 @@ ul {
         }
     }
 
-    body[lang="fr"] #partners-list {
-        padding-left: 203px;
+    html[lang="en"] body #partners-list {
+        padding-left: 226px;
     }
-
-    body[lang="en"] #partners-list {
-        padding-left: 225px;
+    
+    html[lang="fr"] body #partners-list {
+        padding-left: 203px;
     }
 }
 

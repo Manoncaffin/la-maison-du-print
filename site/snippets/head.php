@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="<?= kirby()->language()->code() ?>">
 
 <head>
     <meta charset="utf-8">
