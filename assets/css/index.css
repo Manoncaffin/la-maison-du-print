@@ -387,6 +387,7 @@ a {
 
     .mentions_footer a {
         position: relative;
+        font-weight: 600;
     }
 
     .mentions_footer a::after {
