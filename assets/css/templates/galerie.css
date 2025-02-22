@@ -41,7 +41,8 @@
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: auto;
         column-gap: var(--gutter-width);
-        row-gap: 20px;
+        row-gap: 20px; 
+        grid-auto-flow: dense;
         padding: 90px 20px 0 20px;
         transition: grid-template-columns 0.3s ease;
     }
@@ -58,7 +59,7 @@
 
     /* Cacher les éléments filtrés */
     .gallery-item.hidden {
-        display: none;
+        display: none !important;
     }
 
     .gallery-item.hidden {

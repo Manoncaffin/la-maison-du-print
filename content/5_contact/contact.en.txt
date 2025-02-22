@@ -109,8 +109,7 @@ Partners:
   link: https://editionscomete.com/
 - 
   network: A great site like this one
-  link: >
-    https://manon-portfolio.projets.garage404.com/
+  link: https://manoncaffin.fr
 - 
   network: Motion design!
   link: https://thibaultfavre.com

@@ -22,22 +22,20 @@
             $index = 1;
             ?>
 
-            <?php foreach ($page->gallery_items()->toStructure() as $item): ?>
-                <?php
-                $categories = $item->category()->split();
-                $image = $item->image()->toFile();
-                ?>
-
-                <?php if ($image): ?>
-                    <!-- Alternance entre les colonnes -->
-                    <div class="gallery-item column-<?= $index ?>" data-category="<?= implode(' ', $categories) ?>" 
-                        style="grid-column: <?= ($index % 2 == 0) ? '8' : '1' ?> / span 5;">
-                        <img src="<?= $image->url() ?>" alt="<?= $item->about()->esc() ?>">
-                        <p><?= $item->about()->esc() ?></p>
-                    </div>
-                    <?php $index++; ?>
-                <?php endif; ?>
-            <?php endforeach; ?>
+<?php foreach ($page->gallery_items()->toStructure() as $item): ?>
+    <?php
+    $categories = $item->category()->split();
+    $image = $item->image()->toFile();
+    $categoriesClasses = implode(' ', $categories);
+    ?>
+    <?php if ($image): ?>
+        <!-- On n'ajoute PAS de position inline ni de classe spécifique pour le placement -->
+        <div class="gallery-item <?= $categoriesClasses ?>" data-category="<?= $categoriesClasses ?>">
+            <img src="<?= $image->url() ?>" alt="<?= $item->about()->esc() ?>">
+            <p><?= $item->about()->esc() ?></p>
+        </div>
+    <?php endif; ?>
+<?php endforeach; ?>
         </section>
 
     </main>
