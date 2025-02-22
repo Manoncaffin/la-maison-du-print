@@ -2,37 +2,43 @@
     <?= snippet('header') ?>
     <?= snippet('head') ?>
 
-    <?php
-    function translateDay($day)
-    {
-        $translation = [
-            'monday' => 'lundi',
-            'tuesday' => 'mardi',
-            'wednesday' => 'mercredi',
-            'thursday' => 'jeudi',
-            'friday' => 'vendredi',
-            'lundi' => 'monday',
-            'mardi' => 'tuesday',
-            'mercredi' => 'wednesday',
-            'jeudi' => 'thursday',
-            'vendredi' => 'friday',
-        ];
-        return $translation[$day] ?? $day;
-    }
-    ?>
-
     <main>
 
-        <?php $contact = page('contact'); ?>
-
         <?php
-        // Fonction pour traduire le jour dynamiquement
-        function getTranslatedDay($day)
+        function translateDay($day)
         {
-            return t('days.' . $day);
+            $daysMapping = [
+                'lundi'     => 'monday',
+                'mardi'     => 'tuesday',
+                'mercredi'  => 'wednesday',
+                'jeudi'     => 'thursday',
+                'vendredi'  => 'friday',
+                'samedi'    => 'saturday',
+                'dimanche'  => 'sunday'
+            ];
+
+            $languageCode = kirby()->language()->code();
+            $dayLower = strtolower($day);
+
+            if ($languageCode === 'en') {
+                // Si la donnée est "dimanche", on force à utiliser "friday" pour éviter le bug
+                if ($dayLower === 'dimanche') {
+                    return t('days.friday');
+                }
+                // Sinon, si le jour est en français, on le mappe en anglais
+                if (isset($daysMapping[$dayLower])) {
+                    return t('days.' . $daysMapping[$dayLower]);
+                } else {
+                    return t('days.' . $dayLower);
+                }
+            } else {
+                // Pour la version française, on retourne la valeur en français
+                return t('days.' . $dayLower);
+            }
         }
         ?>
 
+        <?php $contact = page('contact'); ?>
 
         <div class="title-page">
             <h2><?php echo t('contact_title'); ?></h2>
@@ -53,29 +59,20 @@
             </div>
 
             <!-- Horaires -->
-
             <article class="opening-hours">
                 <h3><?php echo t('opening_hours_title'); ?></h3>
                 <ul>
-                <?php
-                    if ($contact->open()->isNotEmpty()):
-                        foreach ($contact->open()->toStructure() as $entry):
-                            var_dump($entry->day()->value()); 
-                            // Accès aux jours traduits via la fonction 'translateDay'
-                            $translatedDay = t('days.' . translateDay($entry->day()->value()));
-                            $startTime = str_replace(":", "h", $entry->time_start()->toDate('H:i'));
-                            $endTime = str_replace(":", "h", $entry->time_end()->toDate('H:i'));
-                    ?>
+                    <?php if ($contact->open()->isNotEmpty()): ?>
+                        <?php $lang = kirby()->language()->code(); ?>
+                        <?php foreach ($contact->open()->toStructure() as $entry): ?>
                             <li>
-                                <strong><?= $translatedDay ?>:</strong>
-                                <?= $startTime ?> - <?= $endTime ?>
+                                <strong><?= translateDay($entry->day()->value()) ?><?= ($lang === 'fr' ? ' :' : ':') ?></strong>
+                                <?= $entry->time_start()->toDate('H:i') ?> - <?= $entry->time_end()->toDate('H:i') ?>
                             </li>
                         <?php endforeach; ?>
                     <?php endif; ?>
                 </ul>
             </article>
-
-
 
             <!-- Règlement -->
             <?php if ($contact->buy()->isNotEmpty()): ?>
@@ -123,7 +120,6 @@
                             </li>
                         <?php endforeach; ?>
                     </ul>
-
                 <?php endif; ?>
 
                 <!-- Bons plans -->
@@ -145,7 +141,6 @@
                             <?php endforeach; ?>
                         <?php endif; ?>
                     </ul>
-                </article>
                 </article>
         </section>
     </main>

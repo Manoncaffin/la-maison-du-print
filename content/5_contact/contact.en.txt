@@ -23,25 +23,30 @@ Tel: 07 68 18 48 96
 Open:
 
 - 
+  days: monday
+  time_start: 09:00:00
+  time_end: 18:00:00
   day: lundi
+- 
+  days: tuesday
   time_start: 09:00:00
   time_end: 18:00:00
-- 
   day: mardi
-  time_start: 09:00:00
-  time_end: 18:00:00
 - 
-  day: mercredi
+  days: wednesday
   time_start: 09:00:00
   time_end: 13:30:00
+  day: mercredi
 - 
+  days: thursday
+  time_start: 09:00:00
+  time_end: 18:00:00
   day: jeudi
-  time_start: 09:00:00
-  time_end: 18:00:00
 - 
-  day: dimanche
+  days: friday
   time_start: 09:00:00
   time_end: 18:00:00
+  day: dimanche
 
 ----
 

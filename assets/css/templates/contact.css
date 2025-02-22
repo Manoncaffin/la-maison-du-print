@@ -40,7 +40,7 @@ ul {
     }
 
     .container_contact {
-        display: flex;
+        display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: auto;
         column-gap: var(--gutter-width);
@@ -80,7 +80,6 @@ ul {
     .networks {
         grid-column: 1 / span 6;
         grid-row: auto;
-        position: absolute;
     }
 
     #partners-list {
@@ -356,6 +355,11 @@ ul {
     .networks {
         grid-column: 8 / span 4;
         grid-row: 2;
+    }
+
+    .clients,
+    .networks {
+        position: absolute;
     }
 }
 
