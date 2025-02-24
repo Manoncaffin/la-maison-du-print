@@ -39,7 +39,7 @@
     .all_logo_homepage img {
         display: flex;
         justify-content: center;
-        max-width: 350px;
+        max-width: 300px;
         rotate: -20deg;
     }
 
@@ -266,7 +266,7 @@
         padding-top: 50px;
 
         img {
-            max-width: 450px;
+            max-width: 500px;
         }
     }
 

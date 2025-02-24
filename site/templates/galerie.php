@@ -18,23 +18,23 @@
         </section>
 
         <section class="gallery">
-    <?php $index = 1; ?>
-    <?php foreach ($page->gallery_items()->toStructure() as $item): ?>
-        <?php
-        $categories = $item->category()->split();
-        $image = $item->image()->toFile();
-        $categoriesClasses = implode(' ', $categories);
-        ?>
-        <?php if ($image): ?>
-            <div class="gallery-item <?= $categoriesClasses ?>" data-category="<?= $categoriesClasses ?>"
-                 style="grid-column: <?= ($index % 2 === 1) ? '2 / span 5' : '8 / span 5' ?>;">
-                <img src="<?= $image->url() ?>" alt="<?= $item->about()->esc() ?>">
-                <p><?= $item->about()->esc() ?></p>
-            </div>
-            <?php $index++; ?>
-        <?php endif; ?>
-    <?php endforeach; ?>
-</section>
+            <?php $index = 1; ?>
+            <?php foreach ($page->gallery_items()->toStructure() as $item): ?>
+                <?php
+                $categories = $item->category()->split();
+                $image = $item->image()->toFile();
+                $categoriesClasses = implode(' ', $categories);
+                ?>
+                <?php if ($image): ?>
+                    <div class="gallery-item <?= $categoriesClasses ?>" data-category="<?= $categoriesClasses ?>">
+
+                        <img src="<?= $image->url() ?>" alt="<?= $item->about()->esc() ?>">
+                        <p><?= $item->about()->esc() ?></p>
+                    </div>
+                    <?php $index++; ?>
+                <?php endif; ?>
+            <?php endforeach; ?>
+        </section>
 
     </main>
 

@@ -57,5 +57,3 @@ $logo = $site->files()->find('logo.png');
             </nav>
         </header>
     </div>
-
-    <!-- <script src="<?= $site->url() ?>/assets/js/dropdown.js"></script> -->

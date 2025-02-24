@@ -57,6 +57,4 @@ $isGalerieActive = in_array($current_page, ['galerie', 'serigraphie', 'impressio
             </nav>
         </header>
     </div>
-
-    <script src="<?= $site->url() ?>/assets/js/dropdown.js"></script>
 </body>
