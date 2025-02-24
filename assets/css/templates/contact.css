@@ -160,6 +160,7 @@ ul {
         justify-content: center;
         align-items: center;
         pointer-events: none;
+        z-index: 999;
     }
     
     html[lang="fr"] body .client-logo-container {
@@ -176,6 +177,7 @@ ul {
         justify-content: center;
         align-items: center;
         pointer-events: none;
+        z-index: 999;
     }
 
     .client-item:hover .client-logo-container {
