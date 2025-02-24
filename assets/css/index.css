@@ -142,8 +142,8 @@ a {
 }
 
 ::selection {
-    background-color:black; 
-    color: white; 
+    background-color: black;
+    color: white;
 }
 
 
@@ -274,7 +274,7 @@ a {
         font-size: 1.3rem;
     }
 
-    .all_menu a, 
+    .all_menu a,
     .all_menu-home a {
         display: flex;
         justify-content: center;
@@ -324,9 +324,20 @@ a {
         display: none !important;
     }
 
-    .language,
-    .language-home {
-        display: none;
+
+    .all_menu .language-mobile {
+        display: flex;
+        justify-content: center;
+
+        a {
+            border-radius: 50%;
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            border: 1px solid black;
+            background-color: black;
+            padding: 10px;
+        }
     }
 
     .title_header {
@@ -780,6 +791,7 @@ a {
         display: none;
     }
 
+    .mobile-only,
     .mobile-only-home {
         display: none;
     }

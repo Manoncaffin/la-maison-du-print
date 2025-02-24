@@ -21,9 +21,7 @@ $isGalerieActive = in_array($current_page, ['galerie', 'serigraphie', 'impressio
             <!-- Bouton burger -->
             <input id="toggle" type="checkbox" />
             <label for="toggle" class="burger-home">
-                <!-- Icône burger -->
                 <div class="button_open"><i class="fas fa-bars"></i></div>
-                <!-- Croix de fermeture -->
                 <div class="button_close">&times;</div>
             </label>
 

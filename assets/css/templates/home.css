@@ -26,7 +26,7 @@
     .container_homepage {
         display: flex;
         flex-direction: column;
-        padding: 40px 20px 20px 20px;
+        padding: 65px 20px 20px 20px;
     }
 
     .all_logo_homepage {
