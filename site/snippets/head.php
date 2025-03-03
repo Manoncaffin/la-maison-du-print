@@ -7,24 +7,24 @@
     <!-- Primary Meta Tags -->
     <title><?= $site->title() ?></title>
     <meta name="title" content="<?= $site->title() ?>" />
-    <meta name="description" content="" />
+    <meta name="description" content="Impression textile, sérigraphie flocage DTF et broderie" />
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="<?= $site->url() ?>" />
     <meta property="og:title" content="<?= $site->title() ?>" />
-    <meta property="og:description" content="" />
+    <meta property="og:description" content="Impression textile, sérigraphie flocage DTF et broderie" />
     <meta property="og:image" content="<?= $site->url() ?>/assets/imgs/meta-tags.png" />
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="<?= $site->url() ?>" />
     <meta property="twitter:title" content="<?= $site->title() ?>" />
-    <meta property="twitter:description" content="" />
+    <meta property="twitter:description" content="Impression textile, sérigraphie flocage DTF et broderie" />
     <meta property="twitter:image" content="<?= $site->url() ?>/assets/imgs/meta-tags.png" />
 
     <meta name="<?= $site->title() ?>" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="Keywords" content="Ateliers artistiques mutualisés, Lyon, ..." />
-    <meta name="Author" content="Friche artistique Lamartine" />
+    <meta name="Keywords" content="Atelier d'impression sérigraphie, impression DTF" />
+    <meta name="Author" content="La Maison du print" />
     <meta name="Revisit-After" content="15 days" />
     <meta name="Robots" content="All" />
     <?= css(['assets/css/index.css', '@auto']) ?>

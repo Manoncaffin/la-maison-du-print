@@ -1,16 +1,12 @@
 <?php
 
 return [
+    'url' => 'https://lamaisonduprint.fr',
     'languages' => true,
     'home' => 'home',
     // Active debug mode
     'debug' => true,
     'cache' => false,
-
-    // Activate multiples languages and auto detect
-    // 'languages' => [
-    //   'detect' => true
-    // ],
 
     // Auto arrange kirbytext presets
     'smartypants' => true,
