@@ -55,8 +55,8 @@ return function ($kirby, $pages, $page) {
 
             try {
                 $kirby->email([
-                    'to'      => 'caffinmanon@gmail.com',
-                    'from'    => 'noreply@tonsite.com',
+                    'to'      => 'atelier@lamaisonduprint.fr',
+                    'from'    => 'atelier@lamaisonduprint.fr', 
                     'subject' => 'Nouvelle demande de devis',
                     'body'    => "Nom : {$data['name']} {$data['firstname']}\n"
                                 . "Email : {$data['email']}\n"

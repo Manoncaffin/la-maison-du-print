@@ -23,8 +23,8 @@ return [
     ],
 
     'upload' => [
-    'maxsize' => 50 * 1024 * 1024,
-    'types' => ['mp4', 'mov', 'avi', 'svg', 'png', 'jpg', 'jpeg']
+        'maxsize' => 50 * 1024 * 1024,
+        'types' => ['mp4', 'mov', 'avi', 'svg', 'png', 'jpg', 'jpeg']
     ],
 
     'content' => [
@@ -33,14 +33,14 @@ return [
             'image/png' => 'png',
             'image/jpeg' => 'jpg'
         ]
-        ],
+    ],
 
-        'panel' => [
-            'install' => true,
-            'slug' => 'panel',
-            'language' => 'fr',
-            'css' => 'assets/css/panel.css'
-        ],
+    'panel' => [
+        'install' => true,
+        'slug' => 'panel',
+        'language' => 'fr',
+        'css' => 'assets/css/panel.css'
+    ],
 
     //Image srcsets thumbs presets
     'thumbs' => [
@@ -81,5 +81,16 @@ return [
             'locale' => 'en_GB',
             'url' => '/en',
         ],
+    ],
+    'email' => [
+        'transport' => [
+            'type'     => 'smtp',
+            'host'     => 'ssl0.ovh.net', 
+            'port'     => 465, 
+            'security' => 'ssl',
+            'auth'     => true,
+            'username' => 'atelier@lamaisonduprint.fr', 
+            'password' => 'Kaboul2992',
+        ]
     ]
 ];
