@@ -404,6 +404,7 @@ a {
     .mentions_footer a {
         position: relative;
         font-weight: 600;
+        font-family: 'Inter-Semibold';
     }
 
     .mentions_footer a::after {
