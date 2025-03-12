@@ -51,25 +51,45 @@
                     <div class="form-section-one">
                         <h2><?= t('devis.order') ?></h2>
                         <label for="model"><?= t('devis.model') ?></label>
-                        <input id="model" name="model" type="text" placeholder="<?= t('placeholder.model') ?>" required>
+                        <select id="model" name="model" required>
+                            <option value=""><?= t('placeholder.model') ?></option>
+                            <?php foreach ($devis->choice_model()->toStructure() as $item): ?>
+                                <option value="<?= $item->model() ?>"><?= $item->model() ?></option>
+                            <?php endforeach; ?>
+                        </select>
 
                         <label for="background"><?= t('devis.background') ?></label>
-                        <input id="background" name="background" type="text" placeholder="<?= t('placeholder.background') ?>" required>
+                        <select id="background" name="background" required>
+                            <option value=""><?= t('placeholder.background') ?></option>
+                            <?php foreach ($devis->choice_background()->toStructure() as $item): ?>
+                                <option value="<?= $item->model() ?>"><?= $item->model() ?></option>
+                            <?php endforeach; ?>
+                        </select>
 
                         <label for="articles"><?= t('devis.articles') ?></label>
                         <input id="articles" name="articles" type="number" placeholder="<?= t('placeholder.articles') ?>" required>
 
                         <label for="color"><?= t('devis.color') ?></label>
-                        <input id="color" name="color" type="text" placeholder="<?= t('placeholder.color') ?>" required>
+                        <select id="color" name="color" required>
+                            <option value=""><?= t('placeholder.color') ?></option>
+                            <?php foreach ($devis->color_number()->toStructure() as $item): ?>
+                                <option value="<?= $item->model() ?>"><?= $item->model() ?></option>
+                            <?php endforeach; ?>
+                        </select>
 
                         <label for="to_print"><?= t('devis.to_print') ?></label>
-                        <input id="to_print" name="to_print" type="text" placeholder="<?= t('placeholder.to_print') ?>" required>
+                        <select id="to_print" name="to_print" required>
+                            <option value=""><?= t('placeholder.to_print') ?></option>
+                            <?php foreach ($devis->to_print()->toStructure() as $item): ?>
+                                <option value="<?= $item->model() ?>"><?= $item->model() ?></option>
+                            <?php endforeach; ?>
+                        </select>
 
                         <label for="description"><?= t('devis.description') ?></label>
                         <textarea id="description" name="description" placeholder="<?= t('placeholder.description') ?>"></textarea>
 
                         <label for="files"><?= t('devis.files') ?></label>
-                        <input id="files" name="files[]" type="file" multiple required accept=".pdf,.ai">
+                        <input id="files" name="files[]" type="file" accept=".pdf,.ai">
                     </div>
                     <!-- Section: Informations client -->
                     <div class="form-section-two">
