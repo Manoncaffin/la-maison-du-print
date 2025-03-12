@@ -1,13 +1,39 @@
-Title: Legal notices
+Title: Mentions légales
 
 ----
 
-Column1: <p><strong>Site editor</strong> <br>La Maison du print</p><p><strong>Head office : </strong>123 rue de la Soie, 38110 La Bâtie-Montgascon</p><p><strong>SIRET number :</strong> 2803693800019</p><p><strong>RCS number :</strong> Vienne B 928 036 938</p><p><strong>Intra-community VAT number :</strong> FR45928036938</p><p><strong>Email :</strong> atelier@lamaisonduprint.fr</p><p><strong>Phone :</strong> +33 (7) 68 18 48 90</p><p><strong>Publication manager :</strong> Simon Fleury, company manager La Maison du print<br><br><strong>Host</strong> <br><strong>Host :</strong> OVH SAS</p><p><strong>Head office :</strong> 2 rue Kellermann, 59100 Roubaix, France</p><p><strong>Phone :</strong> +33 9 72 10 10 07<br><br><strong>Intellectual property</strong> <br>All graphic elements, the structure and, more generally, the content of the La Maison du print website are protected by copyright and intellectual property laws. Any reproduction, representation, modification, publication, adaptation of all or part of the elements of the site, whatever the means or process used, is prohibited without the prior written permission of La Maison du print.</p>
+Column1:
+
+**Site editor**
+La Maison du print
+**Head office:** 123 rue de la Soie, 38110 La Bâtie-Montgascon
+**SIRET number:** 2803693800019
+**RCS number:** Vienne B 928 036 938
+**Intra-community VAT number:** FR45928036938
+**Email:** atelier@lamaisonduprint.fr
+**Phone:** +33 (7) 68 18 48 90
+**Publication manager:** Simon Fleury, company manager La Maison du print
+
+**Host**
+**Host:** EX2
+**Head office:** 34 Avenue des Champs-Élysées, 75008 Paris, France
+
+**Intellectual property**
+All graphic elements, the structure and, more generally, the content of the La Maison du print website are protected by copyright and intellectual property laws. Any reproduction, representation, modification, publication, adaptation of all or part of the elements of the site, whatever the means or process used, is prohibited without the prior written permission of La Maison du print.
 
 ----
 
-Column2: <p><strong>Responsability</strong> <br>La Maison du print makes every effort to ensure the accuracy of the information published on the site. However, the company cannot be held responsible for errors or omissions in the published content. The use of the information and content on this site is the sole responsibility of the user.<br><br><strong>Visual design and development</strong><br><strong>Visual identity:</strong> Simon Fleury and Gaspard Audrain<br><strong>Photographs and videos:</strong> Simon Fleury<br><strong>Webdesign and code:</strong> Manon Caffin<br><strong>Typography:</strong> Inter by Rasmus Andersson</p>
+Column2:
+
+**Responsability**
+La Maison du print makes every effort to ensure the accuracy of the information published on the site. However, the company cannot be held responsible for errors or omissions in the published content. The use of the information and content on this site is the sole responsibility of the user.
+
+**Visual design and development**
+**Visual identity:** Simon Fleury and Gaspard Audrain
+**Photographs and videos:** Simon Fleury
+**Webdesign and code:** Manon Caffin
+**Typography:** Inter by Rasmus Andersson
 
 ----
 
-Uuid: QQcL9VtumgPnkShZ
+Texte: <p><strong>Éditeur du site</strong> <br>La Maison du print<br><strong>Siège social :</strong> 123 rue de la Soie, 38110 La Bâtie-Montgascon<br><strong>Numéro SIRET :</strong> 2803693800019<br><strong>Numéro RCS :</strong> Vienne B 928 036 938<br><strong>Numéro TVA intracommunautaire :</strong> FR45928036938<br><strong>Email :</strong> atelier@lamaisonduprint.fr<br><strong>Téléphone :</strong> +33 (7) 68 18 48 90<br><strong>Responsable de la publication :</strong> Simon Fleury, gérant de la société La Maison du print<br><br><strong>Hébergeur</strong> <br><strong>Hébergeur :</strong> OVH SAS<br><strong>Siège social :</strong> 2 rue Kellermann, 59100 Roubaix, France<br><strong>Téléphone :</strong> +33 9 72 10 10 07<br><br><strong>Propriété intellectuelle</strong> <br>Tous les éléments graphiques, la structure et, plus généralement, le contenu du site La Maison du print sont protégés par le droit d’auteur et les lois relatives à la propriété intellectuelle. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de La Maison du print.<br><br><strong>Responsabilité</strong> <br>La Maison du print met tout en œuvre pour assurer l’exactitude des informations publiées sur le site. Cependant, la société ne saurait être tenue responsable des erreurs ou omissions dans les contenus publiés. L'utilisation des informations et contenus présents sur ce site relève de la seule responsabilité de l'utilisateur.<br><br><strong>Conception visuelle et développement</strong><br><strong>Identité visuelle :</strong> Simon Fleury et Gaspard Audrain<br><strong>Photographies et vidéos :</strong> Simon Fleury<br><strong>UX/UI design et code :</strong> Manon Caffin<br><strong>Typographie :</strong> Inter par Rasmus Andersson</p>

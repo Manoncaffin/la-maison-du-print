@@ -6,7 +6,7 @@ columns:
     fields:
       column1:
         label: Colonne 1
-        type: writer
+        type: textarea
         fieldsets:
           - heading
           - text
@@ -18,7 +18,7 @@ columns:
           - markdown
       column2:
         label: Colonne 2
-        type: writer
+        type: textarea
         fieldsets:
           - heading
           - text

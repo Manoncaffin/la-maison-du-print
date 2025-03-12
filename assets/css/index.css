@@ -1,22 +1,20 @@
 @font-face {
     font-family: 'Inter-Light';
-    src: url('/assets/fonts/Inter-Light.woff2') format('woff2');
+    src: url('../fonts/Inter-Light.woff2') format('woff2');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Inter-Italic';
-    src: url('/assets/fonts/Inter-Italic.woff2') format('woff2'),
-        url('/assets/fonts/Inter-Italic.woff') format('woff');
+    src: url('../fonts/Inter-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Inter-Semibold';
-    src: url('/assets/fonts/Inter-SemiBold.woff2') format('woff2'),
-        url('/assets/fonts/Inter-SemiBold.woff') format('woff');
+    src: url('../fonts/Inter-SemiBold.woff2') format('woff2');
     font-weight: 600;
     font-style: normal;
 }
@@ -74,6 +72,11 @@ h3 {
     padding: 0;
     font-size: 1rem;
 }
+
+a {
+    font-family: "Inter", sans-serif;
+    font-weight: 600; 
+  }  
 
 h3 a {
     font-family: "Inter-Light", sans-serif;
@@ -287,6 +290,7 @@ a {
         color: white;
         text-decoration: none;
         font-size: 2.2rem;
+        font-family: "Inter-Semibold";
     }
 
     /* Fin menu déroulant */

@@ -214,7 +214,7 @@
     .container_contact {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
-        padding: 40px 40px 0 40px;
+        padding: 30px 40px 0 40px;
     }
 
     .address,
@@ -309,6 +309,14 @@
 
     body[lang="en"] .container_contact {
         grid-template-rows: 110px 110px 55px 65px;
+    }
+
+    html[lang="en"] body #partners-list {
+        padding-left: 236px;
+    }
+    
+    html[lang="fr"] body #partners-list {
+        padding-left: 213px;
     }
 
     .address {

@@ -12,7 +12,7 @@ return [
         'days.friday' => 'Vendredi',
         'days.saturday' => 'Samedi',
         'days.sunday' => 'Dimanche', 
-    'legal_notice' => 'MENTIONS LÉGALES',
+    'legal_notices' => 'MENTIONS LÉGALES',
     'contact_title' => 'CONTACT ET INFOS PRATIQUES',  
     'opening_hours_title' => 'Horaires et jours d\'ouverture',
     'payment_title' => 'Règlement',

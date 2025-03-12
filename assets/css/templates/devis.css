@@ -214,12 +214,13 @@
     }
 
     .about-image {
+        padding-top: 30px;
         grid-column: 2 / span 5;
     }
 
     .about-section {
         grid-column: 7 / span 5;
-        padding-top: 40px;
+        padding-top: 30px;
         margin-top: 0;
     }
 
@@ -319,6 +320,6 @@
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1200px) {
     .legal-message {
-        margin: 30px 250px 0 250px;
+        margin: 30px 270px 0 270px;
     }
 }

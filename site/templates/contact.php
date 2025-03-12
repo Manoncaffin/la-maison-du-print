@@ -67,7 +67,12 @@
                         <?php foreach ($contact->open()->toStructure() as $entry): ?>
                             <li>
                                 <strong><?= translateDay($entry->day()->value()) ?><?= ($lang === 'fr' ? ' :' : ':') ?></strong>
-                                <?= $entry->time_start()->toDate('H:i') ?> - <?= $entry->time_end()->toDate('H:i') ?>
+                                <?php
+                                $lang = kirby()->language()->code();
+                                $timeFormat = $lang === 'fr' ? 'H\hi' : 'H:i';
+                                ?>
+                                <?= $entry->time_start()->toDate($timeFormat) ?> - <?= $entry->time_end()->toDate($timeFormat) ?>
+
                             </li>
                         <?php endforeach; ?>
                     <?php endif; ?>
