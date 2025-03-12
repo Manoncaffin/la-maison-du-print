@@ -34,7 +34,7 @@
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         column-gap: var(--gutter-width);
-        padding: 120px 20px 0 20px;
+        padding: 100px 20px 0 20px;
     }
 
     .title-page {
@@ -46,15 +46,12 @@
         margin-top: 6px;
     }
 
-    .about {
-        padding-top: 40px;
-    }
-
     .technique {
         padding: 0 20px 0 20px;
     }
 
     .about {
+        padding-top: 30px;
         grid-column: 1 / span 6;
     }
 
@@ -165,7 +162,6 @@
         padding: 120px 40px 0 40px;
 
         .about {
-            padding-top: 30px;
             grid-column: 1 / span 6;
         }
     

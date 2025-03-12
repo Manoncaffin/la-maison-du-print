@@ -2,10 +2,21 @@
     <?php snippet('header') ?>
     <?= snippet('head') ?>
 
-    <?php var_dump($errors, $success); ?>
-    <?php if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        var_dump($_POST, $_FILES);
-    } ?>
+    <?php
+    $errors = [];
+    $success = false;
+
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if (empty($_POST['name'])) {
+            $errors[] = 'Le champ Nom est requis.';
+        }
+
+        if (empty($errors)) {
+            $success = true;
+        }
+    }
+    ?>
+
 
 
     <body>
