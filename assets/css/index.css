@@ -303,7 +303,7 @@ a {
     .button_close {
         display: none;
         position: absolute;
-        top: 500px;
+        top: 430px;
         left: 50%;
         transform: translateX(-50%);
         font-size: 3rem;
