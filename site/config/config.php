@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'url' => 'https://lamaisonduprint.fr',
+    'url' => ($_SERVER['HTTP_HOST'] === 'localhost') ? 'http://localhost:8888/la-maison-du-print/' : 'https://lamaisonduprint.fr',
     'languages' => true,
     'home' => 'home',
     // Active debug mode
