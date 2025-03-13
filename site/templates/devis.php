@@ -3,13 +3,11 @@
     <?= snippet('head') ?>
 
     <?php
+
     $errors = [];
     $success = false;
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        if (empty($_POST['name'])) {
-            $errors[] = 'Le champ Nom est requis.';
-        }
 
         if (empty($errors)) {
             $success = true;
@@ -43,7 +41,14 @@
                 </div>
             <?php endif; ?>
 
-            <form id="devisForm" action="<?= $page->url() ?>" method="post" enctype="multipart/form-data">
+            <form id="devisForm" action="devis" method="post">
+            <?php
+// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+//     echo "<pre>";
+//     var_dump($_POST);
+//     echo "</pre>";
+// }
+?>
                 <input type="hidden" name="csrf_token" value="<?= csrf() ?>" />
                 <!-- Section: Votre commande -->
                 <div class="first">
@@ -94,10 +99,10 @@
                     <div class="form-section-two">
                         <h2><?= t('devis.info') ?></h2>
                         <label for="name"><?= t('devis.company') ?></label>
-                        <input id="name" name="company" type="text" placeholder="<?= t('placeholder.company') ?>" required>
+                        <input id="company" name="company" type="text" placeholder="<?= t('placeholder.company') ?>" required>
 
                         <label for="name"><?= t('devis.siret') ?></label>
-                        <input id="name" name="siret" type="text" placeholder="<?= t('placeholder.siret') ?>" required>
+                        <input id="siret" name="siret" type="text" placeholder="<?= t('placeholder.siret') ?>" required>
 
                         <label for="name"><?= t('devis.name') ?></label>
                         <input id="name" name="name" type="text" placeholder="<?= t('placeholder.name') ?>" required>
