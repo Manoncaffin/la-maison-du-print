@@ -1,28 +1,12 @@
-# Kirby .htaccess
-RewriteEngine On
-RewriteBase 
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
 
-# Rewriting rules for pretty URLs
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php [L]
+  # Si tu utilises un sous-dossier, remplace "/"
+  # par "/la-maison-du-print/" dans le RewriteBase.
 
-# Pass the Authorization header to PHP
-SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
-
-# Compress text files responses
-<IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/plain
-    AddOutputFilterByType DEFLATE text/html
-    AddOutputFilterByType DEFLATE text/css
-    AddOutputFilterByType DEFLATE text/javascript
-    AddOutputFilterByType DEFLATE application/json
-    AddOutputFilterByType DEFLATE application/javascript
-    AddOutputFilterByType DEFLATE application/x-javascript
-</IfModule>
-
-# Set security headers in all responses
-<IfModule mod_headers.c>
-    Header set Content-Type "text/plain" "expr=-z %{CONTENT_TYPE}"
-    Header set X-Content-Type-Options "nosniff"
+  # Redirige tout vers index.php
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.php [L]
 </IfModule>
