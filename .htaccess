@@ -2,7 +2,27 @@
 RewriteEngine On
 RewriteBase /la-maison-du-print/
 
-# Redirection vers index.php
+# Rewriting rules for pretty URLs
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php [L]
+
+# Pass the Authorization header to PHP
+SetEnvIf Authorization "(.*)" HTTP_AUTHORIZATION=$1
+
+# Compress text files responses
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+</IfModule>
+
+# Set security headers in all responses
+<IfModule mod_headers.c>
+    Header set Content-Type "text/plain" "expr=-z %{CONTENT_TYPE}"
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>
