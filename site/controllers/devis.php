@@ -7,16 +7,13 @@ return function ($kirby, $pages, $page) {
     $attachments = [];
 
     if ($kirby->request()->is('POST')) {
-        // if ($kirby->user() && $kirby->user()->isAdmin()) {
-        //     var_dump($_POST); // DEBUG : à retirer en production
-        // }
 
         // Vérification CSRF
         if (get('csrf_token', 'POST') !== csrf()) {
-            echo "<pre>";
-var_dump($_FILES);
-echo "</pre>";
-exit;
+//             echo "<pre>";
+// var_dump($_FILES);
+// echo "</pre>";
+// exit;
             $errors[] = 'Erreur de sécurité. Veuillez réessayer.';
             return compact('errors', 'success', 'data');
         }

@@ -43,11 +43,11 @@
 
             <form id="devisForm" action="devis" method="post" enctype="multipart/form-data">
             <?php
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    echo "<pre>";
-    var_dump($_POST);
-    echo "</pre>";
-}
+// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+//     echo "<pre>";
+//     var_dump($_POST);
+//     echo "</pre>";
+// }
 ?>
                 <input type="hidden" name="csrf_token" value="<?= csrf() ?>" />
                 <!-- Section: Votre commande -->
