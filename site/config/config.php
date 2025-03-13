@@ -2,7 +2,6 @@
 
 return [
     'url' => 'https://lamaisonduprint.fr',
-    // 'url' => 'http://localhost:8888/la-maison-du-print/',
     'languages' => true,
     'home' => 'home',
     // Active debug mode
