@@ -41,13 +41,13 @@
                 </div>
             <?php endif; ?>
 
-            <form id="devisForm" action="devis" method="post">
+            <form id="devisForm" action="devis" method="post" enctype="multipart/form-data">
             <?php
-// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//     echo "<pre>";
-//     var_dump($_POST);
-//     echo "</pre>";
-// }
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    echo "<pre>";
+    var_dump($_POST);
+    echo "</pre>";
+}
 ?>
                 <input type="hidden" name="csrf_token" value="<?= csrf() ?>" />
                 <!-- Section: Votre commande -->
@@ -93,7 +93,7 @@
                         <textarea id="description" name="description" placeholder="<?= t('placeholder.description') ?>"></textarea>
 
                         <label for="files"><?= t('devis.files') ?></label>
-                        <input id="files" name="files[]" type="file" accept=".pdf,.ai">
+                        <input id="files" name="files[]" type="file" accept=".pdf,.ai, jpeg, jpg, png">
                     </div>
                     <!-- Section: Informations client -->
                     <div class="form-section-two">
