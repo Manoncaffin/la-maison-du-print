@@ -8,7 +8,6 @@ return function ($kirby, $pages, $page) {
 
     // Traitement du formulaire uniquement si la méthode est POST et le bouton submit a été cliqué
     if ($kirby->request()->is('POST') && get('submit')) {
-
         // Vérification CSRF : comparer le token envoyé avec celui généré par Kirby
         if (get('csrf_token') !== csrf()) {
             $errors[] = 'Erreur de sécurité. Veuillez réessayer.';
@@ -64,7 +63,7 @@ return function ($kirby, $pages, $page) {
                 mkdir($uploadDir, 0777, true);
             }
             $maxFileSize        = 2 * 1024 * 1024; // 2 Mo
-            $allowedExtensions  = ['pdf', 'ai'];
+            $allowedExtensions  = ['pdf', 'ai', 'jpeg', 'jpg', 'png'];
 
             foreach ($data['files']['tmp_name'] as $key => $tmp_name) {
                 $originalName = $data['files']['name'][$key];
@@ -101,14 +100,14 @@ return function ($kirby, $pages, $page) {
                     'from'        => 'atelier@lamaisonduprint.fr',
                     'subject'     => 'Nouvelle demande de devis',
                     'body'        => "Nom : {$data['name']} {$data['firstname']}\n"
-                        . "Email : {$data['email']}\n"
-                        . "Téléphone : {$data['phone']}\n\n"
-                        . "Modèle : {$data['model']}\n"
-                        . "Fond : {$data['background']}\n"
-                        . "Nombre d'articles : {$data['articles']}\n"
-                        . "Nombre de couleurs : {$data['color']}\n"
-                        . "Zone à imprimer : {$data['to_print']}\n\n"
-                        . "Description du projet :\n{$data['description']}\n\n",
+                                    . "Email : {$data['email']}\n"
+                                    . "Téléphone : {$data['phone']}\n\n"
+                                    . "Modèle : {$data['model']}\n"
+                                    . "Fond : {$data['background']}\n"
+                                    . "Nombre d'articles : {$data['articles']}\n"
+                                    . "Nombre de couleurs : {$data['color']}\n"
+                                    . "Zone à imprimer : {$data['to_print']}\n\n"
+                                    . "Description du projet :\n{$data['description']}\n\n",
                     'attachments' => $attachments
                 ]);
                 $success = true;
