@@ -1,34 +1,73 @@
 <?php
 
-return function ($kirby, $pages, $page) {
+return function ($kirby, $page) {
     $errors = [];
     $success = false;
 
-    if ($kirby->request()->is('POST')) {
-        // Récupérer les données du formulaire
+    if ($kirby->request()->is('POST') && get('submit')) {
+
+        $alerts      = null;
+        $attachments = [];
+        
+        // Récupération des données du formulaire
         $data = [
-            'model'       => $kirby->request()->get('model'),
-            'background'  => $kirby->request()->get('background'),
-            'articles'    => $kirby->request()->get('articles'),
-            'color'       => $kirby->request()->get('color'),
-            'to_print'    => $kirby->request()->get('to_print'),
-            'description' => $kirby->request()->get('description'),
+            'model'       => get('model'),
+            'background'  => get('background'),
+            'articles'    => get('articles'),
+            'color'       => get('color'),
+            'to_print'    => get('to_print'),
+            'description' => get('description'),
             'files'       => $_FILES['files'] ?? null,
-            'name'        => $kirby->request()->get('name'),
-            'firstname'   => $kirby->request()->get('firstname'),
-            'email'       => $kirby->request()->get('email'),
-            'phone'       => $kirby->request()->get('phone'),
+            'company'     => get('company'),
+            'siret'       => get('siret'),
+            'name'        => get('name'),
+            'firstname'   => get('firstname'),
+            'email'       => get('email'),
+            'phone'       => get('phone'),
         ];
 
-        // Validation des champs obligatoires
-        if (empty($data['model'])) $errors[] = 'Le champ "Choix du modèle" est requis.';
-        if (empty($data['background'])) $errors[] = 'Le champ "Choix du fond" est requis.';
-        if (empty($data['articles']) || !is_numeric($data['articles'])) $errors[] = 'Le champ "Nombre d\'articles" est requis et doit être un nombre.';
-        if (empty($data['color'])) $errors[] = 'Le champ "Nombre de couleurs" est requis.';
-        if (empty($data['to_print'])) $errors[] = 'Le champ "Zone à imprimer" est requis.';
-        if (empty($data['name'])) $errors[] = 'Le champ "Nom du client" est requis.';
-        if (empty($data['email']) || !filter_var($data['email'], FILTER_VALIDATE_EMAIL)) $errors[] = 'Le champ "Email" est invalide.';
-        if (empty($data['phone'])) $errors[] = "Le téléphone est requis.";
+        // Règles de validation
+        $rules = [
+            'model'       => ['required'],
+            'background'  => ['required'],
+            'articles'    => ['required', 'numeric'],
+            'color'       => ['required'],
+            'to_print'    => ['required'],
+            'company'     => ['required'],
+            'siret'       => ['required'],
+            'name'        => ['required'],
+            'firstname'   => ['required'],
+            'email'       => ['required', 'email'],
+            'phone'       => ['required'],
+        ];
+
+        // Messages d'erreur associés
+        $messages = [
+            'model'       => 'Le champ "Choix du modèle" est requis.',
+            'background'  => 'Le champ "Choix du fond" est requis.',
+            'articles'    => 'Le champ "Nombre d\'articles" est requis et doit être un nombre.',
+            'color'       => 'Le champ "Nombre de couleurs" est requis.',
+            'to_print'    => 'Le champ "Zone à imprimer" est requis.',
+            'company'     => 'Le champ "Votre entreprise" est requis.',
+            'siret'       => 'Le champ "Numéro de SIRET" est requis.',
+            'name'        => 'Le champ "Nom" est requis.',
+            'firstname'   => 'Le champ "Prénom" est requis.',
+            'email'       => 'Le champ "Email" est invalide.',
+            'phone'       => 'Le champ "Numéro de téléphone" est requis.',
+        ];
+
+        // Validation des champs
+        foreach ($rules as $field => $validation) {
+            foreach ($validation as $rule) {
+                if ($rule === 'required' && empty($data[$field])) {
+                    $errors[] = $messages[$field];
+                } elseif ($rule === 'numeric' && !is_numeric($data[$field])) {
+                    $errors[] = $messages[$field];
+                } elseif ($rule === 'email' && !filter_var($data[$field], FILTER_VALIDATE_EMAIL)) {
+                    $errors[] = $messages[$field];
+                }
+            }
+        }
 
         // Upload des fichiers (si présents)
         $uploadedFiles = [];
@@ -56,9 +95,11 @@ return function ($kirby, $pages, $page) {
             try {
                 $kirby->email([
                     'to'      => 'atelier@lamaisonduprint.fr',
-                    'from'    => 'atelier@lamaisonduprint.fr', 
+                    'from'    => 'atelier@lamaisonduprint.fr',
                     'subject' => 'Nouvelle demande de devis',
                     'body'    => "Nom : {$data['name']} {$data['firstname']}\n"
+                                . "Entreprise : {$data['company']}\n"
+                                . "Numéro de SIRET : {$data['siret']}\n"
                                 . "Email : {$data['email']}\n"
                                 . "Téléphone : {$data['phone']}\n\n"
                                 . "Modèle : {$data['model']}\n"
@@ -67,19 +108,18 @@ return function ($kirby, $pages, $page) {
                                 . "Nombre de couleurs : {$data['color']}\n"
                                 . "Zone à imprimer : {$data['to_print']}\n\n"
                                 . "Description du projet :\n{$data['description']}\n\n"
-                                . (!empty($uploadedFiles) ? "Fichiers joints : " . implode(", ", $uploadedFiles) : "Aucun fichier joint."),
-                ]);
+                    ]);
             } catch (Exception $e) {
                 $errors[] = "Erreur lors de l'envoi de l'email : " . $e->getMessage();
             }
         }
     }
 
+    // Redirection en cas de succès
     if ($success) {
         header("Location: " . url('redirection'));
         exit();
     }
 
     return compact('errors', 'success');
-    
 };

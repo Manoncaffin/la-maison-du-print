@@ -22,6 +22,7 @@ return [
         'methods' => ['password', 'password-reset']
     ],
 
+
     'upload' => [
         'maxsize' => 50 * 1024 * 1024,
         'types' => ['mp4', 'mov', 'avi', 'svg', 'png', 'jpg', 'jpeg']
@@ -84,13 +85,13 @@ return [
     ],
     'email' => [
         'transport' => [
-            'type'     => 'smtp',
-            'host'     => 'ssl0.ovh.net', 
-            'port'     => 465, 
-            'security' => 'ssl',
-            'auth'     => true,
-            'username' => 'atelier@lamaisonduprint.fr', 
-            'password' => 'Kaboul2992',
+            'type' => 'smtp',
+            'host' => 'ssl0.ovh.net', 
+            'port' => 587, 
+            'security' => 'tls',
+            'auth' => true,
+            'username' => 'atelier@lamaisonduprint.fr',
+            'password' => 'Kaboul2992' 
         ]
     ]
 ];

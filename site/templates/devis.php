@@ -46,6 +46,7 @@
             <?php endif; ?>
 
             <form id="devisForm" action="<?= $page->url() ?>" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="csrf_token" value="<?= csrf() ?>" />
                 <!-- Section: Votre commande -->
                 <div class="first">
                     <div class="form-section-one">
@@ -95,10 +96,10 @@
                     <div class="form-section-two">
                         <h2><?= t('devis.info') ?></h2>
                         <label for="name"><?= t('devis.company') ?></label>
-                        <input id="name" name="name" type="text" placeholder="<?= t('placeholder.company') ?>" required>
+                        <input id="name" name="company" type="text" placeholder="<?= t('placeholder.company') ?>" required>
 
                         <label for="name"><?= t('devis.siret') ?></label>
-                        <input id="name" name="name" type="text" placeholder="<?= t('placeholder.siret') ?>" required>
+                        <input id="name" name="siret" type="text" placeholder="<?= t('placeholder.siret') ?>" required>
 
                         <label for="name"><?= t('devis.name') ?></label>
                         <input id="name" name="name" type="text" placeholder="<?= t('placeholder.name') ?>" required>
