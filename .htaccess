@@ -1,6 +1,6 @@
 # Kirby .htaccess
 RewriteEngine On
-RewriteBase /
+RewriteBase /la-maison-du-print/
 
 # Redirection vers index.php
 RewriteCond %{REQUEST_FILENAME} !-f
