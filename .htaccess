@@ -1,9 +1,6 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # Si tu es en local, ajuste le RewriteBase
-    RewriteBase /la-maison-du-print/
-
     # Redirige tout vers index.php
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
