@@ -101,14 +101,14 @@ return function ($kirby, $pages, $page) {
                     'from'        => 'atelier@lamaisonduprint.fr',
                     'subject'     => 'Nouvelle demande de devis',
                     'body'        => "Nom : {$data['name']} {$data['firstname']}\n"
-                                     . "Email : {$data['email']}\n"
-                                     . "Téléphone : {$data['phone']}\n\n"
-                                     . "Modèle : {$data['model']}\n"
-                                     . "Fond : {$data['background']}\n"
-                                     . "Nombre d'articles : {$data['articles']}\n"
-                                     . "Nombre de couleurs : {$data['color']}\n"
-                                     . "Zone à imprimer : {$data['to_print']}\n\n"
-                                     . "Description du projet :\n{$data['description']}\n\n",
+                        . "Email : {$data['email']}\n"
+                        . "Téléphone : {$data['phone']}\n\n"
+                        . "Modèle : {$data['model']}\n"
+                        . "Fond : {$data['background']}\n"
+                        . "Nombre d'articles : {$data['articles']}\n"
+                        . "Nombre de couleurs : {$data['color']}\n"
+                        . "Zone à imprimer : {$data['to_print']}\n\n"
+                        . "Description du projet :\n{$data['description']}\n\n",
                     'attachments' => $attachments
                 ]);
                 $success = true;

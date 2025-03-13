@@ -17,8 +17,6 @@
     }
     ?>
 
-
-
     <body>
 
         <main class="container_devis page-enter">
@@ -122,16 +120,6 @@
                 </div>
 
             </form>
-
-            <?php if (!empty($errors)): ?>
-                <ul>
-                    <?php foreach ($errors as $error): ?>
-                        <li><?= html($error) ?></li>
-                    <?php endforeach ?>
-                </ul>
-            <?php elseif ($success): ?>
-                <p>Formulaire soumis avec succès !</p>
-            <?php endif ?>
 
         </main>
 

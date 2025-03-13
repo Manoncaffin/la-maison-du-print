@@ -84,13 +84,14 @@ return [
     ],
     'email' => [
         'transport' => [
-            'type' => 'smtp',
-            'host' => 'ssl0.ovh.net', 
-            'port' => 587, 
-            'security' => 'tls',
-            'auth' => true,
-            'username' => 'atelier@lamaisonduprint.fr',
-            'password' => 'Kaboul2992' 
+            'type'     => 'smtp',
+            'host'     => getenv('MAIL_HOST'), 
+            'port'     => getenv('MAIL_PORT'),
+            'security' => getenv('MAIL_SECURITY'),
+            'auth'     => true,
+            'username' => getenv('MAIL_USERNAME'),
+            'password' => getenv('MAIL_PASSWORD')
         ]
     ]
+
 ];

@@ -1,12 +1,11 @@
 <IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /
+    RewriteEngine On
 
-  # Si tu utilises un sous-dossier, remplace "/"
-  # par "/la-maison-du-print/" dans le RewriteBase.
+    # Si tu es en local, ajuste le RewriteBase
+    RewriteBase /la-maison-du-print/
 
-  # Redirige tout vers index.php
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.*)$ index.php [L]
+    # Redirige tout vers index.php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ index.php [L]
 </IfModule>
