@@ -118,7 +118,7 @@
                     <button type="submit"><?= t('devis.submit') ?></button>
                 </div>
                 <div class="legal-message">
-                    <?= t('devis.legal') ?> <a href="<?= page('mentions')->url() ?>">la-maison-du-print.fr/mentions</a>.
+                    <?= t('devis.legal') ?> <a href="<?= page('mentions')->url() ?>">la-maison-du-print.fr/mentions</a>
                 </div>
 
             </form>

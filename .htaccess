@@ -1,6 +1,6 @@
 # Kirby .htaccess
 RewriteEngine On
-RewriteBase /la-maison-du-print/
+RewriteBase 
 
 # Rewriting rules for pretty URLs
 RewriteCond %{REQUEST_FILENAME} !-f
