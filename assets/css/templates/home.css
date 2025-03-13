@@ -92,6 +92,9 @@
         gap: 2px;
     }
 
+    #toggle:checked ~ .all_logo_homepage {
+        display: none;
+    }
 }
 
 /* --------------------------------------------------- */
