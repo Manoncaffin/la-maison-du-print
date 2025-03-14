@@ -179,7 +179,7 @@
     textarea:focus {
         /* outline: 2px solid #001f8d; */
         outline: none;
-        border-color: #007bff;
+        border-color: #001f8d;
         box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
     }
 
@@ -199,6 +199,7 @@
         background-position: right 10px center;
         background-size: 12px;
         padding-right: 30px;
+        background-color: none;
     }
 
     .devis_button {
