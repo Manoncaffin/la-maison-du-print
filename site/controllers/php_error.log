@@ -1,0 +1,94 @@
+[15-Mar-2025 16:40:29 UTC] Whoops\Exception\ErrorException: require(../../vendor/autoload.php): Failed to open stream: No such file or directory in /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php:8
+Stack trace:
+#0 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(8): Whoops\Run->handleError(2, 'require(../../v...', '/Applications/M...', 8)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(8): require()
+#2 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Filesystem/F.php(425): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Filesystem/F.php(364): Kirby\Filesystem\F::loadIsolated('/Applications/M...', Array)
+#4 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Filesystem/F.php(372): Kirby\Filesystem\F::Kirby\Filesystem\{closure}()
+#5 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Toolkit/Controller.php(69): Kirby\Filesystem\F::load('/Applications/M...')
+#6 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(481): Kirby\Toolkit\Controller::load('/Applications/M...')
+#7 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(449): Kirby\Cms\App->controllerLookup('devis', 'html')
+#8 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(318): Kirby\Cms\App->controller('devis', Array, 'html')
+#9 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(1010): Kirby\Cms\Page->controller(Array, 'html')
+#10 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(784): Kirby\Cms\Page->render()
+#11 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(1191): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#12 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Cms\App->render()
+#13 {main}
+[15-Mar-2025 16:42:51 UTC] Whoops\Exception\ErrorException: require(/vendor/autoload.php): Failed to open stream: No such file or directory in /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php:8
+Stack trace:
+#0 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(8): Whoops\Run->handleError(2, 'require(/vendor...', '/Applications/M...', 8)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(8): require()
+#2 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Filesystem/F.php(425): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Filesystem/F.php(364): Kirby\Filesystem\F::loadIsolated('/Applications/M...', Array)
+#4 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Filesystem/F.php(372): Kirby\Filesystem\F::Kirby\Filesystem\{closure}()
+#5 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Toolkit/Controller.php(69): Kirby\Filesystem\F::load('/Applications/M...')
+#6 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(481): Kirby\Toolkit\Controller::load('/Applications/M...')
+#7 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(449): Kirby\Cms\App->controllerLookup('devis', 'html')
+#8 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(318): Kirby\Cms\App->controller('devis', Array, 'html')
+#9 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(1010): Kirby\Cms\Page->controller(Array, 'html')
+#10 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(784): Kirby\Cms\Page->render()
+#11 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(1191): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#12 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Cms\App->render()
+#13 {main}
+[15-Mar-2025 16:43:06 UTC] Whoops\Exception\ErrorException: require(/../vendor/autoload.php): Failed to open stream: No such file or directory in /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php:8
+Stack trace:
+#0 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(8): Whoops\Run->handleError(2, 'require(/../ven...', '/Applications/M...', 8)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(8): require()
+#2 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Filesystem/F.php(425): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Filesystem/F.php(364): Kirby\Filesystem\F::loadIsolated('/Applications/M...', Array)
+#4 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Filesystem/F.php(372): Kirby\Filesystem\F::Kirby\Filesystem\{closure}()
+#5 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Toolkit/Controller.php(69): Kirby\Filesystem\F::load('/Applications/M...')
+#6 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(481): Kirby\Toolkit\Controller::load('/Applications/M...')
+#7 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(449): Kirby\Cms\App->controllerLookup('devis', 'html')
+#8 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(318): Kirby\Cms\App->controller('devis', Array, 'html')
+#9 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(1010): Kirby\Cms\Page->controller(Array, 'html')
+#10 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(784): Kirby\Cms\Page->render()
+#11 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(1191): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#12 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Cms\App->render()
+#13 {main}
+[15-Mar-2025 16:43:16 UTC] Whoops\Exception\ErrorException: require(../../../vendor/autoload.php): Failed to open stream: No such file or directory in /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php:8
+Stack trace:
+#0 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(8): Whoops\Run->handleError(2, 'require(../../....', '/Applications/M...', 8)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(8): require()
+#2 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Filesystem/F.php(425): include('/Applications/M...')
+#3 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Filesystem/F.php(364): Kirby\Filesystem\F::loadIsolated('/Applications/M...', Array)
+#4 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Filesystem/F.php(372): Kirby\Filesystem\F::Kirby\Filesystem\{closure}()
+#5 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Toolkit/Controller.php(69): Kirby\Filesystem\F::load('/Applications/M...')
+#6 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(481): Kirby\Toolkit\Controller::load('/Applications/M...')
+#7 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(449): Kirby\Cms\App->controllerLookup('devis', 'html')
+#8 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(318): Kirby\Cms\App->controller('devis', Array, 'html')
+#9 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(1010): Kirby\Cms\Page->controller(Array, 'html')
+#10 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(784): Kirby\Cms\Page->render()
+#11 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(1191): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#12 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Cms\App->render()
+#13 {main}
+[15-Mar-2025 16:52:18 UTC] MAIL_HOST: 
+[15-Mar-2025 16:52:18 UTC] MAIL_PORT: 
+[15-Mar-2025 16:52:18 UTC] MAIL_USERNAME: 
+[15-Mar-2025 16:52:18 UTC] MAIL_PASSWORD: 
+[15-Mar-2025 16:52:18 UTC] MAIL_SECURITY: 
+[15-Mar-2025 16:53:45 UTC] MAIL_HOST: 
+[15-Mar-2025 16:53:45 UTC] MAIL_PORT: 
+[15-Mar-2025 16:53:45 UTC] MAIL_USERNAME: 
+[15-Mar-2025 16:53:45 UTC] MAIL_PASSWORD: 
+[15-Mar-2025 16:53:45 UTC] MAIL_SECURITY: 
+[15-Mar-2025 16:55:13 UTC] MAIL_HOST: 
+[15-Mar-2025 16:55:13 UTC] MAIL_PORT: 
+[15-Mar-2025 16:55:13 UTC] MAIL_USERNAME: 
+[15-Mar-2025 16:55:13 UTC] MAIL_PASSWORD: 
+[15-Mar-2025 16:55:13 UTC] MAIL_SECURITY: 
+[15-Mar-2025 16:58:37 UTC] MAIL_HOST: 
+[15-Mar-2025 16:58:37 UTC] MAIL_PORT: 
+[15-Mar-2025 16:58:37 UTC] MAIL_USERNAME: 
+[15-Mar-2025 16:58:37 UTC] MAIL_PASSWORD: 
+[15-Mar-2025 16:58:37 UTC] MAIL_SECURITY: 
+[15-Mar-2025 17:05:31 UTC] MAIL_HOST: 
+[15-Mar-2025 17:05:31 UTC] MAIL_PORT: 
+[15-Mar-2025 17:05:31 UTC] MAIL_USERNAME: 
+[15-Mar-2025 17:05:31 UTC] MAIL_PASSWORD: 
+[15-Mar-2025 17:05:31 UTC] MAIL_SECURITY: 
+[15-Mar-2025 17:07:24 UTC] MAIL_HOST: 
+[15-Mar-2025 17:07:24 UTC] MAIL_PORT: 
+[15-Mar-2025 17:07:24 UTC] MAIL_USERNAME: 
+[15-Mar-2025 17:07:24 UTC] MAIL_PASSWORD: 
+[15-Mar-2025 17:07:24 UTC] MAIL_SECURITY: 
