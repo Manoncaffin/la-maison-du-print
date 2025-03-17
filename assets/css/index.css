@@ -75,8 +75,8 @@ h3 {
 
 a {
     font-family: "Inter", sans-serif;
-    font-weight: 600; 
-  }  
+    font-weight: 600;
+}
 
 h3 a {
     font-family: "Inter-Light", sans-serif;
@@ -229,7 +229,7 @@ a {
         top: -100%;
         left: 0;
         width: 100%;
-        /* height: 100vh; */
+        height: 100vh;
         background-color: #001f8d;
         display: flex;
         flex-direction: column;
@@ -244,7 +244,7 @@ a {
         top: -100%;
         left: 0;
         width: 100%;
-        /* height: 100vh; */
+        height: 100vh;
         background-color: #001f8d;
         display: flex;
         flex-direction: column;
@@ -453,6 +453,10 @@ a {
         font-size: 1.1rem;
     }
 
+    .all_menu {
+        height: fit-content;
+    }
+
     .all_menu li.active {
         background-color: black;
     }
@@ -495,10 +499,17 @@ a {
 
     .all_menu ul li {
         border-radius: 20px;
-        width: 110px;
-        padding: 8px;
+        width: 95px;
+        padding: 4px;
         border: 1px solid black;
         position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo_header {
+        width: 50px;
     }
 
     .language,
@@ -815,6 +826,17 @@ a {
         width: fit-content;
     }
 
+    .all_menu-home ul {
+        display: flex;
+        gap: 10px;
+    }
+
+    .all_menu-home ul li {
+        border-radius: 20px;
+        position: relative;
+        border: 1px solid white;
+    }
+
     .all_menu-home ul li:hover {
         background-color: white;
     }
@@ -829,19 +851,8 @@ a {
 
     .all_menu-home ul li,
     .all_menu ul li {
-        width: 120px;
+        width: 100px;
         padding: 10px 12px;
-    }
-
-    .all_menu-home ul {
-        display: flex;
-        gap: 10px;
-    }
-
-    .all_menu-home ul li {
-        border-radius: 20px;
-        position: relative;
-        border: 1px solid white;
     }
 
     /* ------- FOOTER ------- */
@@ -869,6 +880,11 @@ a {
 
     /* ------- HEADER ------- */
     /* ---------------------- */
+
+    .all_menu-home ul li,
+    .all_menu ul li {
+        width: 120px;
+    }
 
     .all_menu ul {
         gap: 10px;

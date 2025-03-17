@@ -26,7 +26,7 @@ $logo = $site->files()->find('logo.png');
                 <div class="button_close">&times;</div>
             </label>
 
-            <nav class="all_menu">
+            <nav class="all_menu all_menu_mobile">
                 <ul>
                     <li class="mobile-only">
                         <a href="<?= url('home') ?>"><?= t('menu_home'); ?></a>
