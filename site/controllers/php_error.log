@@ -92,3 +92,558 @@ Stack trace:
 [15-Mar-2025 17:07:24 UTC] MAIL_USERNAME: 
 [15-Mar-2025 17:07:24 UTC] MAIL_PASSWORD: 
 [15-Mar-2025 17:07:24 UTC] MAIL_SECURITY: 
+[15-Mar-2025 17:10:07 UTC] MAIL_HOST: 
+[15-Mar-2025 17:10:07 UTC] MAIL_PORT: 
+[15-Mar-2025 17:10:07 UTC] MAIL_USERNAME: 
+[15-Mar-2025 17:10:07 UTC] MAIL_PASSWORD: 
+[15-Mar-2025 17:10:07 UTC] MAIL_SECURITY: 
+[16-Mar-2025 10:56:27 UTC] PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php:33
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php on line 33
+[16-Mar-2025 17:28:37 UTC] PHP Fatal error:  Uncaught Error: Array callback must have exactly two elements in /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php:33
+Stack trace:
+#0 {main}
+  thrown in /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php on line 33
+[16-Mar-2025 17:34:09 UTC] PHP Fatal error:  Uncaught Dotenv\Exception\InvalidPathException: Unable to read any of the environment file(s) at [/Applications/MAMP/htdocs/la-maison-du-print/site/controllers/.env]. in /Applications/MAMP/htdocs/la-maison-du-print/vendor/vlucas/phpdotenv/src/Store/FileStore.php:68
+Stack trace:
+#0 /Applications/MAMP/htdocs/la-maison-du-print/vendor/vlucas/phpdotenv/src/Dotenv.php(222): Dotenv\Store\FileStore->read()
+#1 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(16): Dotenv\Dotenv->load()
+#2 {main}
+  thrown in /Applications/MAMP/htdocs/la-maison-du-print/vendor/vlucas/phpdotenv/src/Store/FileStore.php on line 68
+[16-Mar-2025 17:36:59 UTC] MAIL_HOST: 
+[16-Mar-2025 17:36:59 UTC] MAIL_PORT: 
+[16-Mar-2025 17:36:59 UTC] MAIL_USERNAME: 
+[16-Mar-2025 17:36:59 UTC] MAIL_PASSWORD: 
+[16-Mar-2025 17:36:59 UTC] MAIL_SECURITY: 
+[16-Mar-2025 17:42:50 UTC] MAIL_HOST: 
+[16-Mar-2025 17:42:50 UTC] MAIL_PORT: 
+[16-Mar-2025 17:42:50 UTC] MAIL_USERNAME: 
+[16-Mar-2025 17:42:50 UTC] MAIL_PASSWORD: 
+[16-Mar-2025 17:42:50 UTC] MAIL_SECURITY: 
+[16-Mar-2025 17:50:52 UTC] Debug .env - MAIL_HOST: ssl0.ovh.net
+[16-Mar-2025 17:50:52 UTC] Debug .env - MAIL_PORT: 587
+[16-Mar-2025 17:50:52 UTC] Debug .env - MAIL_USERNAME: atelier@lamaisonduprint.fr
+[16-Mar-2025 17:50:52 UTC] Debug .env - MAIL_PASSWORD: Kaboul2992
+[16-Mar-2025 17:50:52 UTC] Debug .env - MAIL_SECURITY: tls
+[16-Mar-2025 17:50:52 UTC] ✅ Le fichier .env a bien été trouvé.
+[16-Mar-2025 17:52:10 UTC] Debug .env - MAIL_HOST: ssl0.ovh.net
+[16-Mar-2025 17:52:10 UTC] Debug .env - MAIL_PORT: 587
+[16-Mar-2025 17:52:10 UTC] Debug .env - MAIL_USERNAME: atelier@lamaisonduprint.fr
+[16-Mar-2025 17:52:10 UTC] Debug .env - MAIL_PASSWORD: Kaboul2992
+[16-Mar-2025 17:52:10 UTC] Debug .env - MAIL_SECURITY: tls
+[16-Mar-2025 17:52:10 UTC] ✅ Le fichier .env a bien été trouvé.
+[16-Mar-2025 17:52:53 UTC] Debug .env - MAIL_HOST: ssl0.ovh.net
+[16-Mar-2025 17:52:53 UTC] Debug .env - MAIL_PORT: 587
+[16-Mar-2025 17:52:53 UTC] Debug .env - MAIL_USERNAME: atelier@lamaisonduprint.fr
+[16-Mar-2025 17:52:53 UTC] Debug .env - MAIL_PASSWORD: Kaboul2992
+[16-Mar-2025 17:52:53 UTC] Debug .env - MAIL_SECURITY: tls
+[16-Mar-2025 17:52:53 UTC] ✅ Le fichier .env a bien été trouvé.
+[16-Mar-2025 17:58:46 UTC] Debug .env - MAIL_HOST: ssl0.ovh.net
+[16-Mar-2025 17:58:46 UTC] Debug .env - MAIL_PORT: 587
+[16-Mar-2025 17:58:46 UTC] Debug .env - MAIL_USERNAME: atelier@lamaisonduprint.fr
+[16-Mar-2025 17:58:46 UTC] Debug .env - MAIL_PASSWORD: Kaboul2992
+[16-Mar-2025 17:58:46 UTC] Debug .env - MAIL_SECURITY: tls
+[16-Mar-2025 18:00:08 UTC] Debug .env - MAIL_HOST: ssl0.ovh.net
+[16-Mar-2025 18:00:08 UTC] Debug .env - MAIL_PORT: 587
+[16-Mar-2025 18:00:08 UTC] Debug .env - MAIL_USERNAME: atelier@lamaisonduprint.fr
+[16-Mar-2025 18:00:08 UTC] Debug .env - MAIL_PASSWORD: Kaboul2992
+[16-Mar-2025 18:00:08 UTC] Debug .env - MAIL_SECURITY: tls
+[16-Mar-2025 18:02:17 UTC] PHP Warning:  Array to string conversion in /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php on line 22
+[16-Mar-2025 18:02:17 UTC] PHP Stack trace:
+[16-Mar-2025 18:02:17 UTC] PHP   1. {main}() /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php:0
+[16-Mar-2025 18:02:17 UTC] MAIL_HOST via getenv: ssl0.ovh.net
+[16-Mar-2025 18:02:17 UTC] MAIL_HOST via $_ENV: ssl0.ovh.net
+[16-Mar-2025 18:02:17 UTC] MAIL_HOST via $_SERVER: ssl0.ovh.net
+[16-Mar-2025 18:06:22 UTC] MAIL_HOST via getenv: ssl0.ovh.net
+[16-Mar-2025 18:06:22 UTC] MAIL_HOST via $_ENV: ssl0.ovh.net
+[16-Mar-2025 18:06:22 UTC] MAIL_HOST via $_SERVER: ssl0.ovh.net
+[16-Mar-2025 18:17:57 UTC] MAIL_HOST via getenv: ssl0.ovh.net
+[16-Mar-2025 18:17:57 UTC] MAIL_HOST via $_ENV: ssl0.ovh.net
+[16-Mar-2025 18:17:57 UTC] MAIL_HOST via $_SERVER: ssl0.ovh.net
+[16-Mar-2025 18:20:39 UTC] MAIL_HOST via getenv: ssl0.ovh.net
+[16-Mar-2025 18:20:39 UTC] MAIL_HOST via $_ENV: ssl0.ovh.net
+[16-Mar-2025 18:20:39 UTC] MAIL_HOST via $_SERVER: ssl0.ovh.net
+[16-Mar-2025 18:23:27 UTC] MAIL_HOST via getenv: ssl0.ovh.net
+[16-Mar-2025 18:23:27 UTC] MAIL_HOST via $_ENV: ssl0.ovh.net
+[16-Mar-2025 18:23:27 UTC] MAIL_HOST via $_SERVER: ssl0.ovh.net
+[16-Mar-2025 18:23:46 UTC] MAIL_HOST via getenv: ssl0.ovh.net
+[16-Mar-2025 18:23:46 UTC] MAIL_HOST via $_ENV: ssl0.ovh.net
+[16-Mar-2025 18:23:46 UTC] MAIL_HOST via $_SERVER: ssl0.ovh.net
+[16-Mar-2025 18:35:08 UTC] MAIL_HOST via getenv: ssl0.ovh.net
+[16-Mar-2025 18:35:08 UTC] MAIL_HOST via $_ENV: ssl0.ovh.net
+[16-Mar-2025 18:35:08 UTC] MAIL_HOST via $_SERVER: ssl0.ovh.net
+[16-Mar-2025 18:35:23 UTC] MAIL_HOST via getenv: ssl0.ovh.net
+[16-Mar-2025 18:35:23 UTC] MAIL_HOST via $_ENV: ssl0.ovh.net
+[16-Mar-2025 18:35:23 UTC] MAIL_HOST via $_SERVER: ssl0.ovh.net
+[16-Mar-2025 18:38:20 UTC] MAIL_HOST via getenv: ssl0.ovh.net
+[16-Mar-2025 18:38:20 UTC] MAIL_HOST via $_ENV: ssl0.ovh.net
+[16-Mar-2025 18:38:20 UTC] MAIL_HOST via $_SERVER: ssl0.ovh.net
+[16-Mar-2025 18:38:20 UTC] Whoops\Exception\ErrorException: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php:19) in /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Http/Response.php:286
+Stack trace:
+#0 [internal function]: Whoops\Run->handleError(2, 'Cannot modify h...', '/Applications/M...', 286)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Http/Response.php(286): header('Cache-Control: ...')
+#2 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Http/Response.php(98): Kirby\Http\Response->send()
+#3 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Http\Response->__toString()
+#4 {main}
+[16-Mar-2025 18:38:54 UTC] MAIL_HOST via getenv: ssl0.ovh.net
+[16-Mar-2025 18:38:54 UTC] MAIL_HOST via $_ENV: ssl0.ovh.net
+[16-Mar-2025 18:38:54 UTC] MAIL_HOST via $_SERVER: ssl0.ovh.net
+[16-Mar-2025 18:38:54 UTC] Whoops\Exception\ErrorException: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php:19) in /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Http/Response.php:286
+Stack trace:
+#0 [internal function]: Whoops\Run->handleError(2, 'Cannot modify h...', '/Applications/M...', 286)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Http/Response.php(286): header('Cache-Control: ...')
+#2 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Http/Response.php(98): Kirby\Http\Response->send()
+#3 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Http\Response->__toString()
+#4 {main}
+[16-Mar-2025 18:39:06 UTC] MAIL_HOST via getenv: ssl0.ovh.net
+[16-Mar-2025 18:39:06 UTC] MAIL_HOST via $_ENV: ssl0.ovh.net
+[16-Mar-2025 18:39:06 UTC] MAIL_HOST via $_SERVER: ssl0.ovh.net
+[16-Mar-2025 18:39:06 UTC] Whoops\Exception\ErrorException: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php:19) in /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Http/Response.php:286
+Stack trace:
+#0 [internal function]: Whoops\Run->handleError(2, 'Cannot modify h...', '/Applications/M...', 286)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Http/Response.php(286): header('Cache-Control: ...')
+#2 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Http/Response.php(98): Kirby\Http\Response->send()
+#3 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Http\Response->__toString()
+#4 {main}
+[16-Mar-2025 18:42:19 UTC] MAIL_HOST via getenv: ssl0.ovh.net
+[16-Mar-2025 18:42:19 UTC] MAIL_HOST via $_ENV: ssl0.ovh.net
+[16-Mar-2025 18:42:19 UTC] MAIL_HOST via $_SERVER: ssl0.ovh.net
+[16-Mar-2025 18:42:19 UTC] Whoops\Exception\ErrorException: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php:19) in /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Http/Response.php:286
+Stack trace:
+#0 [internal function]: Whoops\Run->handleError(2, 'Cannot modify h...', '/Applications/M...', 286)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Http/Response.php(286): header('Cache-Control: ...')
+#2 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Http/Response.php(98): Kirby\Http\Response->send()
+#3 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Http\Response->__toString()
+#4 {main}
+[16-Mar-2025 18:45:40 UTC] MAIL_HOST via getenv: 
+[16-Mar-2025 18:45:40 UTC] MAIL_HOST via $_ENV: ssl0.ovh.net
+[16-Mar-2025 18:45:40 UTC] MAIL_HOST via $_SERVER: ssl0.ovh.net
+[16-Mar-2025 18:45:40 UTC] Whoops\Exception\ErrorException: Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php:19) in /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Http/Response.php:286
+Stack trace:
+#0 [internal function]: Whoops\Run->handleError(2, 'Cannot modify h...', '/Applications/M...', 286)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Http/Response.php(286): header('Cache-Control: ...')
+#2 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Http/Response.php(98): Kirby\Http\Response->send()
+#3 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Http\Response->__toString()
+#4 {main}
+[16-Mar-2025 19:44:51 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt unisexe classique col rond 205g, 100% coton
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 1
+    [to_print] => Centre poitrine
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => sfgerrg
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[16-Mar-2025 19:58:24 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt oversize lourd 240g
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 1
+    [to_print] => Centre poitrine
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => sfgerrg
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 10:09:11 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt oversize lourd 240g
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 2
+    [to_print] => Centre poitrine
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => sfgerrg
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 10:12:05 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt unisexe classique col rond 205g, 100% coton
+    [background] => T-shirt clair
+    [articles] => 1
+    [color] => 2
+    [to_print] => Centre poitrine
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 10:12:05 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 10:12:10 UTC] Error sending email: SMTP Error: Could not authenticate.
+[17-Mar-2025 10:12:10 UTC] #0 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(2058): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1687): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 17 M...', '<h2>Nouvelle de...')
+#2 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1521): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(155): PHPMailer\PHPMailer\PHPMailer->send()
+#4 [internal function]: Kirby\Cms\App->{closure}(Object(Kirby\Cms\App), Object(Kirby\Cms\Pages), Object(Kirby\Cms\Page))
+#5 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Toolkit/Controller.php(60): Closure->call(Object(Kirby\Cms\App), kirby: Object(Kirby\Cms\App), pages: Object(Kirby\Cms\Pages), page: Object(Kirby\Cms\Page))
+#6 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(450): Kirby\Toolkit\Controller->call(Object(Kirby\Cms\App), Array)
+#7 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(318): Kirby\Cms\App->controller('devis', Array, 'html')
+#8 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(1010): Kirby\Cms\Page->controller(Array, 'html')
+#9 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(784): Kirby\Cms\Page->render()
+#10 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(1191): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#11 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Cms\App->render()
+#12 {main}
+[17-Mar-2025 10:16:07 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt unisexe classique col rond 205g, 100% coton
+    [background] => T-shirt clair
+    [articles] => 1
+    [color] => 2
+    [to_print] => Centre poitrine
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 10:16:07 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 10:16:12 UTC] Error sending email: SMTP Error: Could not authenticate.
+[17-Mar-2025 10:16:12 UTC] #0 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(2058): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1687): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 17 M...', '<h2>Nouvelle de...')
+#2 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1521): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(155): PHPMailer\PHPMailer\PHPMailer->send()
+#4 [internal function]: Kirby\Cms\App->{closure}(Object(Kirby\Cms\App), Object(Kirby\Cms\Pages), Object(Kirby\Cms\Page))
+#5 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Toolkit/Controller.php(60): Closure->call(Object(Kirby\Cms\App), kirby: Object(Kirby\Cms\App), pages: Object(Kirby\Cms\Pages), page: Object(Kirby\Cms\Page))
+#6 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(450): Kirby\Toolkit\Controller->call(Object(Kirby\Cms\App), Array)
+#7 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(318): Kirby\Cms\App->controller('devis', Array, 'html')
+#8 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(1010): Kirby\Cms\Page->controller(Array, 'html')
+#9 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(784): Kirby\Cms\Page->render()
+#10 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(1191): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#11 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Cms\App->render()
+#12 {main}
+[17-Mar-2025 10:18:15 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt unisexe classique col rond 205g, 100% coton
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 1
+    [to_print] => Centre poitrine
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 10:18:15 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 10:18:21 UTC] Error sending email: SMTP Error: Could not authenticate.
+[17-Mar-2025 10:18:21 UTC] #0 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(2058): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1687): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 17 M...', '<h2>Nouvelle de...')
+#2 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1521): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(156): PHPMailer\PHPMailer\PHPMailer->send()
+#4 [internal function]: Kirby\Cms\App->{closure}(Object(Kirby\Cms\App), Object(Kirby\Cms\Pages), Object(Kirby\Cms\Page))
+#5 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Toolkit/Controller.php(60): Closure->call(Object(Kirby\Cms\App), kirby: Object(Kirby\Cms\App), pages: Object(Kirby\Cms\Pages), page: Object(Kirby\Cms\Page))
+#6 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(450): Kirby\Toolkit\Controller->call(Object(Kirby\Cms\App), Array)
+#7 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(318): Kirby\Cms\App->controller('devis', Array, 'html')
+#8 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(1010): Kirby\Cms\Page->controller(Array, 'html')
+#9 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(784): Kirby\Cms\Page->render()
+#10 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(1191): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#11 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Cms\App->render()
+#12 {main}
+[17-Mar-2025 10:20:24 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt unisexe classique col rond 205g, 100% coton
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 1
+    [to_print] => Centre poitrine
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 10:20:24 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 10:20:30 UTC] Error sending email: SMTP Error: Could not authenticate.
+[17-Mar-2025 10:20:30 UTC] #0 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(2058): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1687): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 17 M...', '<h2>Nouvelle de...')
+#2 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1521): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(156): PHPMailer\PHPMailer\PHPMailer->send()
+#4 [internal function]: Kirby\Cms\App->{closure}(Object(Kirby\Cms\App), Object(Kirby\Cms\Pages), Object(Kirby\Cms\Page))
+#5 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Toolkit/Controller.php(60): Closure->call(Object(Kirby\Cms\App), kirby: Object(Kirby\Cms\App), pages: Object(Kirby\Cms\Pages), page: Object(Kirby\Cms\Page))
+#6 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(450): Kirby\Toolkit\Controller->call(Object(Kirby\Cms\App), Array)
+#7 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(318): Kirby\Cms\App->controller('devis', Array, 'html')
+#8 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(1010): Kirby\Cms\Page->controller(Array, 'html')
+#9 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(784): Kirby\Cms\Page->render()
+#10 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(1191): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#11 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Cms\App->render()
+#12 {main}
+[17-Mar-2025 10:21:02 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt unisexe classique col rond 205g, 100% coton
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 1
+    [to_print] => Côté coeur
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 10:21:02 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 10:21:07 UTC] Error sending email: SMTP Error: Could not authenticate.
+[17-Mar-2025 10:21:07 UTC] #0 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(2058): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1687): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 17 M...', '<h2>Nouvelle de...')
+#2 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1521): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(156): PHPMailer\PHPMailer\PHPMailer->send()
+#4 [internal function]: Kirby\Cms\App->{closure}(Object(Kirby\Cms\App), Object(Kirby\Cms\Pages), Object(Kirby\Cms\Page))
+#5 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Toolkit/Controller.php(60): Closure->call(Object(Kirby\Cms\App), kirby: Object(Kirby\Cms\App), pages: Object(Kirby\Cms\Pages), page: Object(Kirby\Cms\Page))
+#6 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(450): Kirby\Toolkit\Controller->call(Object(Kirby\Cms\App), Array)
+#7 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(318): Kirby\Cms\App->controller('devis', Array, 'html')
+#8 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(1010): Kirby\Cms\Page->controller(Array, 'html')
+#9 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(784): Kirby\Cms\Page->render()
+#10 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(1191): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#11 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Cms\App->render()
+#12 {main}
+[17-Mar-2025 10:42:32 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt unisexe classique col rond 205g, 100% coton
+    [background] => T-shirt clair
+    [articles] => 1
+    [color] => 1
+    [to_print] => Côté coeur
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 10:42:32 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 10:42:38 UTC] Error sending email: SMTP Error: Could not authenticate.
+[17-Mar-2025 10:42:38 UTC] #0 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(2058): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1687): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 17 M...', '<h2>Nouvelle de...')
+#2 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1521): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(155): PHPMailer\PHPMailer\PHPMailer->send()
+#4 [internal function]: Kirby\Cms\App->{closure}(Object(Kirby\Cms\App), Object(Kirby\Cms\Pages), Object(Kirby\Cms\Page))
+#5 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Toolkit/Controller.php(60): Closure->call(Object(Kirby\Cms\App), kirby: Object(Kirby\Cms\App), pages: Object(Kirby\Cms\Pages), page: Object(Kirby\Cms\Page))
+#6 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(450): Kirby\Toolkit\Controller->call(Object(Kirby\Cms\App), Array)
+#7 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(318): Kirby\Cms\App->controller('devis', Array, 'html')
+#8 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(1010): Kirby\Cms\Page->controller(Array, 'html')
+#9 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(784): Kirby\Cms\Page->render()
+#10 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(1191): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#11 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Cms\App->render()
+#12 {main}
+[17-Mar-2025 10:55:35 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt unisexe classique col rond 205g, 100% coton
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 2
+    [to_print] => Centre poitrine
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 10:55:35 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 10:56:32 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt unisexe classique col rond 205g, 100% coton
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 2
+    [to_print] => Centre poitrine
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 10:56:32 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 10:57:44 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt unisexe classique col rond 205g, 100% coton
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 2
+    [to_print] => Centre poitrine
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 10:57:44 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 10:57:49 UTC] Error sending email: SMTP Error: Could not connect to SMTP host. Failed to connect to server
+[17-Mar-2025 10:57:49 UTC] #0 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(2058): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1687): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 17 M...', '<h2>Nouvelle de...')
+#2 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1521): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(155): PHPMailer\PHPMailer\PHPMailer->send()
+#4 [internal function]: Kirby\Cms\App->{closure}(Object(Kirby\Cms\App), Object(Kirby\Cms\Pages), Object(Kirby\Cms\Page))
+#5 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Toolkit/Controller.php(60): Closure->call(Object(Kirby\Cms\App), kirby: Object(Kirby\Cms\App), pages: Object(Kirby\Cms\Pages), page: Object(Kirby\Cms\Page))
+#6 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(450): Kirby\Toolkit\Controller->call(Object(Kirby\Cms\App), Array)
+#7 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(318): Kirby\Cms\App->controller('devis', Array, 'html')
+#8 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(1010): Kirby\Cms\Page->controller(Array, 'html')
+#9 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(784): Kirby\Cms\Page->render()
+#10 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(1191): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#11 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Cms\App->render()
+#12 {main}
+[17-Mar-2025 10:57:49 UTC] Error sending email: SMTP Error: Could not authenticate.
+[17-Mar-2025 10:57:49 UTC] #0 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(2058): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1687): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 17 M...', '<h2>Nouvelle de...')
+#2 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1521): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(155): PHPMailer\PHPMailer\PHPMailer->send()
+#4 [internal function]: Kirby\Cms\App->{closure}(Object(Kirby\Cms\App), Object(Kirby\Cms\Pages), Object(Kirby\Cms\Page))
+#5 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Toolkit/Controller.php(60): Closure->call(Object(Kirby\Cms\App), kirby: Object(Kirby\Cms\App), pages: Object(Kirby\Cms\Pages), page: Object(Kirby\Cms\Page))
+#6 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(450): Kirby\Toolkit\Controller->call(Object(Kirby\Cms\App), Array)
+#7 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(318): Kirby\Cms\App->controller('devis', Array, 'html')
+#8 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(1010): Kirby\Cms\Page->controller(Array, 'html')
+#9 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(784): Kirby\Cms\Page->render()
+#10 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(1191): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#11 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Cms\App->render()
+#12 {main}
+[17-Mar-2025 10:58:06 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt unisexe classique col rond 205g, 100% coton
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 1
+    [to_print] => Dos
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 10:58:06 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 10:58:12 UTC] Error sending email: SMTP Error: Could not authenticate.
+[17-Mar-2025 10:58:12 UTC] #0 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(2058): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1687): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 17 M...', '<h2>Nouvelle de...')
+#2 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1521): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(155): PHPMailer\PHPMailer\PHPMailer->send()
+#4 [internal function]: Kirby\Cms\App->{closure}(Object(Kirby\Cms\App), Object(Kirby\Cms\Pages), Object(Kirby\Cms\Page))
+#5 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Toolkit/Controller.php(60): Closure->call(Object(Kirby\Cms\App), kirby: Object(Kirby\Cms\App), pages: Object(Kirby\Cms\Pages), page: Object(Kirby\Cms\Page))
+#6 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(450): Kirby\Toolkit\Controller->call(Object(Kirby\Cms\App), Array)
+#7 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(318): Kirby\Cms\App->controller('devis', Array, 'html')
+#8 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(1010): Kirby\Cms\Page->controller(Array, 'html')
+#9 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(784): Kirby\Cms\Page->render()
+#10 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(1191): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#11 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Cms\App->render()
+#12 {main}
+[17-Mar-2025 11:00:35 UTC] Error sending email: SMTP Error: Could not connect to SMTP host.
+[17-Mar-2025 11:00:35 UTC] #0 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(2058): PHPMailer\PHPMailer\PHPMailer->smtpConnect(Array)
+#1 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1687): PHPMailer\PHPMailer\PHPMailer->smtpSend('Date: Mon, 17 M...', '<h2>Nouvelle de...')
+#2 /Applications/MAMP/htdocs/la-maison-du-print/vendor/phpmailer/phpmailer/src/PHPMailer.php(1521): PHPMailer\PHPMailer\PHPMailer->postSend()
+#3 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(155): PHPMailer\PHPMailer\PHPMailer->send()
+#4 [internal function]: Kirby\Cms\App->{closure}(Object(Kirby\Cms\App), Object(Kirby\Cms\Pages), Object(Kirby\Cms\Page))
+#5 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Toolkit/Controller.php(60): Closure->call(Object(Kirby\Cms\App), kirby: Object(Kirby\Cms\App), pages: Object(Kirby\Cms\Pages), page: Object(Kirby\Cms\Page))
+#6 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(450): Kirby\Toolkit\Controller->call(Object(Kirby\Cms\App), Array)
+#7 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(318): Kirby\Cms\App->controller('devis', Array, 'html')
+#8 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(1010): Kirby\Cms\Page->controller(Array, 'html')
+#9 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(784): Kirby\Cms\Page->render()
+#10 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(1191): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#11 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Cms\App->render()
+#12 {main}
+[17-Mar-2025 11:10:21 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt oversize lourd 240g
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 2
+    [to_print] => Centre poitrine
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 11:10:21 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 11:10:22 UTC] Email sent successfully
+[17-Mar-2025 11:10:22 UTC] TypeError: go(): Argument #1 ($url) must be of type string, null given, called in /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php on line 159 and defined in /Applications/MAMP/htdocs/la-maison-du-print/kirby/config/helpers.php:203
+Stack trace:
+#0 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/devis.php(159): go(NULL)
+#1 [internal function]: Kirby\Cms\App->{closure}(Object(Kirby\Cms\App), Object(Kirby\Cms\Pages), Object(Kirby\Cms\Page))
+#2 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Toolkit/Controller.php(60): Closure->call(Object(Kirby\Cms\App), kirby: Object(Kirby\Cms\App), pages: Object(Kirby\Cms\Pages), page: Object(Kirby\Cms\Page))
+#3 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(450): Kirby\Toolkit\Controller->call(Object(Kirby\Cms\App), Array)
+#4 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(318): Kirby\Cms\App->controller('devis', Array, 'html')
+#5 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/Page.php(1010): Kirby\Cms\Page->controller(Array, 'html')
+#6 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(784): Kirby\Cms\Page->render()
+#7 /Applications/MAMP/htdocs/la-maison-du-print/kirby/src/Cms/App.php(1191): Kirby\Cms\App->io(Object(Kirby\Cms\Page))
+#8 /Applications/MAMP/htdocs/la-maison-du-print/index.php(11): Kirby\Cms\App->render()
+#9 {main}
+[17-Mar-2025 11:13:26 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt oversize lourd 240g
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 2
+    [to_print] => Centre poitrine
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 11:13:26 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 11:13:27 UTC] Email sent successfully

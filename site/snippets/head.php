@@ -2,7 +2,7 @@
 <html lang="<?= kirby()->language()->code() ?>">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
 
     <!-- Primary Meta Tags -->
     <title><?= $site->title() ?></title>

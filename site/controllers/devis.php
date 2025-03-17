@@ -3,39 +3,18 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 ini_set('log_errors', 1);
-ini_set('error_log', __DIR__ . '/php_error.log');
+// ini_set('error_log', __DIR__ . '/php_error.log');
+ini_set('error_log', '/Applications/MAMP/htdocs/la-maison-du-print/site/controllers/php_error.log');
 
-require '/Applications/MAMP/htdocs/la-maison-du-print/vendor/autoload.php'; 
+require '/Applications/MAMP/htdocs/la-maison-du-print/vendor/autoload.php';
 
 use Dotenv\Dotenv;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Charger les variables d'environnement depuis le répertoire racine
+// Charger les variables d'environnement depuis le répertoire racine avec un chemin absolu
 $dotenv = Dotenv::createImmutable('/Applications/MAMP/htdocs/la-maison-du-print');
-$dotenv->safeLoad();
-
-// Définir les variables dans l'environnement
-putenv("MAIL_HOST=" . getenv('MAIL_HOST'));
-putenv("MAIL_PORT=" . getenv('MAIL_PORT'));
-putenv("MAIL_USERNAME=" . getenv('MAIL_USERNAME'));
-putenv("MAIL_PASSWORD=" . getenv('MAIL_PASSWORD'));
-putenv("MAIL_SECURITY=" . getenv('MAIL_SECURITY'));
-
-// Vérifier si les variables sont bien chargées
-error_log('MAIL_HOST: ' . getenv('MAIL_HOST'));
-error_log('MAIL_PORT: ' . getenv('MAIL_PORT'));
-error_log('MAIL_USERNAME: ' . getenv('MAIL_USERNAME'));
-error_log('MAIL_PASSWORD: ' . getenv('MAIL_PASSWORD'));
-error_log('MAIL_SECURITY: ' . getenv('MAIL_SECURITY'));
-
-if (!file_exists('/Applications/MAMP/htdocs/la-maison-du-print/.env')) {
-    exit("⚠️ Erreur : Le fichier .env n'existe pas !");
-}
-
-if (!getenv('MAIL_HOST')) {
-    exit("⚠️ Erreur : Les variables d'environnement ne sont pas chargées !");
-}
+$dotenv->load();
 
 return function ($kirby, $pages, $page) {
     $errors      = [];
@@ -149,21 +128,28 @@ return function ($kirby, $pages, $page) {
                 }
             }
         }
-
+        error_log('Vérification des données du formulaire : ' . print_r($data, true));
         // Envoi d'email
         if (empty($errors)) {
             try {
                 $mail = new PHPMailer(true);
                 $mail->isSMTP();
-                $mail->Host       = getenv('MAIL_HOST');
+                $mail->Host = $_ENV['MAIL_HOST'] ?? 'default_host';
                 $mail->SMTPAuth   = true;
-                $mail->Username   = getenv('MAIL_USERNAME');
-                $mail->Password   = getenv('MAIL_PASSWORD');
-                $mail->SMTPSecure = getenv('MAIL_SECURITY') ?: PHPMailer::ENCRYPTION_STARTTLS;
-                $mail->Port       = getenv('MAIL_PORT');
+                $mail->Username = $_ENV['MAIL_USERNAME'] ?? 'default_user';
+                $mail->Password = $_ENV['MAIL_PASSWORD'] ?? 'default_pass';
+                $mail->SMTPSecure = $_ENV['MAIL_SECURITY'] ?? PHPMailer::ENCRYPTION_STARTTLS;
+                $mail->CharSet = 'UTF-8'; 
+                $mail->Port = $_ENV['MAIL_PORT'] ?? 587;
 
                 $mail->setFrom('atelier@lamaisonduprint.fr', 'La Maison du Print');
                 $mail->addAddress('atelier@lamaisonduprint.fr', 'Atelier');
+
+                // S'assurer que $body est bien encodé en UTF-8
+                $body = mb_convert_encoding($body, 'UTF-8', 'auto');
+
+                // Utiliser htmlspecialchars pour garantir l'encodage HTML des caractères spéciaux
+                $body = htmlspecialchars($body, ENT_QUOTES, 'UTF-8');
 
                 $mail->isHTML(true);
                 $mail->Subject = 'Nouvelle demande de devis';
@@ -172,18 +158,23 @@ return function ($kirby, $pages, $page) {
                 foreach ($attachments as $attachment) {
                     $mail->addAttachment($attachment);
                 }
-
+                error_log('Début du processus d\'envoi du mail');
                 $mail->send();
                 error_log('Email sent successfully');
 
                 // Redirection après l'envoi de l'email
-                go($kirby->url('redirection'));
+                go(url('redirection'));
+                // exit();  
             } catch (Exception $e) {
                 error_log('Error sending email: ' . $e->getMessage());
                 $errors[] = "Erreur lors de l'envoi de l'email : " . $e->getMessage();
+                error_log($e->getTraceAsString()); 
             }
         }
     }
 
     return compact('errors', 'success', 'data');
 };
+
+// chmod 777 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/
+// Cette commande accorde toutes les permissions au dossier où les logs sont stockés, ce qui permet au serveur web de bien enregistrer les erreurs.
