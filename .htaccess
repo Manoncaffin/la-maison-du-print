@@ -1,14 +1,11 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
+    # Bloquer l'accès au dossier vendor
+    RewriteRule ^vendor/ - [F,L]
+
     # Redirige tout vers index.php
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ index.php [L]
 </IfModule>
-
-# Interdire l'accès au dossier vendor
-<Directory "/home/lamaiso5/public_html/vendor">
-    Order Deny,Allow
-    Deny from all
-</Directory>
