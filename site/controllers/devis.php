@@ -73,18 +73,20 @@ return function ($kirby, $pages, $page) {
         }
 
         // Construction du message HTML avec toutes les données
-        $body = "<h2>Nouvelle demande de devis</h2>
-                <p><strong>Entreprise :</strong> {$data['company']}</p>
-                <p><strong>SIRET :</strong> {$data['siret']}</p>
-                <p><strong>Nom :</strong> {$data['name']} {$data['firstname']}</p>
-                <p><strong>Email :</strong> {$data['email']}</p>
-                <p><strong>Téléphone :</strong> {$data['phone']}</p>
-                <p><strong>Modèle :</strong> {$data['model']}</p>
-                <p><strong>Fond :</strong> {$data['background']}</p>
-                <p><strong>Nombre d’articles :</strong> {$data['articles']}</p>
-                <p><strong>Nombre de couleurs :</strong> {$data['color']}</p>
-                <p><strong>Zone à imprimer :</strong> {$data['to_print']}</p>
-                <p><strong>Description :</strong> {$data['description']}</p>";
+        $body = "
+        <h2>Nouvelle demande de devis</h2>
+        <p><strong>Entreprise :</strong> {$data['company']}</p>
+        <p><strong>SIRET :</strong> {$data['siret']}</p>
+        <p><strong>Nom :</strong> {$data['name']}</p> 
+        <p><strong>Nom :</strong> {$data['firstname']}</p>
+        <p><strong>Email :</strong> {$data['email']}</p>
+        <p><strong>Téléphone :</strong> {$data['phone']}</p>
+        <p><strong>Modèle :</strong> {$data['model']}</p>
+        <p><strong>Fond :</strong> {$data['background']}</p>
+        <p><strong>Nombre d’articles :</strong> {$data['articles']}</p>
+        <p><strong>Nombre de couleurs :</strong> {$data['color']}</p>
+        <p><strong>Zone à imprimer :</strong> {$data['to_print']}</p>
+        <p><strong>Description :</strong> {$data['description']}</p>";
 
         $data['files'] = isset($_FILES['files']) && isset($_FILES['files']['tmp_name']) && !empty($_FILES['files']['tmp_name'][0]) ? $_FILES['files'] : null;
 
@@ -148,9 +150,6 @@ return function ($kirby, $pages, $page) {
                 // S'assurer que $body est bien encodé en UTF-8
                 $body = mb_convert_encoding($body, 'UTF-8', 'auto');
 
-                // Utiliser htmlspecialchars pour garantir l'encodage HTML des caractères spéciaux
-                $body = htmlspecialchars($body, ENT_QUOTES, 'UTF-8');
-
                 $mail->isHTML(true);
                 $mail->Subject = 'Nouvelle demande de devis';
                 $mail->Body    = $body;
@@ -175,6 +174,3 @@ return function ($kirby, $pages, $page) {
 
     return compact('errors', 'success', 'data');
 };
-
-// chmod 777 /Applications/MAMP/htdocs/la-maison-du-print/site/controllers/
-// Cette commande accorde toutes les permissions au dossier où les logs sont stockés, ce qui permet au serveur web de bien enregistrer les erreurs.

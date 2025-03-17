@@ -647,3 +647,131 @@ Stack trace:
 
 [17-Mar-2025 11:13:26 UTC] Début du processus d'envoi du mail
 [17-Mar-2025 11:13:27 UTC] Email sent successfully
+[17-Mar-2025 11:36:50 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt unisexe classique col rond 205g, 100% coton
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 1
+    [to_print] => Centre poitrine
+    [description] => Bonjour Monsieur Fleury, blablablabalbalbalbalbasdjjksdkjsnjcndsjkcbkjxbcksbsdjbcksjbdckjsbdckjbsjxcbsbvsdbvskdjbskjvbjskdbvjkbdsbskjbxskcjbkjdvbsjkdbvjkcsbdkjvsbdvkjsbdjkvsn;xcns;cnjlsdnvbjls. 
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => Array
+        (
+            [name] => Array
+                (
+                    [0] => RECENSEMENT manon.pdf
+                )
+
+            [full_path] => Array
+                (
+                    [0] => RECENSEMENT manon.pdf
+                )
+
+            [type] => Array
+                (
+                    [0] => application/pdf
+                )
+
+            [tmp_name] => Array
+                (
+                    [0] => /Applications/MAMP/tmp/php/phpzyFTlW
+                )
+
+            [error] => Array
+                (
+                    [0] => 0
+                )
+
+            [size] => Array
+                (
+                    [0] => 525176
+                )
+
+        )
+
+)
+
+[17-Mar-2025 11:36:50 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 11:36:51 UTC] Email sent successfully
+[17-Mar-2025 11:47:58 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt unisexe classique col rond 205g, 100% coton
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 1
+    [to_print] => Côté coeur
+    [description] => éù$*!?/+=:;,§ù%`£
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 11:47:58 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 11:47:59 UTC] Email sent successfully
+[17-Mar-2025 12:01:05 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt unisexe classique col rond 205g, 100% coton
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 1
+    [to_print] => Centre poitrine
+    [description] => ùéà
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Manon Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 12:01:05 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 12:01:06 UTC] Email sent successfully
+[17-Mar-2025 12:32:55 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt oversize lourd 240g
+    [background] => T-shirt clair
+    [articles] => 1
+    [color] => 1
+    [to_print] => Centre poitrine
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 12:32:55 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 12:32:56 UTC] Email sent successfully
+[17-Mar-2025 12:46:55 UTC] Vérification des données du formulaire : Array
+(
+    [model] => T-shirt unisexe classique col rond 205g, 100% coton
+    [background] => T-shirt foncé
+    [articles] => 1
+    [color] => 1
+    [to_print] => Centre poitrine
+    [description] => 
+    [company] => Manon Caffin
+    [siret] => 45998877667733
+    [name] => Caffin
+    [firstname] => Manon
+    [email] => caffinmanon@gmail.com
+    [phone] => 0681782314
+    [files] => 
+)
+
+[17-Mar-2025 12:46:55 UTC] Début du processus d'envoi du mail
+[17-Mar-2025 12:46:56 UTC] Email sent successfully
