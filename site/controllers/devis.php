@@ -1,12 +1,13 @@
 <?php
-require '/Applications/MAMP/htdocs/la-maison-du-print/vendor/autoload.php';
+
+// require '/Applications/MAMP/htdocs/la-maison-du-print/vendor/autoload.php';
+require '/home/lamaiso5/public_html/vendor/autoload.php';  
 
 use Dotenv\Dotenv;
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-// Charger les variables d'environnement depuis le répertoire racine avec un chemin absolu
-$dotenv = Dotenv::createImmutable('/Applications/MAMP/htdocs/la-maison-du-print');
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../../vendor');
 $dotenv->load();
 
 return function ($kirby, $pages, $page) {
@@ -123,6 +124,7 @@ return function ($kirby, $pages, $page) {
                 }
             }
         }
+
         // Envoi d'email
         if (empty($errors)) {
             try {
@@ -149,6 +151,7 @@ return function ($kirby, $pages, $page) {
                 foreach ($attachments as $attachment) {
                     $mail->addAttachment($attachment);
                 }
+
                 $mail->send();
 
                 // Redirection après l'envoi de l'email

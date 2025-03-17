@@ -6,3 +6,9 @@
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)$ index.php [L]
 </IfModule>
+
+# Interdire l'accès au dossier vendor
+<Directory "/home/lamaiso5/public_html/vendor">
+    Order Deny,Allow
+    Deny from all
+</Directory>
