@@ -1,20 +1,6 @@
-.page-enter {
-    opacity: 0;
-    transform: translateY(-100px);
+.home.page-enter {
     animation: slideDown 0.8s ease-out forwards;
 }
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
 
 
 /* --------------------------------------------------- */
@@ -34,6 +20,18 @@
         align-items: center;
         justify-content: center;
         padding-bottom: 30px;
+    }
+
+    .all_logo_homepage img {
+        opacity: 0;
+        animation: fadeInLogo 0.5s ease-out forwards;
+        animation-delay: 0.8s; /* Délais de l'animation du logo */
+    }
+    
+    @keyframes fadeInLogo {
+        to {
+            opacity: 1;
+        }
     }
 
     .all_logo_homepage img {

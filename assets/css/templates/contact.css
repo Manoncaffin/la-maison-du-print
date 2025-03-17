@@ -1,19 +1,5 @@
-.page-enter {
-    opacity: 0;
-    transform: translateY(-100px);
+.contact.page-enter {
     animation: slideDown 0.8s ease-out forwards;
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* Start coding here */

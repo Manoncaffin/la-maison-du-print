@@ -27,9 +27,6 @@ $isGalerieActive = in_array($current_page, ['galerie', 'serigraphie', 'impressio
 
             <nav class="all_menu-home">
                 <ul>
-                    <li class="mobile-only-home">
-                        <a href="<?= url('home') ?>"><?= t('menu_home'); ?></a>
-                    </li>
                     <li class="<?= ($page == 'atelier') ? 'active' : '' ?>">
                         <a href="<?= url('atelier') ?>"><?= t('menu_workshop'); ?></a>
                     </li>

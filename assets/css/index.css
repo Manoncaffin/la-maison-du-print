@@ -348,11 +348,6 @@ a {
         display: none;
     }
 
-    .mobile-only,
-    .mobile-only-home {
-        display: block;
-    }
-
     .image_homepage img {
         display: none;
     }
@@ -683,10 +678,6 @@ a {
         border: 1px solid black;
     }
 
-    .mobile-only {
-        display: none;
-    }
-
     /* ------- HEADER ------- */
     /* ---------------------- */
 
@@ -807,18 +798,12 @@ a {
         display: none;
     }
 
-    .mobile-only,
-    .mobile-only-home {
-        display: none;
-    }
-
     .all_menu a {
         font-size: 1rem;
     }
 
     .all_menu ul {
         gap: 10px;
-        display: flex;
     }
 
     .all_menu .language-home .all_menu-home .language-home {

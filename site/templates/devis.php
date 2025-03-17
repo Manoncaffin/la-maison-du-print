@@ -1,4 +1,4 @@
-<body class="page-enter">
+<body class="page-enter <?= $page->slug() ?>">
     <?php snippet('header') ?>
     <?php snippet('head') ?>
 

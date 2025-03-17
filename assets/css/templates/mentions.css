@@ -1,22 +1,5 @@
-.page-enter {
-    opacity: 0;
-    transform: translateY(-100px);
+.mentions.page-enter {
     animation: slideDown 0.8s ease-out forwards;
-}
-
-strong {
-    font-family: "Inter-Semibold";
-}
-
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
 
 /* Start coding here */

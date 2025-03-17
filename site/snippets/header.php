@@ -28,9 +28,6 @@ $logo = $site->files()->find('logo.png');
 
             <nav class="all_menu all_menu_mobile">
                 <ul>
-                    <li class="mobile-only">
-                        <a href="<?= url('home') ?>"><?= t('menu_home'); ?></a>
-                    </li>
                     <li class="<?= ($page == 'atelier') ? 'active' : '' ?>">
                         <a href="<?= url('atelier') ?>"><?= t('menu_workshop'); ?></a>
                     </li>
@@ -55,3 +52,9 @@ $logo = $site->files()->find('logo.png');
             </nav>
         </header>
     </div>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    document.body.classList.add('page-enter'); 
+});
+</script>
+
