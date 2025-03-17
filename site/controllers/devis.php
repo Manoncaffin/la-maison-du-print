@@ -1,11 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-ini_set('log_errors', 1);
-// ini_set('error_log', __DIR__ . '/php_error.log');
-ini_set('error_log', '/Applications/MAMP/htdocs/la-maison-du-print/site/controllers/php_error.log');
-
 require '/Applications/MAMP/htdocs/la-maison-du-print/vendor/autoload.php';
 
 use Dotenv\Dotenv;
@@ -130,7 +123,6 @@ return function ($kirby, $pages, $page) {
                 }
             }
         }
-        error_log('Vérification des données du formulaire : ' . print_r($data, true));
         // Envoi d'email
         if (empty($errors)) {
             try {
@@ -157,17 +149,13 @@ return function ($kirby, $pages, $page) {
                 foreach ($attachments as $attachment) {
                     $mail->addAttachment($attachment);
                 }
-                error_log('Début du processus d\'envoi du mail');
                 $mail->send();
-                error_log('Email sent successfully');
 
                 // Redirection après l'envoi de l'email
                 go(url('redirection'));
                 // exit();  
             } catch (Exception $e) {
-                error_log('Error sending email: ' . $e->getMessage());
                 $errors[] = "Erreur lors de l'envoi de l'email : " . $e->getMessage();
-                error_log($e->getTraceAsString()); 
             }
         }
     }
