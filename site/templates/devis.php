@@ -1,9 +1,8 @@
 <body class="page-enter">
     <?php snippet('header') ?>
-    <?= snippet('head') ?>
+    <?php snippet('head') ?>
 
     <?php
-
     $errors = [];
     $success = false;
 
@@ -42,13 +41,6 @@
             <?php endif; ?>
 
             <form id="devisForm" action="devis" method="post" enctype="multipart/form-data">
-            <?php
-// if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//     echo "<pre>";
-//     var_dump($_POST);
-//     echo "</pre>";
-// }
-?>
                 <input type="hidden" name="csrf_token" value="<?= csrf() ?>" />
                 <!-- Section: Votre commande -->
                 <div class="first">

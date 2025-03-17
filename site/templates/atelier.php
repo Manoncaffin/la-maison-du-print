@@ -19,7 +19,7 @@
 
             <div class="video">
                 <?php if ($atelier->video()->isNotEmpty()): ?>
-                    <video controls>
+                    <video autoplay loop muted playsinline>
                         <source src="<?= $atelier->video()->toFile()->url(); ?>" type="video/mp4">
                         Votre navigateur ne supporte pas la balise vidéo.
                     </video>
