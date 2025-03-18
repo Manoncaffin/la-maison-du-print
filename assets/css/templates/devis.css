@@ -105,28 +105,40 @@
         display: none;
     }
 
+    .file-upload-container {
+        display: flex;
+        align-items: center;
+    }
+    
     .custom-file-upload {
         display: inline-block;
         padding: 10px 20px;
-        background-color: #f0f0f0;
+        background-color: #ffffff;
         border: 1px solid #ccc;
-        border-radius: 4px;
+        border-radius: 15px; 
         cursor: pointer;
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
         font-size: 14px;
-        color: #333;
-        box-shadow: 2px 4px 0px rgba(0, 31, 141, 0.15);
+        color: black;
+        box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.15); 
+        width: fit-content;
     }
     
     .custom-file-upload:hover {
-        background-color: #e0e0e0;
+        background-color: #f0f0f0;
+    }
+    
+    .file-status {
+        margin-left: 10px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 14px;
+        color: #333;
     }
 
     .form-submit {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 10px;
     }
 
     .form-submit button {
@@ -139,7 +151,7 @@
         margin: 15px 0 0 0;
         font-size: 0.7rem;
         cursor: pointer;
-        box-shadow: 2px 4px 0px rgba(0, 31, 141, 0.15);
+        box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.15); 
     }
 
     .form-submit button:hover {
@@ -231,7 +243,7 @@
         margin: 15px 0 40px 0;
         font-size: 0.7rem;
         cursor: pointer;
-        box-shadow: 2px 4px 0px rgba(0, 31, 141, 0.15);
+        box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.15); 
     }
 
     .devis_button a:hover {

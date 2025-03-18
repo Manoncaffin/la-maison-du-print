@@ -65,7 +65,7 @@ return [
     'placeholder.email' => 'Entrez votre email',
     'placeholder.phone' => 'Entrez votre numéro',
 
-    'devis.submit' => 'Envoyer le formulaire',
+    'devis.submit' => 'ENVOYER LE FORMULAIRE',
     'devis.legal' => 'En tant que responsable de traitement, La Maison du print met en œuvre un traitement de données personnelles vous concernant aux fins de gestion de vos demandes de prise de contact et de réponse à vos devis. Pour en savoir plus sur la gestion de vos données et de vos droits par La Maison du print, vous êtes invité·es à vous rendre à l’adresse suivante : ',
 ],
 ];

@@ -2,6 +2,10 @@
     animation: slideDown 0.8s ease-out forwards;
 }
 
+a {
+    font-weight: lighter;
+}
+
 /* Start coding here */
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
@@ -72,7 +76,6 @@
 
     #partners-list li a {
         text-decoration: none;
-        font-weight: lighter;
     }
 
     #partners-list li a:hover {
@@ -137,6 +140,7 @@
         align-items: center;
         pointer-events: none;
         z-index: 999;
+        width: fit-content;
     }
     
     html[lang="fr"] body .client-logo-container {
@@ -154,6 +158,7 @@
         align-items: center;
         pointer-events: none;
         z-index: 999;
+        width: fit-content;
     }
 
     .client-item:hover .client-logo-container {
