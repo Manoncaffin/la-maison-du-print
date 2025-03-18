@@ -339,6 +339,7 @@
     .networks {
         grid-column: 8 / span 4;
         grid-row: 2;
+        padding-top: 20px;
     }
 
     .clients,

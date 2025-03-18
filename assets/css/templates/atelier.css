@@ -36,10 +36,6 @@ video::-webkit-media-controls {
         margin-top: 6px;
     }
 
-    .technique {
-        padding: 0 20px 0 20px;
-    }
-
     .about {
         padding-top: 30px;
         grid-column: 1 / span 6;
@@ -56,7 +52,7 @@ video::-webkit-media-controls {
     }
 
     .technique {
-        padding-top: 40px;
+        padding: 30px 20px 0 20px;
         font-size: 1.9rem;
 
         h3 {
@@ -154,7 +150,7 @@ video::-webkit-media-controls {
         .about {
             grid-column: 1 / span 6;
         }
-    
+
         .video {
             grid-column: 8 / span 5;
         }
@@ -237,7 +233,7 @@ video::-webkit-media-controls {
             display: flex;
             justify-content: end;
         }
-    
+
         .gallery_text_two {
             grid-column: 7 / span 6;
             grid-row: 1 / span 1;
@@ -245,12 +241,12 @@ video::-webkit-media-controls {
             display: flex;
             flex-direction: column;
             align-items: end;
-    
+
             p {
                 text-align: right;
             }
         }
-    
+
         .gallery_img_two {
             grid-column: 1 / span 5;
             grid-row: 1 / span 1;
@@ -289,7 +285,7 @@ video::-webkit-media-controls {
 
         .about {
             grid-column: 2 / span 5;
-        }    
+        }
 
         .video {
             grid-column: 7 / span 5;
@@ -329,11 +325,11 @@ video::-webkit-media-controls {
         .gallery_title_two {
             grid-column: 7 / span 5;
         }
-    
+
         .gallery_text_two {
             grid-column: 7 / span 5;
         }
-    
+
         .gallery_img_two {
             grid-column: 2 / span 5;
         }
@@ -349,7 +345,7 @@ video::-webkit-media-controls {
     .container_atelier {
         .about {
             grid-column: 2 / span 5;
-        }    
+        }
 
         .video {
             grid-column: 8 / span 4;
@@ -370,7 +366,7 @@ video::-webkit-media-controls {
         .gallery_text_two {
             grid-column: 7 / span 5;
         }
-    
+
         .gallery_img_two {
             grid-column: 2 / span 4;
         }

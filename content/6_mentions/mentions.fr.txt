@@ -4,34 +4,35 @@ Title: Mentions légales
 
 Column1:
 
-**Éditeur du site **
+## Éditeur du site
 La Maison du print
-**Siège social :** 123 rue de la Soie, 38110 La Bâtie-Montgascon
-**Numéro SIRET :** 2803693800019
-**Numéro RCS :** Vienne B 928 036 938
-**Numéro TVA intracommunautaire :** FR45928036938
-**Email :** atelier@lamaisonduprint.fr
-**Téléphone :** +33 (7) 68 18 48 90
-**Responsable de la publication :** Simon Fleury, gérant de la société La Maison du print
+## Siège social : 123 rue de la Soie, 38110 La Bâtie-Montgascon
+## Numéro SIRET : 2803693800019
+##Numéro RCS : Vienne B 928 036 938
+##Numéro TVA intracommunautaire :##  FR45928036938
+##Email : atelier@lamaisonduprint.fr
+##Téléphone : +33 (7) 68 18 48 90
+##Responsable de la publication : Simon Fleury, gérant de la société La Maison du print
 
-**Hébergement**
-**Hébergeur :** EX2
-**Siège social :** 34 Avenue des Champs-Élysées, 75008 Paris
+## Hébergement
+## Hébergeur : EX2
+## Siège social : 34 Avenue des Champs-Élysées, 75008 Paris
 
-**Propriété intellectuelle** 
+## Propriété intellectuelle
 Tous les éléments graphiques, la structure et, plus généralement, le contenu du site La Maison du print sont protégés par le droit d’auteur et les lois relatives à la propriété intellectuelle. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de La Maison du print.
 
 ----
 
 Column2:
 
-**Responsabilité** 
+## Responsabilité
 La Maison du print met tout en œuvre pour assurer l’exactitude des informations publiées sur le site. Cependant, la société ne saurait être tenue responsable des erreurs ou omissions dans les contenus publiés. L'utilisation des informations et contenus présents sur ce site relève de la seule responsabilité de l'utilisateur.
 
-**Conception visuelle et développementIdentité visuelle :** Simon Fleury et Gaspard Audrain
-**Photographies et vidéos :** Simon Fleury
-**Webdesign et code :** Manon Caffin
-**Typographie :** Inter par Rasmus Andersson
+## Conception visuelle et développement
+Identité visuelle : Simon Fleury et Gaspard Audrain
+## Photographies et vidéos : Simon Fleury
+## Webdesign et code : Manon Caffin
+## Typographie : Inter par Rasmus Andersson
 
 ----
 

@@ -151,6 +151,13 @@
             font-size: 0.7rem;
         }
     }
+
+    select {
+        background-color: white;
+        -webkit-appearance: none;
+        -moz-appearance: none;    
+        appearance: none;          
+    }
     
     select,
     input::placeholder,
@@ -164,7 +171,6 @@
     select:focus,
     input:focus,
     textarea:focus {
-        /* outline: 2px solid #001f8d; */
         outline: none;
         border-color: #001f8d;
         box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);

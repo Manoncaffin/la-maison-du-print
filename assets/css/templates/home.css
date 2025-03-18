@@ -25,7 +25,7 @@
     .all_logo_homepage img {
         opacity: 0;
         animation: fadeInLogo 0.5s ease-out forwards;
-        animation-delay: 0.8s; /* Délais de l'animation du logo */
+        animation-delay: 0.8s;
     }
     
     @keyframes fadeInLogo {
@@ -37,7 +37,7 @@
     .all_logo_homepage img {
         display: flex;
         justify-content: center;
-        max-width: 300px;
+        max-width: 330px;
         rotate: -20deg;
     }
 
