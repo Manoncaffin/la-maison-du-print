@@ -84,7 +84,7 @@
                         <label for="description"><?= t('devis.description') ?></label>
                         <textarea id="description" name="description" placeholder="<?= t('placeholder.description') ?>"></textarea>
 
-                        <label for="files"><?= t('devis.files') ?></label>
+                        <label for="files" class="custom-file-upload"><?= t('devis.files') ?></label>
                         <input id="files" name="files[]" type="file" accept=".pdf,.ai, jpeg, jpg, png">
                     </div>
                     <!-- Section: Informations client -->
