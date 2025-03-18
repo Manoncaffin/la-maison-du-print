@@ -72,6 +72,7 @@
 
     #partners-list li a {
         text-decoration: none;
+        font-weight: lighter;
     }
 
     #partners-list li a:hover {
