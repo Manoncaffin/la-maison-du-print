@@ -30,7 +30,7 @@ a {
     }
 
     .title-page {
-        padding: 120px 20px 0 20px;
+        padding: 140px 20px 0 20px;
     }
 
     .border {
@@ -70,6 +70,13 @@ a {
         display: none;
     }
 
+    #selected-partner {
+        display: inline;
+        color: gray;
+        cursor: pointer;
+    }
+
+    #selected-partner,
     #partners-list li {
         color: gray;
     }
@@ -78,6 +85,7 @@ a {
         text-decoration: none;
     }
 
+    #selected-partner:hover,
     #partners-list li a:hover {
         color: black;
     }
@@ -88,18 +96,8 @@ a {
         align-items: flex-start;
     }
 
-    #selected-partner {
-        color: gray;
-        cursor: pointer;
-        display: block;
-    }
-
     .column .column-1 {
         margin-bottom: 20px;
-    }
-
-    #selected-partner {
-        display: inline;
     }
 
     .partners {
@@ -221,7 +219,7 @@ a {
     }
 
     .title-page {
-        padding: 120px 40px 0 40px;
+        padding: 140px 40px 0 40px;
     }
 
     p {
@@ -251,11 +249,11 @@ a {
     }
 
     html[lang="en"] body #partners-list {
-        padding-left: 226px;
+        padding-left: 236px;
     }
     
     html[lang="fr"] body #partners-list {
-        padding-left: 203px;
+        padding-left: 213px;
     }
 }
 

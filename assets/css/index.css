@@ -180,20 +180,20 @@ a {
         background-color: transparent;
     }
 
-    .container_header {
-        max-width: 1500px;
+    .container_header,
+    .container_header-home {
         width: 100%;
         margin: 0 auto;
         padding: 15px 20px;
+    }
+
+    .container_header {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
 
     .container_header-home {
-        width: 100%;
-        margin: 0 auto;
-        padding: 15px 20px;
         display: flex;
         justify-content: end;
         align-items: center;
@@ -225,7 +225,7 @@ a {
     }
 
     /* Début menu déroulant */
-    .all_menu {
+    .all_menu_mobile {
         position: fixed;
         top: -100%;
         left: 0;
@@ -238,6 +238,10 @@ a {
         align-items: center;
         z-index: 998;
         transition: top 0.5s ease;
+    }
+
+    .all_menu {
+        height: fit-content;
     }
 
     .all_menu-home {
@@ -440,6 +444,11 @@ a {
         padding: 15px 40px;
     }
 
+    .container_header {
+        display: flex;
+        justify-content: space-between;
+    }
+
     .container_header-home {
         display: flex;
         justify-content: end;
@@ -449,31 +458,12 @@ a {
         font-size: 1.1rem;
     }
 
-    .all_menu {
-        height: fit-content;
-    }
-
     .all_menu li.active {
         background-color: black;
     }
 
     .all_menu li.active a {
         color: white;
-    }
-
-    .burger {
-        display: none;
-    }
-
-    .all_menu {
-        position: static;
-        display: flex;
-        justify-content: center;
-        background: none;
-        color: black;
-        top: auto;
-        width: auto;
-        transition: none;
     }
 
     .all_menu a,
@@ -495,8 +485,7 @@ a {
 
     .all_menu ul li {
         border-radius: 20px;
-        width: 95px;
-        padding: 4px;
+        padding: 4px 10px;
         border: 1px solid black;
         position: relative;
         display: flex;
@@ -734,6 +723,7 @@ a {
 
     .container_header {
         padding: 20px 80px 20px 80px;
+        justify-content: space-between;
     }
 
     .container_header-home {
@@ -775,6 +765,17 @@ a {
         position: static;
         background-color: transparent;
         gap: 20px;
+    }
+
+    .all_menu {
+        position: static;
+        display: flex;
+        justify-content: center;
+        background: none;
+        color: black;
+        top: auto;
+        width: auto;
+        transition: none;
     }
 
     .logo {

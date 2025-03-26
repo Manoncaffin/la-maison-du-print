@@ -24,7 +24,7 @@ video::-webkit-media-controls {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         column-gap: var(--gutter-width);
-        padding: 120px 20px 0 20px;
+        padding: 140px 20px 0 20px;
     }
 
     .title-page {
@@ -146,7 +146,7 @@ video::-webkit-media-controls {
 @media screen and (min-width: 768px) {
     .container_atelier {
         grid-template-columns: repeat(12, 1fr);
-        padding: 120px 40px 0 40px;
+        padding: 140px 40px 0 40px;
 
         .about {
             grid-column: 1 / span 6;
@@ -280,7 +280,7 @@ video::-webkit-media-controls {
 /* --------------------------------------------------- */
 @media only screen and (min-width: 1000px) {
     .container_atelier {
-        padding: 120px 80px 0 80px;
+        padding: 140px 80px 0 80px;
         max-width: 1500px;
         margin: 0 auto;
 

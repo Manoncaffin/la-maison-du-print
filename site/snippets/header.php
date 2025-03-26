@@ -49,6 +49,7 @@ $logo = $site->files()->find('logo.png');
                             </li>
                         <?php endif; ?>
                     <?php endforeach; ?>
+                </ul>
             </nav>
         </header>
     </div>

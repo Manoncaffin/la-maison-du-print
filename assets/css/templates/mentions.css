@@ -40,7 +40,7 @@
     }
 
     .title-page {
-        padding: 120px 20px 0 20px;
+        padding: 140px 20px 0 20px;
 }
 
 .column-1 {
@@ -63,7 +63,7 @@
     }
 
     .title-page {
-        padding: 120px 40px 0 40px;
+        padding: 140px 40px 0 40px;
     }
 
     .legal-notice {
@@ -87,7 +87,7 @@
     }
 
     .title-page {
-        padding: 120px 80px 0 80px;
+        padding: 140px 80px 0 80px;
         max-width: 1500px;
         margin: 0 auto;
     }
@@ -131,6 +131,6 @@
 @media only screen and (min-width: 1500px) {
 
     .title-page {
-        padding: 130px 80px 0 80px;
+        padding: 140px 80px 0 80px;
     }
 }
