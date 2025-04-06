@@ -68,7 +68,7 @@ return [
         'placeholder.email' => 'Enter your email',
         'placeholder.phone' => 'Enter your phone number',
         'devis.submit' => 'SUBMIT THE FORM',
-        'devis.legal' => 'As the data controller, La Maison du print processes your personal data in order to manage your contact requests and respond to your quotes. To learn more about how La Maison du print manages your data and your rights, please visit: ',
+        'devis.legal' => 'As the data controller, La Maison du print processes your personal data in order to manage your contact requests and respond to your quotes.',
         'legal_notice' => 'LEGAL NOTICE'
     ],
     'url' => NULL
