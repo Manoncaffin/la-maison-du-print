@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!-- Primary Meta Tags -->
     <title><?= $site->title() ?></title>
     <meta name="title" content="<?= $site->title() ?>" />
@@ -22,7 +22,6 @@
     <meta property="twitter:image" content="<?= $site->url() ?>/assets/imgs/meta-tags.png" />
 
     <meta name="<?= $site->title() ?>" content="">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="Keywords" content="Atelier d'impression sérigraphie, impression DTF" />
     <meta name="Author" content="La Maison du print" />
     <meta name="Revisit-After" content="15 days" />

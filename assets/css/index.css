@@ -405,6 +405,7 @@ a {
         position: relative;
         font-weight: 600;
         font-family: 'Inter-Semibold';
+        color: white;
     }
 
     .mentions_footer a::after {

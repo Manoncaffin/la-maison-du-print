@@ -8,7 +8,9 @@
         </div>
 
         <div class="mentions_footer">
-            <h3><a href="<?= url('mentions') ?>"><?php echo t('legal_notices'); ?></a></h3>
+            <ul>
+                <li><a href="<?= url('mentions') ?>"><?php echo t('legal_notices'); ?></a></li>
+            </ul>
         </div>
     </div>
 
