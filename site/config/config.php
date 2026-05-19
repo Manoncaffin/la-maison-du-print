@@ -21,7 +21,6 @@ return [
         'methods' => ['password', 'password-reset']
     ],
 
-
     'upload' => [
         'maxsize' => 50 * 1024 * 1024,
         'types' => ['mp4', 'mov', 'avi', 'svg', 'png', 'jpg', 'jpeg']
@@ -37,7 +36,7 @@ return [
 
     'panel' => [
         'install' => true,
-        'slug' => 'panel',
+        'slug' => 'canyon',
         'language' => 'fr',
         'css' => 'assets/css/panel.css'
     ],

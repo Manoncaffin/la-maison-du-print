@@ -28,11 +28,9 @@
     <meta name="Robots" content="All" />
     <?= css(['assets/css/index.css', '@auto']) ?>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= $site->url() ?>/assets/imgs/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= $site->url() ?>/assets/imgs/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= $site->url() ?>/assets/imgs/favicon/favicon-16x16.png">
-    <link rel="manifest" href="<?= $site->url() ?>/assets/imgs/favicon/site.webmanifest">
-    <link rel="mask-icon" href="<?= $site->url() ?>/assets/imgs/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?= $site->url() ?>/assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= $site->url() ?>/assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?= $site->url() ?>/assets/images/favicons/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">

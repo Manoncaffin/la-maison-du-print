@@ -4,30 +4,30 @@
         <loc>https://www.lamaisonduprint.fr/</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>1.0</priority> <!-- Priorité la plus élevée pour la page d'accueil -->
+        <priority>1.0</priority> 
     </url>
     <url>
         <loc>https://www.lamaisonduprint.fr/atelier</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority> <!-- Priorité élevée pour une page principale -->
+        <priority>0.8</priority>
     </url>
     <url>
         <loc>https://www.lamaisonduprint.fr/devis</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.8</priority> <!-- Priorité élevée pour une page principale -->
+        <priority>0.8</priority> 
     </url>
     <url>
         <loc>https://www.lamaisonduprint.fr/galerie</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.6</priority> <!-- Priorité élevée pour une page principale -->
+        <priority>0.6</priority> 
     </url>
         <url>
         <loc>https://www.lamaisonduprint.fr/contact</loc>
         <lastmod>2025-04-24</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>0.5</priority> <!-- Priorité élevée pour une page principale -->
+        <priority>0.5</priority> 
     </url>
 </urlset>
