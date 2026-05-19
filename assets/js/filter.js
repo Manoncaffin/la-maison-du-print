@@ -6,9 +6,19 @@ document.addEventListener('DOMContentLoaded', () => {
         tag.addEventListener('click', () => {
             const category = tag.getAttribute('data-category');
 
-            tags.forEach(t => t.classList.remove('active'));
+            // Flou uniquement sur les boutons
+            tags.forEach(t => {
+                t.classList.remove('active');
+                if (category === 'all') {
+                    t.classList.remove('blurred');
+                } else {
+                    t.classList.add('blurred');
+                }
+            });
             tag.classList.add('active');
+            tag.classList.remove('blurred');
 
+            // Affichage/masquage des images (sans flou)
             galleryItems.forEach(item => {
                 if (category === 'all') {
                     item.classList.remove('hidden');

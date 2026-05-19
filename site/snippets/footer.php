@@ -4,7 +4,7 @@
 
     <div class="all_footer">
         <div class="name_footer">
-            <h1 class="title_footer">LA MAISON DU PRINT © 2025.</h1>
+            <h1 class="title_footer">LA MAISON DU PRINT © 2026.</h1>
         </div>
 
         <div class="mentions_footer">

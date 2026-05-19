@@ -93,9 +93,13 @@
         color: white;
     }
 
-    .custom-button:hover~.custom-button {
+    /* .custom-button:hover~.custom-button {
         filter: blur(3px);
-    }
+    } */
+
+    .custom-button.blurred {
+    filter: blur(3px);
+}
 
     .custom-button:focus,
     .custom-button:active {
@@ -145,6 +149,15 @@
     .gallery-item {
         grid-column: 1 / span 6;
     }
+
+    .gallery-item {
+    transition: filter 0.3s ease, opacity 0.3s ease;
+}
+
+.gallery-item.blurred {
+    filter: blur(3px);
+    opacity: 0.4;
+}
 
 }
 
